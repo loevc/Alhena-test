@@ -1,0 +1,10 @@
+# Keep recipe/patch bytes stable when checking out on another Windows device.
+* text=auto eol=lf
+# PS1 sources retain their UTF-8 BOM so Windows PowerShell 5.1 decodes Chinese.
+*.ps1 text eol=lf
+*.png -text
+*.ico -text
+*.zip -text
+*.jar -text
+*.gz -text
+*.pack -text

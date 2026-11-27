@@ -1,0 +1,16 @@
+[
+  {
+    "path": "plugins/git4idea/src/git4idea/ui/branch/dashboard/BranchesTree.kt",
+    "reason": "The pinned baseline calls TreeUtil.expandAll (ReadAction) from launchOnShow's strict UI dispatcher. Preserve upstream locking rules by switching only initial model/tree expansion to EDT.",
+    "sha256": "44c5ec47a58e0e6c73520f7bf8a9ee42ead8da5d815ffcf87984167bafce85d5",
+    "old": "    tree.launchOnShow(\"Git Dashboard Tree\") {\n      updateTree()\n      checkCanceled()",
+    "new": "    tree.launchOnShow(\"Git Dashboard Tree\") {\n      withContext(Dispatchers.EDT) {\n        updateTree()\n      }\n      checkCanceled()"
+  },
+  {
+    "path": "plugins/git4idea/src/git4idea/index/ui/GitStageCommitPanel.kt",
+    "reason": "A resolved merge can have no index diff (Accept Left). Included, non-conflicted MERGING repositories still require a two-parent commit. Keep them in the original staging workflow's commit roots without allowing arbitrary empty commits or excluded roots.",
+    "sha256": "8aaccd13c721f24af9d5db6bdc8832bb494f9e41dcab690e91a972d9239798d0",
+    "old": "  val rootsToCommit get() = state.rootsToCommit",
+    "new": "  val rootsToCommit get() = state.rootsToCommit + state.includedRoots.filter { root ->\n    root !in state.conflictedRoots &&\n      git4idea.repo.GitRepositoryManager.getInstance(project).getRepositoryForRootQuick(root)?.state ==\n      com.intellij.dvcs.repo.Repository.State.MERGING\n  }"
+  }
+]
