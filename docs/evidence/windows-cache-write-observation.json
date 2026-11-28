@@ -1,0 +1,27 @@
+{
+  "status": "matching_mechanism_reproduced_short_reader_contention_fixed_and_validated",
+  "archiveSha256": "c9b5d639380786e3e1824c1d5e963c4582783c3c1ca6e05ed9be0cf14668434e",
+  "failedRun": "out/remote-sync/20261127-194353-https",
+  "log": "out/smoke/20261127-194357/log/idea.log",
+  "exception": "java.nio.file.AccessDeniedException",
+  "operation": "WorkspaceModelCacheImpl serializes and renames project-model-cache temporary file to cache.data",
+  "effect": "Git operations completed but the acceptance gate rejected this run due to a SEVERE log entry",
+  "successfulRetry": "out/remote-sync/20261127-194600-https/result.json",
+  "rootCause": "Exact original serializer failure reproduced with a held ordinary reader or mapped target on bundled JBR. Bounded Windows retries recover short readers; persistent denial remains visible. The historical holding process was not captured and cannot be retrospectively attributed.",
+  "sourceInvestigation": {
+    "serializer": "platform/platform-impl/src/com/intellij/workspaceModel/ide/impl/WorkspaceModelCacheSerializer.kt:93",
+    "finding": "Atomic rename catches AtomicMoveNotSupportedException only; observed AccessDeniedException propagates from saveCacheToFile to the cache-saving coroutine. This locates the unhandled path but does not identify which handle or policy denied the operation.",
+    "latestRegression": "docs/evidence/version-desktop/result.json",
+    "decision": "Bounded Windows-only AccessDenied retries added only after exact original-interface reproduction; exhausted failure and interruption remain visible. Full same-ZIP regression in progress.",
+    "additionalFindings": [
+      "Original failure occurred at JVM 2236ms during startup, before later Git update operations; it is not the newly fixed quick-shutdown queue invariant.",
+      "EntityStorageSerializerImpl.serializeCache closes KryoOutput in finally; KryoOutput.close uses FileChannel.use, and KryoInput.close explicitly cleans its mapped buffer. This does not identify the file handle or Windows policy causing the old rename denial.",
+      "No retry, log suppression, global antivirus exclusion or cache-disabling patch was added without reproduction."
+    ]
+  },
+  "mechanismEvidence": "docs/evidence/cache-rename-reproduction.json",
+  "targetedFixEvidence": "docs/evidence/cache-contention-acceptance.json",
+  "fixedCandidate": "docs/evidence/cache-contention-candidate.json",
+  "fixedArchiveSha256": "2a71563a782d2c7ef6e9d00e9b7c1cade03a316ff416184616c6d1558f278bdc",
+  "fullAcceptance": "docs/evidence/current-candidate.json"
+}

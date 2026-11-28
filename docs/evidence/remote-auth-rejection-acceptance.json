@@ -1,0 +1,15 @@
+﻿{
+    "status":  "passed",
+    "archiveSha256":  "c9b5d639380786e3e1824c1d5e963c4582783c3c1ca6e05ed9be0cf14668434e",
+    "evidence":  "D:\\resources\\code\\github\\loevc\\Alhena\\out\\welcome-smoke\\20261127-194653",
+    "fixture":  "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-remote-20261127-194653-ssh",
+    "remote":  "git@github.com:loevc/Alhena-test.git",
+    "transport":  "ssh",
+    "scenario":  "SSH authentication rejected with no allowed authentication method",
+    "checks":  [
+                   "original Clone reports expected failure diagnostic",
+                   "welcome UI remains usable",
+                   "no cloned repository left behind",
+                   "no global network or authentication configuration changed"
+               ]
+}

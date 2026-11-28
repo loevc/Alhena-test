@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "archiveSha256": "9b3ed7d117532bb6ba56a5d3c1b6d20b0a388d13c2799e52551f8a3173109362",
+  "evidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\startup-readiness\\20261128-010045",
+  "sourceRepository": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-performance-ripgrep",
+  "runs": [
+    {
+      "iteration": 1,
+      "fixture": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-startup-20261128-010045-1",
+      "sandbox": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\smoke\\20261128-010048",
+      "archiveSha256": "9b3ed7d117532bb6ba56a5d3c1b6d20b0a388d13c2799e52551f8a3173109362",
+      "status": "passed"
+    },
+    {
+      "iteration": 2,
+      "fixture": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-startup-20261128-010045-2",
+      "sandbox": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\smoke\\20261128-010056",
+      "archiveSha256": "9b3ed7d117532bb6ba56a5d3c1b6d20b0a388d13c2799e52551f8a3173109362",
+      "status": "passed"
+    },
+    {
+      "iteration": 3,
+      "fixture": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-startup-20261128-010045-3",
+      "sandbox": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\smoke\\20261128-010105",
+      "archiveSha256": "9b3ed7d117532bb6ba56a5d3c1b6d20b0a388d13c2799e52551f8a3173109362",
+      "status": "passed"
+    }
+  ],
+  "checks": [
+    "fresh repository clone without IDE metadata for each run",
+    "central original Log has commits and exactly one editor",
+    "no severe startup or shutdown errors",
+    "normal platform shutdown"
+  ]
+}

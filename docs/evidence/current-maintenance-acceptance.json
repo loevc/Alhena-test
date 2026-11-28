@@ -1,0 +1,94 @@
+{
+  "status": "passed",
+  "scope": "Pinned-source drift protection and current compiled/candidate provenance; future upstream upgrade requires rerun",
+  "archiveSha256": "29f137bb7bc42ed16e1f2cfcf505de9210e4a2097041336115d3764a08b9df22",
+  "protectedPatches": [
+    {
+      "path": "plugins/git4idea/src/git4idea/ui/branch/dashboard/BranchesTree.kt",
+      "baseSha256": "44c5ec47a58e0e6c73520f7bf8a9ee42ead8da5d815ffcf87984167bafce85d5",
+      "preparedSha256": "d5bd08db09ed0e8afa5941a7aa634d522a64f4332fc01c6af4e68d74054f4975",
+      "reason": "The pinned baseline calls TreeUtil.expandAll (ReadAction) from launchOnShow's strict UI dispatcher. Preserve upstream locking rules by switching only initial model/tree expansion to EDT."
+    },
+    {
+      "path": "plugins/git4idea/src/git4idea/index/ui/GitStageCommitPanel.kt",
+      "baseSha256": "8aaccd13c721f24af9d5db6bdc8832bb494f9e41dcab690e91a972d9239798d0",
+      "preparedSha256": "2101a93fe8dcea6edb5b3e1acb14d449818222e6711723b7ca5280ff3f5e0de5",
+      "reason": "A resolved merge can have no index diff (Accept Left). Included, non-conflicted MERGING repositories still require a two-parent commit. Keep them in the original staging workflow's commit roots without allowing arbitrary empty commits or excluded roots."
+    },
+    {
+      "path": "platform/vcs-log/impl/src/com/intellij/vcs/log/impl/VcsLogTabsManager.kt",
+      "baseSha256": "d202d4256fd6093d14f2a212859fbf3d299cf564db51c56144b23d2e36e1b776",
+      "preparedSha256": "9f86b2de4c9912a46481f2446194a67373a1a06610dd49cc61d4e258bc6dcecd",
+      "reason": "Opening an original Log editor can return its loading panel during asynchronous log recreation. Route the registered editor action through a void opening API, keeping tab state/listeners and existing synchronous APIs intact without dereferencing an uninitialized UI."
+    },
+    {
+      "path": "platform/vcs-log/impl/src/com/intellij/vcs/log/impl/IdeVcsLogManager.kt",
+      "baseSha256": "7e4300d01017f7efd19b4b7d48394bac5542e57013ba5201bdfb0ed734edbbb4",
+      "preparedSha256": "53b15fb3312fbdd05122f0d6237acc525c34f70c199b54d82ec2e951eabf368d",
+      "reason": "Opening an original Log editor can return its loading panel during asynchronous log recreation. Route the registered editor action through a void opening API, keeping tab state/listeners and existing synchronous APIs intact without dereferencing an uninitialized UI."
+    },
+    {
+      "path": "platform/vcs-log/impl/src/com/intellij/vcs/log/ui/actions/OpenAnotherLogTabAction.java",
+      "baseSha256": "c8d85d6803d93289eefbc3b04bf811507684ae4a147fd7525f133188460bad44",
+      "preparedSha256": "6d7008d93e286115fcf44f5bb5277943f959f66368cd9a0db66720aed741680f",
+      "reason": "Opening an original Log editor can return its loading panel during asynchronous log recreation. Route the registered editor action through a void opening API, keeping tab state/listeners and existing synchronous APIs intact without dereferencing an uninitialized UI."
+    },
+    {
+      "path": "platform/vcs-impl/src/com/intellij/openapi/vcs/changes/ChangeListManagerImpl.java",
+      "baseSha256": "da7d1159917e4f5f7c547bd8bbf12c014675f7237bb51d2e47e0e18b443334c2",
+      "preparedSha256": "e68d2b8b5f3b67d80eacfffadcd4791b3673656053034be81c9eb623ce64845d",
+      "reason": "Project closing cancels the dispose-aware refresh indicator before service dispose stops its queue. A running refresh can restore waiters with no future request, causing a false invariant failure during shutdown. Stop the queue and release waiters before disposing the refresh indicator; keep the later idempotent service stop."
+    },
+    {
+      "path": "platform/platform-impl/bootstrap/src/com/intellij/platform/ide/bootstrap/ApplicationLoader.kt",
+      "baseSha256": "20c66cd5272491eb662bcd756174fb623c35e3968e1f6c47e1059bd162c30bff",
+      "preparedSha256": "3c82b87341b3a31eb017035d375546394d8739d88c34f10220383a3a66938175",
+      "reason": "Alhena intentionally uses platform NOOP telemetry. An early service can initialize that lazy manager before asynchronous full SDK installation, which then fails its single-initialization requirement. Adopt the same thread-safe lazy NOOP for Alhena in bootstrap; keep other products and the manager invariant unchanged."
+    }
+  ],
+  "desktopSourceInputsMatchCiExport": true,
+  "ciTestRepositoryCommit": "b30fe4ef7f310b18ee93b295010018432a0be8a4",
+  "ciTestBranch": "codex/ci-acceptance-20261128-032246",
+  "ciIsCanonicalSourceCommit": false,
+  "gitLineEndingNormalization": "Exported working-file SHA and actual committed blob SHA are separately preserved in out/noop-bootstrap-ci-snapshot.json",
+  "sourceInputCount": 68,
+  "independentVersion": "0.1.0-dev",
+  "platformTag": "idea/252.28539.166",
+  "ciProductBuildCommit": "3ecfa58d07afe31dc8ffe4f66e78a90b9330ae65",
+  "ciProductBuildSourceInputsUnchanged": true,
+  "ciExecutionStatusTrackedSeparately": true,
+  "buildInputCommittedBlobSha256": {
+    ".gitattributes": "91ac12dfaf6ac218a0d7fa66af52372ee7793985db4f548ba7897dc109bd7bb5",
+    ".github/workflows/windows.yml": "4b9d0e6b8cf414072f03481f127dccadc7095326d11552ca09bbdfeab58ec3d2",
+    "build.ps1": "466741e6959a38e81bdc816ac0e7d24451214d8aadd0c8afdc6001e6272fe854",
+    "patches/upstream.json": "77b2e770ecabba5063192057260c38782a50d7dee15453cba884095a44ab8779",
+    "product/alhena.product.iml": "5be7fbbdd7bba87f1a5ad652239d6da43c54029d812d56fc0db63f10cb0cf766",
+    "product/build/AlhenaBuildTarget.kt": "7198c4f36ba74ac39545a7690eccd02a2c7f2920e16e929fbf0f0472132a99a3",
+    "product/build/AlhenaProperties.kt": "9ac51edfcb7128abd1233934c1d1c7e6f626ff4a51df9602d95071ada8c83d31",
+    "product/platform-build/AlhenaPackaging.kt": "8df21e06601866c8d2aa9474e0b84746bdef6eab5bdafaeb9561e23f5259bf30",
+    "product/resources/alhena-excluded-modules.txt": "97b33c45d62c6bcf56a41d43abf416227ebfa686a9058cf2c101b0d0372d95c9",
+    "product/resources/alhena.svg": "36202fc62350fed794980f164cab128abc9344d39e832c745e678f69cc51d15f",
+    "product/resources/idea/AlhenaApplicationInfo.xml": "7b47b7f19c333e77913eb5e945eb2619c6f1ee5666e2f201e37c4b36f839f09d",
+    "product/resources/META-INF/AlhenaPlugin.xml": "2666b686d53b540a7c51e94ca332b8a46fd8fcdd697e8e2e86167fb25d792c62",
+    "product/resources/ProductivityFeaturesRegistry.xml": "eacd89a2260dfdd46cec99964f77efa2a6fd2868e9cefe39a93e06e312d6179e",
+    "product/src/alhena/AlhenaApplication.java": "0c50a1edec3f6f68ad2d0a63e82483ab2a6bfa50a66a677cc80e809afe334475",
+    "product/src/alhena/AlhenaConsent.java": "c673217469603c7617051ae611e79aa1482cde65caf7a3deabd18714d4f5e633",
+    "product/src/alhena/AlhenaDirectoryConfigurator.java": "d2894cd0a3ed9569677b7dbc8fbfac8e2392f3147fcbf4bae9b8d310ce0aabef",
+    "product/src/alhena/AlhenaProject.java": "854aced5c9024b7a3d6824692aaa94012b93e08298fe03fd42440dbef09818c8",
+    "product/src/alhena/AlhenaProjectStore.java": "06c3a9fb02042ee5c584991cdee5c987340a0826d0d9876483709e6b6fbd3487",
+    "product/src/alhena/AlhenaSourceFileTypes.java": "d59ff1be5cadf7bacdb22bf303802baf89a8d2c2897bf39a59c72a62374db43b",
+    "product/src/alhena/AlhenaUpdates.java": "d33758d29a8166a3db722b39b495c3ad6a699139a9365ca6004de3afac6099d3",
+    "product/src/alhena/AlhenaWelcome.java": "b7b920c6ed8f6078b56b469248bbabddfc75b34e428c705bb156423d48823c4e",
+    "product/src/alhena/GitSettingsAction.java": "476ef35e67d325eb91e838f8362c62175055c85754c2a2ee280ef0d7ee6997d9",
+    "product/src/alhena/HistoryAction.java": "dc0b92fd39b2a69806a184723b4c04741849dbdadf4b1dd14596c247bd1fc85e",
+    "tools/compile-workflow-probe.ps1": "9ca6ef4fe608db07da2f30310ae9b6dc3de691fd9eaafb6c24959ca71e0f242a",
+    "tools/prefetch-runtime.ps1": "5b9da4b2552c65e732d1ad3faf0e101b40dab15f2327f9657ed4d5858ad3761e",
+    "tools/smoke/AdvancedProbe.java": "f3eec187d100a4e6577060d1b7a4554d1ab65688ad98f92123a678cb33de513e",
+    "tools/smoke/Attach.java": "bd2fef81aa178fb8641f68b84f8416cd6b43735f4d7cf86fca0f8c27862bca34",
+    "tools/smoke/WorkflowLoader.java": "721160712e547fcc92973eb2b8f8dde4a2b9b920f35665ac937be0d091e5eae3",
+    "tools/smoke/WorkflowProbe.java": "24de536d9e985b1c9974a5c5d64831ac509ea8699edcc8aee047caed646a5284",
+    "tools/workspace.py": "a0301e2cd60beabc72ebfde4f404eb19c278cc36f6fdafc5d46e05a52554d14d",
+    "upstream.lock.json": "32fff8c54f2c1710c3b514a50600b2b34c5dfb37b783bf02adad29a75f7e5433"
+  },
+  "sourceInputIdentityScope": "Exact complete current desktop inputs match latest checks-only CI export; hosted package uses older commit with identical product, patches, build, runtime fetching and packaged-agent compilation inputs. Only measurement tools and documentation/bookkeeping differ."
+}

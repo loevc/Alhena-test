@@ -1,0 +1,38 @@
+warning: in the working copy of 'switch-marker.txt', LF will be replaced by CRLF the next time Git touches it
+{
+    "status":  "passed",
+    "archiveSha256":  "2a71563a782d2c7ef6e9d00e9b7c1cade03a316ff416184616c6d1558f278bdc",
+    "evidence":  "D:\\resources\\code\\github\\loevc\\Alhena\\out\\welcome-smoke\\20261128-151635",
+    "fixture":  "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\history-20261128-151636 desktop 中文 repo",
+    "powerShellVersion":  "5.1.19041.6456",
+    "commandLineMode":  false,
+    "nativeSelection":  true,
+    "existingProject":  true,
+    "trustConfirmationObserved":  true,
+    "checks":  [
+                   "repository opens and displays Git history",
+                   "no automatic trust bypass",
+                   "no SEVERE/ERROR log entries",
+                   "real main-toolbar Open control and native Cancel preserve current repository",
+                   "selecting same repository keeps exactly one open project",
+                   "main-toolbar native selection switches to second existing IDEA repository with six commits",
+                   "switching back restores first repository and five commits",
+                   "native EXE without repository argument",
+                   "real Windows native chooser selects and confirms repository",
+                   "all original repository IDE metadata unchanged after close"
+               ],
+    "secondFixture":  "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\history-20261128-151643 switch desktop 中文 repo",
+    "repositorySwitching":  true,
+    "metadataPreserved":  [
+                              {
+                                  "repository":  "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\history-20261128-151636 desktop 中文 repo",
+                                  "snapshot":  "D:\\resources\\code\\github\\loevc\\Alhena\\out\\welcome-smoke\\20261128-151635\\first-metadata-before.json",
+                                  "verified":  true
+                              },
+                              {
+                                  "repository":  "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\history-20261128-151643 switch desktop 中文 repo",
+                                  "snapshot":  "D:\\resources\\code\\github\\loevc\\Alhena\\out\\welcome-smoke\\20261128-151635\\second-metadata-before.json",
+                                  "verified":  true
+                              }
+                          ]
+}

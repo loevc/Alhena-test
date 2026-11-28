@@ -1,0 +1,95 @@
+{
+  "status": "passed",
+  "archiveSha256": "85f525e1b8170790f53856d0aa2769e9381144845e00a138d93cfafa854f8020",
+  "dataset": {
+    "os": "Microsoft Windows 10 \u4e13\u4e1a\u7248",
+    "osVersion": "10.0.19045",
+    "cpu": "Intel(R) Core(TM) i7-14700K",
+    "logicalProcessors": 28,
+    "physicalMemoryBytes": 68388044800,
+    "upstream": "b0d717640ee577a15b73fa79194629ff2a1d3d72",
+    "repository": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-performance-platform",
+    "repositoryHead": "a9e59075350cdc50dae5e30f1b8a63f27010d1c6",
+    "commits": 5,
+    "files": 249211,
+    "runs": 3,
+    "waitSeconds": 600,
+    "method": "Instrumented Swing readiness, no forced GC; graceful platform exit saves settings and VFS between cached launches. Fresh application config is not cold OS cache. Includes attach/poll overhead. Stable samples require no scanner/queued scan, no dumb mode, no visible progress and unchanged scanner activity across two observations."
+  },
+  "sourceResults": "out/measurements/async-editor-platform-scale-20261128-105156/results.json",
+  "sourceResultsSha256": "c7fe8aa7d5f297c5b21a671a2d862d70c2b14c477149f012307fb37aeeac1498",
+  "summary": {
+    "repository-fresh": {
+      "frameReadyMs": {
+        "median": 1463.0,
+        "min": 909.0,
+        "max": 2011.0
+      },
+      "gitLogReadyMs": {
+        "median": 3722.0,
+        "min": 3323.0,
+        "max": 4486.0
+      },
+      "indexSettledMs": {
+        "median": 29253.0,
+        "min": 25786.0,
+        "max": 33918.0
+      },
+      "diffReadyMs": {
+        "median": 1132.0,
+        "min": 878.0,
+        "max": 1186.0
+      },
+      "workingSetBytes": {
+        "median": 2146549760,
+        "min": 2110894080,
+        "max": 2159075328
+      },
+      "heapUsedBytes": {
+        "median": 1031105096,
+        "min": 906005456,
+        "max": 1081081848
+      }
+    },
+    "repository-cached": {
+      "frameReadyMs": {
+        "median": 1395.0,
+        "min": 1369.0,
+        "max": 1558.0
+      },
+      "gitLogReadyMs": {
+        "median": 2945.0,
+        "min": 2629.0,
+        "max": 2979.0
+      },
+      "indexSettledMs": {
+        "median": 7606.0,
+        "min": 7275.0,
+        "max": 8672.0
+      },
+      "diffReadyMs": {
+        "median": 903.0,
+        "min": 883.0,
+        "max": 950.0
+      },
+      "workingSetBytes": {
+        "median": 845926400,
+        "min": 841273344,
+        "max": 860180480
+      },
+      "heapUsedBytes": {
+        "median": 180516752,
+        "min": 179082304,
+        "max": 214479376
+      }
+    }
+  },
+  "sampleCount": 6,
+  "warmupCount": 1,
+  "limits": [
+    "Fresh application configuration, not cold OS cache; previous scans have warmed file-system cache",
+    "249211 tracked files but only five commits, including four controlled Diff commits; depth tested separately",
+    "Includes Attach/poll overhead; indexSettledMs is readiness observation, not pure CPU indexing time",
+    "Diff measured after scan/dumb/progress settle; memory is sampled, not peak or forced-GC retained memory"
+  ]
+}

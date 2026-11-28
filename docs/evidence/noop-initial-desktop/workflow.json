@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "archiveSha256": "29f137bb7bc42ed16e1f2cfcf505de9210e4a2097041336115d3764a08b9df22",
+  "evidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\workflow-smoke\\20261128-111106",
+  "fixture": {
+    "root": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-20261128-111105",
+    "repository": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-20261128-111105\\repo",
+    "remote": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-20261128-111105\\origin.git",
+    "peer": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-20261128-111105\\peer"
+  },
+  "head": "8672471f5cf2d7fc2d55f0abff91cbe861631364",
+  "parents": [
+    "1119330fe6cefbdf9d5cfd44ea87bda74ae7657f",
+    "3ca8cde82a6b06f309ce08783735fa05e14b73df"
+  ],
+  "checks": [
+    "native startup and Git detection",
+    "unstaged-files",
+    "original Stage All writes index",
+    "staged-files",
+    "original Commit button creates commit",
+    "empty-commit-rejected",
+    "original branch checkout",
+    "original branch checkout back",
+    "push",
+    "original Push updates local bare remote",
+    "original Fetch updates remote tracking ref",
+    "update",
+    "original Update Project integrates peer commit",
+    "conflict-dialog",
+    "three-way-merge",
+    "original merge UI resolves index with selected content",
+    "merge-ready",
+    "original staging workflow finishes no-diff merge",
+    "two-parent merge commit, clean index and working tree, no severe log errors"
+  ]
+}

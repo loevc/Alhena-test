@@ -1,0 +1,18 @@
+# Re-created upstream checkout, dependency caches and build/test output.
+/upstream/
+/.cache/
+/out/
+/build/
+/offline-bundles/
+/experiments/wpf-history/build/
+/tests/tmp/
+
+# Machine-specific IDE state. product/*.iml is a build input and stays tracked.
+/.idea/
+/.vs/
+*.user
+*.suo
+
+# Python intermediates; do not broadly ignore ZIP/JAR/ICO build inputs.
+__pycache__/
+*.py[cod]

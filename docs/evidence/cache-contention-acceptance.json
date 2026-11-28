@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "archiveSha256": "2a71563a782d2c7ef6e9d00e9b7c1cade03a316ff416184616c6d1558f278bdc",
+  "runs": [
+    {
+      "result": "docs/evidence/cache-contention/20261128-151427.json",
+      "probe": "docs/evidence/cache-contention/20261128-151427.txt"
+    },
+    {
+      "result": "docs/evidence/cache-contention/20261128-151439.json",
+      "probe": "docs/evidence/cache-contention/20261128-151439.txt"
+    },
+    {
+      "result": "docs/evidence/cache-contention/20261128-151447.json",
+      "probe": "docs/evidence/cache-contention/20261128-151447.txt"
+    }
+  ],
+  "negativeBaseline": "docs/evidence/cache-contention/negative-baseline.json",
+  "negativeBaselineScope": "Same gate rejects old 29f137bb at 20ms transient reader contention; normal exit still completes.",
+  "checks": [
+    "20/40/60ms reader release recovers and cache deserializes",
+    "Persistent denial propagates within bounded time and preserves old target bytes",
+    "Thread interruption preserved and temporary files cleaned",
+    "100 subsequent saves and final deserialize succeed",
+    "All three independent owned app instances exit normally with no severe log errors"
+  ]
+}

@@ -1,0 +1,66 @@
+PASS native Git ready
+PASS initial central workspace ready before opening fixture file
+PASS original staging line tracker sees two separated hunks
+PASS original hunk popup exposes Stage link
+PASS original hunk Stage writes index
+PASS original popup exposes Unstage link
+PASS original hunk Unstage clears index
+PASS staging panel ready
+PASS both fixture hunks staged for clean branch tests
+PASS original Commit prepares clean advanced fixture
+PASS original New Branch dialog
+PASS original Create dialog creates and checks out branch
+PASS original Rename Branch dialog
+PASS original Rename changes current branch
+PASS original checkout returns to main
+PASS original branch context Delete removes test branch
+PASS cherry-pick source visible in original Log
+PASS original Log Cherry-pick creates commit
+PASS original checkout selects rebase fixture
+PASS original Rebase dialog
+PASS original Rebase accepts selected upstream
+PASS original Rebase replays feature onto upstream
+PASS original Annotate renders expected abbreviated authors in editor gutter
+PASS original File History displays both commits
+{
+  "status": "passed",
+  "archiveSha256": "29f137bb7bc42ed16e1f2cfcf505de9210e4a2097041336115d3764a08b9df22",
+  "evidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\advanced-git-smoke\\20261128-111146",
+  "fixture": {
+    "repository": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-advanced-20261128-111146",
+    "base": "690084a07d38b79291c8d26068fc1205f715922b",
+    "history": "9cbecfa04360065f027114acaa5e390d3edbbe56",
+    "cherry": "11de3820456164564768130cf75c4376aed498d0",
+    "upstream": "014215e8cdbb5984610edf6c362c1e3b81411260",
+    "feature": "6431cbcbef6794e887b5122f75126a1ad29fb8d2"
+  },
+  "checks": [
+    "native Git ready",
+    "initial central workspace ready before opening fixture file",
+    "original staging line tracker sees two separated hunks",
+    "original hunk popup exposes Stage link",
+    "original hunk Stage writes index",
+    "selected hunk alone is staged, second hunk remains unstaged",
+    "original popup exposes Unstage link",
+    "original hunk Unstage clears index",
+    "staging panel ready",
+    "both fixture hunks staged for clean branch tests",
+    "original Commit prepares clean advanced fixture",
+    "original New Branch dialog",
+    "original Create dialog creates and checks out branch",
+    "original Rename Branch dialog",
+    "original Rename changes current branch",
+    "original checkout returns to main",
+    "original branch context Delete removes test branch",
+    "cherry-pick source visible in original Log",
+    "original Log Cherry-pick creates commit",
+    "original checkout selects rebase fixture",
+    "original Rebase dialog",
+    "original Rebase accepts selected upstream",
+    "original Rebase replays feature onto upstream",
+    "original Git annotation provider maps each line to expected revision",
+    "original Annotate renders expected abbreviated authors in editor gutter",
+    "original file history provider returns both expected commits",
+    "original File History displays both commits"
+  ]
+}

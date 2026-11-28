@@ -1,0 +1,102 @@
+{
+  "status": "passed",
+  "archiveSha256": "2a71563a782d2c7ef6e9d00e9b7c1cade03a316ff416184616c6d1558f278bdc",
+  "dataset": {
+    "os": "Microsoft Windows 10 \u4e13\u4e1a\u7248",
+    "osVersion": "10.0.19045",
+    "cpu": "Intel(R) Core(TM) i7-14700K",
+    "logicalProcessors": 28,
+    "physicalMemoryBytes": 68388044800,
+    "upstream": "b0d717640ee577a15b73fa79194629ff2a1d3d72",
+    "repository": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-performance-ripgrep-fixed",
+    "repositoryHead": "3e85c6c148fdce38a99ceeb9d2780dc7b03b4a4f",
+    "commits": 2381,
+    "files": 231,
+    "runs": 3,
+    "waitSeconds": 180,
+    "method": "Instrumented Swing readiness, no forced GC; graceful platform exit saves settings and VFS between cached launches. Fresh application config is not cold OS cache. Includes attach/poll overhead. Stable samples require no scanner/queued scan, no dumb mode, no visible progress and unchanged scanner start/stop event count across two observations. Log readiness requires rows in the selected central editor, not another visible graph."
+  },
+  "sourceResults": "out/measurements/cache-fix-history-scale-20261128-153106/results.json",
+  "sourceResultsSha256": "13637e59e76e5d358161fe688b02277ea82417dcbc1043548839806537a17721",
+  "summary": {
+    "repository-fresh": {
+      "frameReadyMs": {
+        "median": 1009.0,
+        "min": 914.0,
+        "max": 1442.0
+      },
+      "gitLogReadyMs": {
+        "median": 3832.0,
+        "min": 3699.0,
+        "max": 3846.0
+      },
+      "indexSettledMs": {
+        "median": 4937.0,
+        "min": 4877.0,
+        "max": 5463.0
+      },
+      "diffReadyMs": {
+        "median": 1245.0,
+        "min": 1162.0,
+        "max": 1250.0
+      },
+      "workingSetBytes": {
+        "median": 968830976,
+        "min": 876367872,
+        "max": 972034048
+      },
+      "heapUsedBytes": {
+        "median": 189934712,
+        "min": 123913400,
+        "max": 234194128
+      }
+    },
+    "repository-cached": {
+      "frameReadyMs": {
+        "median": 1866.0,
+        "min": 1584.0,
+        "max": 1929.0
+      },
+      "gitLogReadyMs": {
+        "median": 3260.0,
+        "min": 2960.0,
+        "max": 3660.0
+      },
+      "indexSettledMs": {
+        "median": 4662.0,
+        "min": 3883.0,
+        "max": 4866.0
+      },
+      "diffReadyMs": {
+        "median": 976.0,
+        "min": 972.0,
+        "max": 1001.0
+      },
+      "workingSetBytes": {
+        "median": 794972160,
+        "min": 774901760,
+        "max": 797749248
+      },
+      "heapUsedBytes": {
+        "median": 171989168,
+        "min": 139884736,
+        "max": 173376744
+      }
+    }
+  },
+  "sampleCount": 6,
+  "warmupCount": 1,
+  "readiness": "Nonzero rows in visible original graph inside selected central FileEditor, not any other visible Log. Stable scan uses actual start/stop event counter.",
+  "checks": [
+    "All seven launches, including warmup, use same ZIP and normal platform shutdown",
+    "No severe/error, VFS crash recovery or interrupted scanning in final logs",
+    "Actual selected central-editor graph has commits",
+    "Final no scan, queued scan, dumb state or running progress"
+  ],
+  "limits": [
+    "Fresh application configuration is not cold OS cache",
+    "Working-tree size and history depth are separate datasets; not one repository combining both extremes",
+    "Attach/poll overhead included; scan settled time is an observed readiness timestamp, not pure indexing CPU duration",
+    "Diff measured after scan settles; memory sampled after grace, not peak or forced-GC retained set"
+  ]
+}

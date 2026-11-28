@@ -1,0 +1,16 @@
+﻿{
+    "status":  "passed",
+    "archiveSha256":  "4d1f78ace6e4f69e2d53b1f92c23eff32b3cc6fca6503e499d69806e74e8d88e",
+    "evidence":  "D:\\resources\\code\\github\\loevc\\Alhena\\out\\gui-smoke\\20261127-184626",
+    "fixture":  "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\history-20261127-184627",
+    "checks":  [
+                   "native ZIP launch",
+                   "isolated config",
+                   "Git4Idea enabled",
+                   "5 commits with merge graph",
+                   "main and feature/history branch tree",
+                   "commit selection loads history.txt",
+                   "original two-sided Diff",
+                   "no SEVERE/ERROR log entries"
+               ]
+}

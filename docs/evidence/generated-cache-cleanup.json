@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "mode": "apply",
+  "keepNewest": 2,
+  "totalBytes": 4843984499,
+  "preserved": [
+    "all source and Git repositories",
+    "release ZIPs and extracted applications",
+    "compilation and dependency caches",
+    "acceptance logs, screenshots and reports"
+  ],
+  "completed": true,
+  "targetCount": 99,
+  "scope": "only old isolated acceptance system/caches, index, tmp and vcs-log directories",
+  "fullRecord": "out/cleanup-generated-previous-20261128-0032.json"
+}

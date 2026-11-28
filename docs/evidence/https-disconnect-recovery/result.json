@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "evidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\network-recovery\\20261128-073900",
+  "archiveSha256": "2a71563a782d2c7ef6e9d00e9b7c1cade03a316ff416184616c6d1558f278bdc",
+  "transport": "real HTTPS to authorized GitHub repository through opaque loopback tunnel",
+  "externalProbeSha256": {
+    "run.py": "534415e68d79355c2645f0e413fb8ab0bb72bbc4378ac7bf00b3380304b0dae4",
+    "relay.py": "6825712a49f48a4416d25df2dd6245112e95303ac340f8869125969d129f0ab5",
+    "NetworkNotificationProbe.java": "821bf3d08a3b1121e60aa6305ad2d04906dae49a6618df853e7fd34435992d75"
+  },
+  "branch": "alhena-network-20261128-073900",
+  "fixture": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-network-target-20261128-073900",
+  "peer": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-network-peer-20261128-073900",
+  "initialHead": "311ff701cb6616ec2c2f2e613cedb28f30fa9cd5",
+  "incomingHead": "64436ca29bcdf42a24d2e04b324dfb62c065cd25",
+  "receivedFile": "network-recovery-20261128-073900.bin",
+  "receivedFileBytes": 524288,
+  "receivedFileSha256": "2278d06fb2dede8c573094d329983c30ec592a94ce61247c6d9500c325adcee2",
+  "cutAfterUpstreamBytes": 77162,
+  "originalErrorNotification": "notification=ERROR|1795851557006.35327812|Fetch failed|RPC failed; curl 56 OpenSSL SSL_read: SSL_ERROR_SYSCALL, errno 0<br/>5 bytes of body are still expected<br/>fetch-pack: unexpected disconnect while reading sideband packet<br/>early EOF<br/>unpack-objects failed",
+  "checks": [
+    "owned loopback relay listening",
+    "original central editor ready",
+    "HTTPS connection cut after transfer bytes",
+    "original fetch error notification visible",
+    "failed transfer leaves branch/tracking ref and worktree/index unchanged",
+    "original Fetch succeeds after transport restore",
+    "original Update dialog",
+    "original Update integrates recovered commit",
+    "recovered binary content matches exact source hash",
+    "final real repository index and worktree clean",
+    "normal platform shutdown"
+  ],
+  "limits": [
+    "Opaque per-repository HTTPS transport interruption; no global proxy or physical NIC change",
+    "Physical link removal and SSH in-flight interruption are not covered"
+  ],
+  "localProxyRestored": true,
+  "normalExit": true,
+  "relayStopped": true
+}

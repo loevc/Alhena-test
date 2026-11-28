@@ -1,0 +1,254 @@
+{
+  "status": "passed",
+  "run": {
+    "id": 46036064719,
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/loevc/Alhena-test/actions/runs/46036064719",
+    "head_sha": "af82d88ad88b696245fbc2d63979695b6379422c",
+    "head_branch": "codex/ci-acceptance-20261127-164256",
+    "path": ".github/workflows/windows.yml",
+    "event": "workflow_dispatch"
+  },
+  "jobs": [
+    {
+      "id": 140631667549,
+      "run_id": 46036064719,
+      "workflow_name": "Windows checks and package",
+      "head_branch": "codex/ci-acceptance-20261127-164256",
+      "run_url": "https://api.github.com/repos/loevc/Alhena-test/actions/runs/46036064719",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOV-Bd_c8AAAAgvkzzXQ",
+      "head_sha": "af82d88ad88b696245fbc2d63979695b6379422c",
+      "url": "https://api.github.com/repos/loevc/Alhena-test/actions/jobs/140631667549",
+      "html_url": "https://github.com/loevc/Alhena-test/actions/runs/46036064719/job/140631667549",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-27T16:43:58Z",
+      "started_at": "2026-11-27T16:44:00Z",
+      "completed_at": "2026-11-27T16:44:19Z",
+      "name": "checks",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-27T16:44:01Z",
+          "completed_at": "2026-11-27T16:44:01Z"
+        },
+        {
+          "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-27T16:44:01Z",
+          "completed_at": "2026-11-27T16:44:09Z"
+        },
+        {
+          "name": "Run actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-27T16:44:09Z",
+          "completed_at": "2026-11-27T16:44:10Z"
+        },
+        {
+          "name": "Unit tests and actual Windows PowerShell 5.1 / PowerShell 7 parsers",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-27T16:44:10Z",
+          "completed_at": "2026-11-27T16:44:15Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-27T16:44:15Z",
+          "completed_at": "2026-11-27T16:44:15Z"
+        },
+        {
+          "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-27T16:44:15Z",
+          "completed_at": "2026-11-27T16:44:17Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-27T16:44:17Z",
+          "completed_at": "2026-11-27T16:44:17Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/loevc/Alhena-test/check-runs/140631667549",
+      "labels": [
+        "windows-latest"
+      ],
+      "runner_id": 1000000001,
+      "runner_name": "GitHub Actions 1000000001",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 140631832178,
+      "run_id": 46036064719,
+      "workflow_name": "Windows checks and package",
+      "head_branch": "codex/ci-acceptance-20261127-164256",
+      "run_url": "https://api.github.com/repos/loevc/Alhena-test/actions/runs/46036064719",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOV-Bd_c8AAAAgvk92cg",
+      "head_sha": "af82d88ad88b696245fbc2d63979695b6379422c",
+      "url": "https://api.github.com/repos/loevc/Alhena-test/actions/jobs/140631832178",
+      "html_url": "https://github.com/loevc/Alhena-test/actions/runs/46036064719/job/140631832178",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-27T16:44:19Z",
+      "started_at": "2026-11-27T16:44:21Z",
+      "completed_at": "2026-11-27T17:05:06Z",
+      "name": "package",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-27T16:44:22Z",
+          "completed_at": "2026-11-27T16:44:23Z"
+        },
+        {
+          "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-27T16:44:23Z",
+          "completed_at": "2026-11-27T16:44:31Z"
+        },
+        {
+          "name": "Run actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-27T16:44:31Z",
+          "completed_at": "2026-11-27T16:44:31Z"
+        },
+        {
+          "name": "Package using Windows PowerShell 5.1",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-27T16:44:31Z",
+          "completed_at": "2026-11-27T17:04:46Z"
+        },
+        {
+          "name": "Compile external desktop acceptance agents",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-27T17:04:46Z",
+          "completed_at": "2026-11-27T17:04:48Z"
+        },
+        {
+          "name": "Record source and archive identity",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-27T17:04:48Z",
+          "completed_at": "2026-11-27T17:04:50Z"
+        },
+        {
+          "name": "Upload candidate package",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-27T17:04:50Z",
+          "completed_at": "2026-11-27T17:04:59Z"
+        },
+        {
+          "name": "Upload build diagnostics",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-27T17:04:59Z",
+          "completed_at": "2026-11-27T17:05:01Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-11-27T17:05:01Z",
+          "completed_at": "2026-11-27T17:05:01Z"
+        },
+        {
+          "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-11-27T17:05:01Z",
+          "completed_at": "2026-11-27T17:05:03Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-11-27T17:05:03Z",
+          "completed_at": "2026-11-27T17:05:03Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/loevc/Alhena-test/check-runs/140631832178",
+      "labels": [
+        "windows-latest"
+      ],
+      "runner_id": 1000000002,
+      "runner_name": "GitHub Actions 1000000002",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    }
+  ],
+  "snapshotCommit": "af82d88ad88b696245fbc2d63979695b6379422c",
+  "workflowSha256": "4b9d0e6b8cf414072f03481f127dccadc7095326d11552ca09bbdfeab58ec3d2",
+  "checkedAtUtc": "2026-11-27T17:15:07.999455+00:00",
+  "artifacts": [
+    {
+      "id": 15217884093,
+      "name": "windows-candidate-af82d88ad88b696245fbc2d63979695b6379422c",
+      "size_in_bytes": 249494564,
+      "digest": "sha256:deff03ddf12b8682db952b083142b7afd3f46a6dcf9edc0c0018c7f5a8f1288b",
+      "expired": false,
+      "created_at": "2026-11-27T17:04:59Z",
+      "expires_at": "2026-12-04T17:04:51Z"
+    },
+    {
+      "id": 15217858967,
+      "name": "windows-build-diagnostics-af82d88ad88b696245fbc2d63979695b6379422c",
+      "size_in_bytes": 148621,
+      "digest": "sha256:037755e58b49b2b816615afcdaf47526dc8c0407d9b112f8fe0bd61a30db483b",
+      "expired": false,
+      "created_at": "2026-11-27T17:05:00Z",
+      "expires_at": "2026-12-04T17:04:59Z"
+    }
+  ],
+  "limits": [
+    "Exact test snapshot af82d88 is the earlier 1e152f7e source baseline; later local readiness fix is not included",
+    "Hosted build does not establish desktop acceptance for its separately generated ZIP",
+    "Alhena source repository commit/Tag/Release association remains pending"
+  ],
+  "diagnosticsArchiveDigestVerified": "sha256:037755e58b49b2b816615afcdaf47526dc8c0407d9b112f8fe0bd61a30db483b",
+  "packageMetadata": "docs/evidence/windows-ci-package-metadata.json",
+  "metadata": {
+    "sourceCommit": "af82d88ad88b696245fbc2d63979695b6379422c",
+    "upstreamCommit": "b0d717640ee577a15b73fa79194629ff2a1d3d72",
+    "archiveName": "alhena-0.1.0-dev-252.28539.SNAPSHOT.win.zip",
+    "archiveBytes": 250138984,
+    "archiveSha256": "8b7811b8b285a151ad07d3c3976e61b965301806017380beabfc115df37a3049",
+    "desktopAcceptance": "not_run_on_hosted_runner",
+    "releaseReady": false
+  }
+}

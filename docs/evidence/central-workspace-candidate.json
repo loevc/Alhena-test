@@ -1,0 +1,59 @@
+{
+  "status": "workspace_candidate_validated_with_open_items",
+  "releaseReady": false,
+  "createdAtUtc": "2026-11-27T12:19:17.473186+00:00",
+  "archive": "out/releases/alhena-252.28539-0ab35f94.win.zip",
+  "archiveBytes": 250138621,
+  "archiveSha256": "0ab35f948c7a5a27466127ebf6c50e5cb8121857f2a10fd9ac18262eefbe4c86",
+  "sourceBaseCommit": "7c92dd2dbe0dadf2bb7ce86e8e25646e2e40a2de",
+  "sourceChangesCommitted": false,
+  "sourceProductSha256": {
+    "product/alhena.product.iml": "e28185ea4f2802e466e2012571e2e72bff388fc0a46e43abc75600ae18432458",
+    "product/build/AlhenaBuildTarget.kt": "7198c4f36ba74ac39545a7690eccd02a2c7f2920e16e929fbf0f0472132a99a3",
+    "product/build/AlhenaProperties.kt": "a6ec4503213eefc4e9e84d0dfc46399dfc893eb9cfe0c8b6748015dc33065ec3",
+    "product/platform-build/AlhenaPackaging.kt": "8df21e06601866c8d2aa9474e0b84746bdef6eab5bdafaeb9561e23f5259bf30",
+    "product/resources/alhena-excluded-modules.txt": "97b33c45d62c6bcf56a41d43abf416227ebfa686a9058cf2c101b0d0372d95c9",
+    "product/resources/alhena.svg": "36202fc62350fed794980f164cab128abc9344d39e832c745e678f69cc51d15f",
+    "product/resources/ProductivityFeaturesRegistry.xml": "eacd89a2260dfdd46cec99964f77efa2a6fd2868e9cefe39a93e06e312d6179e",
+    "product/resources/idea/AlhenaApplicationInfo.xml": "16a6e694efe315860be997d51609e14afd6302143a29f9ba802053281ed9b21c",
+    "product/resources/META-INF/AlhenaPlugin.xml": "68ee20750b6aec2394c15c9f7f7eee4be61ac5a3e30b9017b1b0fad3e825e168",
+    "product/src/alhena/AlhenaApplication.java": "0c50a1edec3f6f68ad2d0a63e82483ab2a6bfa50a66a677cc80e809afe334475",
+    "product/src/alhena/AlhenaConsent.java": "c673217469603c7617051ae611e79aa1482cde65caf7a3deabd18714d4f5e633",
+    "product/src/alhena/AlhenaProject.java": "854aced5c9024b7a3d6824692aaa94012b93e08298fe03fd42440dbef09818c8",
+    "product/src/alhena/AlhenaUpdates.java": "d33758d29a8166a3db722b39b495c3ad6a699139a9365ca6004de3afac6099d3",
+    "product/src/alhena/AlhenaWelcome.java": "b7b920c6ed8f6078b56b469248bbabddfc75b34e428c705bb156423d48823c4e",
+    "product/src/alhena/GitSettingsAction.java": "476ef35e67d325eb91e838f8362c62175055c85754c2a2ee280ef0d7ee6997d9",
+    "product/src/alhena/HistoryAction.java": "2efcc2a85d71d0f327814172b6ca7c575e4461dbc7581d6accb624317bf52cba"
+  },
+  "packagedClassesMatchBuildOutput": {
+    "alhena/AlhenaApplication.class": "b14b39898ee6e0985252966146e376444e92ec54162f9d93c5079ae0229d4c11",
+    "alhena/AlhenaConsent.class": "b92080a04e0787289556c9f0c11a67a8affe6d1521082aec3bfe4ec6d04073f4",
+    "alhena/AlhenaProject$1.class": "960beb1a6fab5313f2d1411bdd19bf98dad17d0f4b746faef802d8207577834f",
+    "alhena/AlhenaProject$2.class": "6b21e7a3e965a66f95c759ace6c032426c2e55fce38ff095ebca1e0914cf9b62",
+    "alhena/AlhenaProject.class": "02f169b5c528155b350867227b724e7a28d8b8671dac3bc9da7ae35a875a1d79",
+    "alhena/AlhenaUpdates.class": "a0694e32d8d13fbb35ca44a1768a8643ac0542e09be7a9d3e5a9b08fb35c06cc",
+    "alhena/AlhenaWelcome.class": "9879484141a9e755157fd3a1f7d4bd46bf045299270f64802b3bbd5960f724f4",
+    "alhena/GitSettingsAction.class": "b43244315218a6f12720f789d09be27cf8a6a1547a3a0f2cffe964322cbc699e",
+    "alhena/HistoryAction.class": "d89fd0dc55bed00bbfd25f12e2dd3ca9a50866dd880c3b46d7b58585ae98a9f3"
+  },
+  "passedEvidence": [
+    "docs/evidence/workspace-git-acceptance.json",
+    "docs/evidence/central-git-diff-acceptance.json",
+    "docs/evidence/central-workflow-acceptance.json",
+    "docs/evidence/central-native-existing-project-acceptance.json",
+    "docs/evidence/advanced-git-acceptance.json",
+    "docs/evidence/repository-switch-acceptance.json",
+    "docs/evidence/central-product-acceptance.json",
+    "docs/evidence/central-remote/result.json",
+    "docs/evidence/central-desktop/result.json"
+  ],
+  "priorRemoteBaseline": "docs/evidence/remote-baseline-candidate.json",
+  "priorRemoteArchiveSha256": "c9b5d639380786e3e1824c1d5e963c4582783c3c1ca6e05ed9be0cf14668434e",
+  "openItems": [
+    "P1 automation and P2 performance/version/upgrade work remain",
+    "commit/tag/Release association pending; repeat final ZIP gates if product changes",
+    "prior Windows project-model-cache AccessDeniedException root cause remains open"
+  ],
+  "currentRemoteMatrix": "docs/evidence/central-remote/result.json",
+  "desktopGate": "docs/evidence/central-desktop/result.json"
+}

@@ -1,0 +1,8 @@
+java=21.0.9+1-b1038.91
+fixture=D:\resources\code\github\loevc\Alhena\out\fixtures\workflow-cache-rename-14535277889757968753
+unheld|success
+channel-open|java.nio.file.AccessDeniedException|D:\resources\code\github\loevc\Alhena\out\fixtures\workflow-cache-rename-14535277889757968753\channel-open.tmp -> D:\resources\code\github\loevc\Alhena\out\fixtures\workflow-cache-rename-14535277889757968753\channel-open.data
+mapped-channel-closed|java.nio.file.AccessDeniedException|D:\resources\code\github\loevc\Alhena\out\fixtures\workflow-cache-rename-14535277889757968753\mapped-channel-closed.tmp -> D:\resources\code\github\loevc\Alhena\out\fixtures\workflow-cache-rename-14535277889757968753\mapped-channel-closed.data
+mapped-channel-closed|mappingStillReadable=true
+mapped-and-channel-open|java.nio.file.AccessDeniedException|D:\resources\code\github\loevc\Alhena\out\fixtures\workflow-cache-rename-14535277889757968753\mapped-and-channel-open.tmp -> D:\resources\code\github\loevc\Alhena\out\fixtures\workflow-cache-rename-14535277889757968753\mapped-and-channel-open.data
+mapped-and-channel-open|mappingStillReadable=true

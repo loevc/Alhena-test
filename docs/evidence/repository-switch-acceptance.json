@@ -1,0 +1,24 @@
+﻿{
+    "status":  "passed",
+    "archiveSha256":  "0ab35f948c7a5a27466127ebf6c50e5cb8121857f2a10fd9ac18262eefbe4c86",
+    "evidence":  "D:\\resources\\code\\github\\loevc\\Alhena\\out\\welcome-smoke\\20261128-001029",
+    "fixture":  "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\history-20261128-001030 中文 repo",
+    "powerShellVersion":  "5.1.19041.6456",
+    "commandLineMode":  false,
+    "nativeSelection":  true,
+    "existingProject":  true,
+    "trustConfirmationObserved":  true,
+    "checks":  [
+                   "repository opens and displays Git history",
+                   "no automatic trust bypass",
+                   "no SEVERE/ERROR log entries",
+                   "real main-toolbar Open control and native Cancel preserve current repository",
+                   "selecting same repository keeps exactly one open project",
+                   "main-toolbar native selection switches to second existing IDEA repository with six commits",
+                   "switching back restores first repository and five commits",
+                   "native EXE without repository argument",
+                   "real Windows native chooser selects and confirms repository"
+               ],
+    "secondFixture":  "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\history-20261128-001037 switch 中文 repo",
+    "repositorySwitching":  true
+}

@@ -1,0 +1,7 @@
+{"event": "listening", "at": 1795851543.973477, "port": 29394}
+{"event": "connected", "at": 1795851555.409634, "restored": false}
+{"event": "transfer_cut", "at": 1795851556.9869413, "upstreamBytes": 77162, "downstreamBytes": 2830}
+{"event": "connected", "at": 1795851558.241798, "restored": true}
+{"event": "closed", "at": 1795851561.928923, "upstreamBytes": 1065107, "downstreamBytes": 2854}
+{"event": "connected", "at": 1795851564.192744, "restored": true}
+{"event": "closed", "at": 1795851565.3142567, "upstreamBytes": 7516, "downstreamBytes": 1239}

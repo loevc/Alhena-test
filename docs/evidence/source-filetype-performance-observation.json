@@ -1,0 +1,35 @@
+{
+  "status": "incomplete_rejected_series",
+  "releaseReady": false,
+  "archiveSha256": "ace0523d817e2a6d7e98d7e920cb82f72d6c96e4ab8d8162bb90988dfab1b8e7",
+  "trackedFiles": 249211,
+  "completedDiagnosticSample": {
+    "scenario": "repository-fresh",
+    "iteration": 1,
+    "warmup": false,
+    "archiveSha256": "ace0523d817e2a6d7e98d7e920cb82f72d6c96e4ab8d8162bb90988dfab1b8e7",
+    "frameReadyMs": 1786.0,
+    "frameWorkingSetBytes": 446234624,
+    "frameHeapUsedBytes": 73004752,
+    "gitLogReadyMs": 5417.0,
+    "gitLogWorkingSetBytes": 686424064,
+    "gitLogHeapUsedBytes": 121678568,
+    "indexSettledMs": 177053.0,
+    "diffReadyMs": 1140.0,
+    "sampledAtMs": 184071.0,
+    "workingSetBytes": 1931583488,
+    "privateBytes": 1799995392,
+    "heapUsedBytes": 994120936,
+    "heapCommittedBytes": 1099956224,
+    "loadedClasses": 35699,
+    "runningProgressIndicators": 0,
+    "evidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\measurements\\optimized-platform-scale-20261128-103432\\repository-fresh-1",
+    "shutdownClean": true
+  },
+  "comparison": {
+    "isolationOnly": "Did not settle within 600 seconds; one thread dump collected, diagnostic only",
+    "filenameFallback": "First fresh sample settled at 177053 ms; second fresh launch failed with Log UI NPE. Not a completed benchmark."
+  },
+  "failureLog": "out/measurements/optimized-platform-scale-20261128-103432/repository-fresh-2/sandbox/log/idea.log",
+  "remaining": "Repeat fresh/cached series after asynchronous editor action fix"
+}

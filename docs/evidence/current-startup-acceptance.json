@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "archiveSha256": "29f137bb7bc42ed16e1f2cfcf505de9210e4a2097041336115d3764a08b9df22",
+  "evidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\startup-readiness\\20261128-111436",
+  "sourceRepository": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-performance-ripgrep",
+  "runs": [
+    {
+      "iteration": 1,
+      "fixture": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-startup-20261128-111436-1",
+      "sandbox": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\smoke\\20261128-111438",
+      "archiveSha256": "29f137bb7bc42ed16e1f2cfcf505de9210e4a2097041336115d3764a08b9df22",
+      "status": "passed"
+    },
+    {
+      "iteration": 2,
+      "fixture": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-startup-20261128-111436-2",
+      "sandbox": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\smoke\\20261128-111446",
+      "archiveSha256": "29f137bb7bc42ed16e1f2cfcf505de9210e4a2097041336115d3764a08b9df22",
+      "status": "passed"
+    },
+    {
+      "iteration": 3,
+      "fixture": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-startup-20261128-111436-3",
+      "sandbox": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\smoke\\20261128-111455",
+      "archiveSha256": "29f137bb7bc42ed16e1f2cfcf505de9210e4a2097041336115d3764a08b9df22",
+      "status": "passed"
+    },
+    {
+      "iteration": 4,
+      "fixture": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-startup-20261128-111436-4",
+      "sandbox": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\smoke\\20261128-111502",
+      "archiveSha256": "29f137bb7bc42ed16e1f2cfcf505de9210e4a2097041336115d3764a08b9df22",
+      "status": "passed"
+    },
+    {
+      "iteration": 5,
+      "fixture": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-startup-20261128-111436-5",
+      "sandbox": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\smoke\\20261128-111508",
+      "archiveSha256": "29f137bb7bc42ed16e1f2cfcf505de9210e4a2097041336115d3764a08b9df22",
+      "status": "passed"
+    }
+  ],
+  "checks": [
+    "fresh repository clone without IDE metadata for each run",
+    "central original Log has commits and exactly one editor",
+    "no severe startup or shutdown errors",
+    "normal platform shutdown",
+    "no IDE metadata created or changed inside repository"
+  ]
+}

@@ -1,0 +1,19 @@
+﻿{
+    "status":  "passed",
+    "archiveSha256":  "0ab35f948c7a5a27466127ebf6c50e5cb8121857f2a10fd9ac18262eefbe4c86",
+    "evidence":  "D:\\resources\\code\\github\\loevc\\Alhena\\out\\welcome-smoke\\20261127-201424",
+    "fixture":  "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\history-20261127-201425 中文 repo",
+    "powerShellVersion":  "5.1.19041.6456",
+    "commandLineMode":  false,
+    "nativeSelection":  true,
+    "existingProject":  true,
+    "trustConfirmationObserved":  true,
+    "checks":  [
+                   "repository opens and displays Git history",
+                   "no automatic trust bypass",
+                   "no SEVERE/ERROR log entries",
+                   "same repository reopens with its persisted Git workspace and one project",
+                   "native EXE without repository argument",
+                   "real Windows native chooser selects and confirms repository"
+               ]
+}

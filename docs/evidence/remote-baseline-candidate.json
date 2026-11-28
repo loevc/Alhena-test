@@ -1,0 +1,58 @@
+{
+  "status": "candidate_validated_with_open_items",
+  "releaseReady": false,
+  "archive": "out/releases/alhena-252.28539-c9b5d639.win.zip",
+  "archiveBytes": 250136577,
+  "archiveSha256": "c9b5d639380786e3e1824c1d5e963c4582783c3c1ca6e05ed9be0cf14668434e",
+  "sourceBaseCommit": "7c92dd2dbe0dadf2bb7ce86e8e25646e2e40a2de",
+  "sourceChangesCommitted": false,
+  "sourceProductSha256": {
+    "product/alhena.product.iml": "55d2f445270a4ee6914c711c87b863281da50ad7d99bbc2c20db9f5e1cf4eb46",
+    "product/build/AlhenaBuildTarget.kt": "7198c4f36ba74ac39545a7690eccd02a2c7f2920e16e929fbf0f0472132a99a3",
+    "product/build/AlhenaProperties.kt": "a6ec4503213eefc4e9e84d0dfc46399dfc893eb9cfe0c8b6748015dc33065ec3",
+    "product/platform-build/AlhenaPackaging.kt": "8df21e06601866c8d2aa9474e0b84746bdef6eab5bdafaeb9561e23f5259bf30",
+    "product/resources/alhena-excluded-modules.txt": "97b33c45d62c6bcf56a41d43abf416227ebfa686a9058cf2c101b0d0372d95c9",
+    "product/resources/alhena.svg": "36202fc62350fed794980f164cab128abc9344d39e832c745e678f69cc51d15f",
+    "product/resources/ProductivityFeaturesRegistry.xml": "eacd89a2260dfdd46cec99964f77efa2a6fd2868e9cefe39a93e06e312d6179e",
+    "product/resources/idea/AlhenaApplicationInfo.xml": "16a6e694efe315860be997d51609e14afd6302143a29f9ba802053281ed9b21c",
+    "product/resources/META-INF/AlhenaPlugin.xml": "354c48ff9366555277ef60e49fe85cd96e991406b1e923bbb880a09202158156",
+    "product/src/alhena/AlhenaApplication.java": "77dc25c3a9f4db9eef935368a44e4196ef9f41b9d9e8c509b0b14803c9d164e0",
+    "product/src/alhena/AlhenaConsent.java": "c673217469603c7617051ae611e79aa1482cde65caf7a3deabd18714d4f5e633",
+    "product/src/alhena/AlhenaProject.java": "f1a2255f9e651404f3fd62744c91a1c94c866dbec8603d67c61ad7343561cfb7",
+    "product/src/alhena/AlhenaUpdates.java": "d33758d29a8166a3db722b39b495c3ad6a699139a9365ca6004de3afac6099d3",
+    "product/src/alhena/AlhenaWelcome.java": "b7b920c6ed8f6078b56b469248bbabddfc75b34e428c705bb156423d48823c4e",
+    "product/src/alhena/HistoryAction.java": "9435265d89cab8815d37fc86f642719e12512158ceb9f6f6bd1a91098836ed39"
+  },
+  "packagedClassesMatchBuildOutput": {
+    "alhena/AlhenaApplication.class": "d810ee0cefad34dac8bbaf58d1b68fe6c7fd004d24aaf2f321d7ae83a34e92bf",
+    "alhena/AlhenaConsent.class": "b92080a04e0787289556c9f0c11a67a8affe6d1521082aec3bfe4ec6d04073f4",
+    "alhena/AlhenaProject$1.class": "960beb1a6fab5313f2d1411bdd19bf98dad17d0f4b746faef802d8207577834f",
+    "alhena/AlhenaProject$2.class": "c892d3bcbcbac1511d61164de5087ead269b6a5d5552e15584c15b1090e09517",
+    "alhena/AlhenaProject.class": "f86a70b3dc3e2da8cbaadcc10d2676348a6e67a45db2ec85f27f8098942669bc",
+    "alhena/AlhenaUpdates.class": "a0694e32d8d13fbb35ca44a1768a8643ac0542e09be7a9d3e5a9b08fb35c06cc",
+    "alhena/AlhenaWelcome.class": "9879484141a9e755157fd3a1f7d4bd46bf045299270f64802b3bbd5960f724f4",
+    "alhena/HistoryAction.class": "c320f8305ab5b7c064ffd4b434fa8a9e62d3915114a9dc275b0716aa0ce1ecff"
+  },
+  "passedEvidence": [
+    "docs/evidence/native-existing-project-acceptance.json",
+    "docs/evidence/powershell51-existing-project-acceptance.json",
+    "docs/evidence/powershell7-existing-project-acceptance.json",
+    "docs/evidence/welcome-cancel-acceptance.json",
+    "docs/evidence/remote-https-clone-acceptance.json",
+    "docs/evidence/remote-ssh-clone-acceptance.json",
+    "docs/evidence/remote-https-sync-acceptance.json",
+    "docs/evidence/remote-ssh-sync-acceptance.json",
+    "docs/evidence/remote-auth-rejection-acceptance.json",
+    "docs/evidence/remote-auth-cancel-acceptance.json",
+    "docs/evidence/remote-network-failure-acceptance.json",
+    "docs/evidence/current-workflow-acceptance.json",
+    "docs/evidence/current-git-diff-acceptance.json"
+  ],
+  "temporarySshKeyRevoked": true,
+  "localPrivateKeyDeleted": true,
+  "openItems": [
+    "source commit/tag/Release asset association pending",
+    "one observed Windows project-model-cache AccessDeniedException remains unexplained",
+    "P1 and P2 requirements remain in iteration-plan.json"
+  ]
+}

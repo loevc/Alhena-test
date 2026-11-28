@@ -1,0 +1,68 @@
+{
+  "status": "verified_published_prerelease",
+  "observedAtUtc": "2026-11-28T09:01:44.831459+00:00",
+  "releaseUrl": "https://github.com/loevc/Alhena/releases/tag/v0.1.0",
+  "releaseId": 461413859,
+  "tag": "v0.1.0",
+  "tagCommit": "f40b0eab001857595f7b1ca3bf7db49cb7de3bf7",
+  "remoteMainCommit": "f40b0eab001857595f7b1ca3bf7db49cb7de3bf7",
+  "acceptedProductSourceCommit": "515baddbd59a5b0cfb88e73e80a6729af136fd87",
+  "releaseDraft": false,
+  "prerelease": true,
+  "publishedAtUtc": "2026-11-28T08:59:01Z",
+  "assets": [
+    {
+      "id": 803880826,
+      "name": "alhena-0.1.0-dev-252.28539-2a71563a.win.zip",
+      "size": 250141729,
+      "digest": "sha256:2a71563a782d2c7ef6e9d00e9b7c1cade03a316ff416184616c6d1558f278bdc",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/loevc/Alhena/releases/download/v0.1.0/alhena-0.1.0-dev-252.28539-2a71563a.win.zip"
+    },
+    {
+      "id": 803896725,
+      "name": "alhena-0.1.0-dev-252.28539-2a71563a.win.zip.sha256",
+      "size": 111,
+      "digest": "sha256:8ffcbc6dce27121a36b35b75a05c1c64274b87d2d83d7b83c31bffdea7270ed2",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/loevc/Alhena/releases/download/v0.1.0/alhena-0.1.0-dev-252.28539-2a71563a.win.zip.sha256"
+    }
+  ],
+  "assetVerificationMethod": "GitHub API SHA-256 and byte length equal local tested files; ZIP CRC and local sidecar checked separately",
+  "freshCommitCheckoutVerification": {
+    "status": "passed",
+    "sourceCommit": "515baddbd59a5b0cfb88e73e80a6729af136fd87",
+    "sourceFilesVerified": 70,
+    "evidenceFilesVerified": 234,
+    "archiveVerified": true,
+    "releaseReady": false
+  },
+  "canonicalCiChecks": [
+    {
+      "url": "https://github.com/loevc/Alhena/actions/runs/46128302214",
+      "commit": "f40b0eab001857595f7b1ca3bf7db49cb7de3bf7",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "url": "https://github.com/loevc/Alhena/actions/runs/46126289730",
+      "commit": "f40b0eab001857595f7b1ca3bf7db49cb7de3bf7",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ],
+  "canonicalCiPackage": "skipped on push; prior hosted package succeeded on identical 70 product/build/test inputs",
+  "priorHostedPackageEvidence": "docs/evidence/cache-contention-windows-ci-package-acceptance.json",
+  "priorHostedSourceIdentity": "docs/evidence/cache-contention-maintenance-acceptance.json",
+  "releaseBodyEmpty": true,
+  "optionalFollowUps": [
+    "Fill release notes from prepared draft",
+    "Commit publication bookkeeping with the next documentation update"
+  ],
+  "limits": [
+    "GitHub server-reported asset digest checked; remote ZIP was not downloaded and desktop-tested again",
+    "Physical NIC disconnection and in-flight SSH recovery not covered",
+    "Product remains 0.1.0-dev EAP; v0.1.0 is a prerelease tag"
+  ],
+  "localReleaseAssociationNotCommitted": true
+}

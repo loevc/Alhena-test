@@ -1,0 +1,104 @@
+{
+  "status": "validated_history_dataset",
+  "archiveSha256": "9b3ed7d117532bb6ba56a5d3c1b6d20b0a388d13c2799e52551f8a3173109362",
+  "dataset": {
+    "repository": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-performance-ripgrep",
+    "origin": "https://github.com/BurntSushi/ripgrep.git",
+    "head": "3e85c6c148fdce38a99ceeb9d2780dc7b03b4a4f",
+    "commits": 2381,
+    "trackedFiles": 231,
+    "shallow": "false",
+    "selectionPreview": "3e85c6c fix: clear trailing backgrounds after colored matches (#3630)\n4a51093 chore: update homebrew tap\n669cb4c chore(release): 16.0.0",
+    "thirdCommitFiles": "commit 669cb4c\nAuthor: Andrew Gallant <jamslam@gmail.com>\n\n    chore(release): 16.0.0\n\n CHANGELOG.md                        | 107 +++++++++++++++++++++++++++++++++++-\n Cargo.lock                          |  20 +++----\n Cargo.toml                          |   6 +-\n crates/cli/Cargo.toml               |   4 +-\n crates/core/flags/doc/template.rg.1 |   2 +-\n crates/globset/Cargo.toml           |   2 +-\n crates/grep/Cargo.toml              |  14 ++---\n crates/ignore/Cargo.toml            |   4 +-\n crates/matcher/Cargo.toml           |   2 +-\n crates/pcre2/Cargo.toml             |   4 +-\n crates/printer/Cargo.toml           |   8 +--\n crates/regex/Cargo.toml             |   4 +-\n crates/searcher/Cargo.toml          |   6 +-\n 13 files changed, 142 insertions(+), 41 deletions(-)"
+  },
+  "measurementRepository": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-performance-ripgrep-fixed",
+  "machine": {
+    "os": "Microsoft Windows 10 \u4e13\u4e1a\u7248",
+    "osVersion": "10.0.19045",
+    "cpu": "Intel(R) Core(TM) i7-14700K",
+    "logicalProcessors": 28,
+    "physicalMemoryBytes": 68388044800,
+    "upstream": "b0d717640ee577a15b73fa79194629ff2a1d3d72",
+    "repository": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-performance-ripgrep-fixed",
+    "repositoryHead": "3e85c6c148fdce38a99ceeb9d2780dc7b03b4a4f",
+    "commits": 2381,
+    "files": 231,
+    "runs": 3,
+    "method": "Instrumented Swing readiness, no forced GC; graceful platform exit saves settings and VFS between cached launches. Fresh application config is not cold OS cache. Includes attach/poll overhead."
+  },
+  "summary": {
+    "repository-fresh": {
+      "frameReadyMs": {
+        "median": 1382.0,
+        "min": 1077.0,
+        "max": 1435.0
+      },
+      "gitLogReadyMs": {
+        "median": 2865.0,
+        "min": 2827.0,
+        "max": 3922.0
+      },
+      "indexSettledMs": {
+        "median": 3800.0,
+        "min": 3640.0,
+        "max": 4171.0
+      },
+      "diffReadyMs": {
+        "median": 1058.0,
+        "min": 993.0,
+        "max": 1106.0
+      },
+      "workingSetBytes": {
+        "median": 861646848,
+        "min": 847527936,
+        "max": 912371712
+      },
+      "heapUsedBytes": {
+        "median": 152487960,
+        "min": 144560768,
+        "max": 223741000
+      }
+    },
+    "repository-cached": {
+      "frameReadyMs": {
+        "median": 1651.0,
+        "min": 1271.0,
+        "max": 1747.0
+      },
+      "gitLogReadyMs": {
+        "median": 3169.0,
+        "min": 2802.0,
+        "max": 3556.0
+      },
+      "indexSettledMs": {
+        "median": 3355.0,
+        "min": 2990.0,
+        "max": 3744.0
+      },
+      "diffReadyMs": {
+        "median": 944.0,
+        "min": 928.0,
+        "max": 955.0
+      },
+      "workingSetBytes": {
+        "median": 805826560,
+        "min": 796495872,
+        "max": 809484288
+      },
+      "heapUsedBytes": {
+        "median": 144945632,
+        "min": 110734752,
+        "max": 154473784
+      }
+    }
+  },
+  "allSamplesShutdownClean": true,
+  "sourceEvidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\measurements\\ripgrep-fixed-20261128-010215\\results.json",
+  "limits": [
+    "Real 2381-commit 231-file history; not a 100000-commit log benchmark",
+    "Log readiness is first usable graph, not exhaustive paging through all commits",
+    "Fresh refers to application config/index cache; repository IDE metadata and OS cache persist between iterations",
+    "Diff timing includes selection, loading, Attach and polling overhead",
+    "No valid old-ZIP large-repository sample exists because its first attempt logged an exception; no speedup claim from that failed run"
+  ]
+}

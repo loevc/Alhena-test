@@ -1,0 +1,19 @@
+{
+  "status": "observed_and_fix_under_validation",
+  "archiveSha256": "1e152f7e69f4162a1f619364758c458ec82d748ac6c9e54abc04c68f21ac13d4",
+  "failedEvidence": "out/measurements/ripgrep-real-20261128-005350/repository-fresh-1",
+  "log": "out/measurements/ripgrep-real-20261128-005350/repository-fresh-1/sandbox/log/idea.log",
+  "exception": "NullPointerException in VcsLogTabsManager.openAnotherLogTab, findVcsLogUi(editors) returned null",
+  "trigger": "Fresh ripgrep project first launch; automatic central History creation while initial VCS mappings/indexing were still settling and the measurement activated the original bottom Log",
+  "sourceFinding": "Graph presence alone is insufficient startup readiness; original action expects a fully initialized editor Log UI",
+  "fix": "Wait for ProjectLevelVcsManager initialization and DumbService smart invocation; preserve original Log data context; coalesce reentrant callbacks",
+  "fixedArchiveSha256": "9b3ed7d117532bb6ba56a5d3c1b6d20b0a388d13c2799e52551f8a3173109362",
+  "fixedEvidence": [
+    "docs/evidence/startup-readiness-acceptance.json",
+    "out/measurements/ripgrep-fixed-20261128-010215/results.json"
+  ],
+  "limits": [
+    "Timing dependent: separate old-ZIP fresh startup rerun passed; not every old launch reproduces the race",
+    "Fixed ZIP full desktop/remote and large working-tree measurements still pending"
+  ]
+}

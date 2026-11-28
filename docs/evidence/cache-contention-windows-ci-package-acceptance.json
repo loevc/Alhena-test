@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "run": {
+    "id": 46120547131,
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/loevc/Alhena-test/actions/runs/46120547131",
+    "head_sha": "115279fc55ef7c7ea538ea43714c993a7e73a35c",
+    "head_branch": "codex/ci-acceptance-20261128-071527",
+    "event": "workflow_dispatch"
+  },
+  "jobs": [
+    {
+      "id": 140903879682,
+      "name": "checks",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-28T07:17:56Z",
+      "completed_at": "2026-11-28T07:18:14Z"
+    },
+    {
+      "id": 140903958235,
+      "name": "package",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-28T07:18:17Z",
+      "completed_at": "2026-11-28T07:37:51Z"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": 15254375406,
+      "name": "windows-build-diagnostics-115279fc55ef7c7ea538ea43714c993a7e73a35c",
+      "size_in_bytes": 151825,
+      "digest": "sha256:30fde4907285a4f585157cf0bca071e682f13915b7ca3577a5ddd0a4209e48a8",
+      "expired": false,
+      "expires_at": "2026-12-05T07:37:47Z"
+    },
+    {
+      "id": 15254355861,
+      "name": "windows-candidate-115279fc55ef7c7ea538ea43714c993a7e73a35c",
+      "size_in_bytes": 249498990,
+      "digest": "sha256:75e159c2ead633a4f77944dc0f12c5efd867be6cc4c79c5b0190ba634ec0ad1e",
+      "expired": false,
+      "expires_at": "2026-12-05T07:37:37Z"
+    }
+  ],
+  "diagnosticsZipSha256": "30fde4907285a4f585157cf0bca071e682f13915b7ca3577a5ddd0a4209e48a8",
+  "diagnosticsDigestVerified": true,
+  "metadata": {
+    "sourceCommit": "115279fc55ef7c7ea538ea43714c993a7e73a35c",
+    "upstreamCommit": "b0d717640ee577a15b73fa79194629ff2a1d3d72",
+    "archiveName": "alhena-0.1.0-dev-252.28539.SNAPSHOT.win.zip",
+    "archiveBytes": 250141722,
+    "archiveSha256": "3ad86e6e3abc80828b1220a20d32009186c950bcd1eb2b8a19c2ebd35527fd15",
+    "desktopAcceptance": "not_run_on_hosted_runner",
+    "releaseReady": false
+  },
+  "currentProductionInputsIdenticalToBuildCommit": true,
+  "productionInputProof": "docs/evidence/cache-contention-maintenance-acceptance.json",
+  "testedLocalArchiveSha256": "2a71563a782d2c7ef6e9d00e9b7c1cade03a316ff416184616c6d1558f278bdc",
+  "ciArtifactDesktopAccepted": false,
+  "canonicalAlhenaSourceCommit": false,
+  "releaseReady": false,
+  "scope": "Hosted build of identical production/build inputs. Exact current product and test sources use this same hosted build commit. The hosted ZIP is a different artifact from the locally desktop-tested ZIP."
+}

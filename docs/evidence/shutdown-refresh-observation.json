@@ -1,0 +1,16 @@
+{
+  "status": "lifecycle_fix_validated_in_three_repeated_cycles",
+  "archiveSha256": "85f525e1b8170790f53856d0aa2769e9381144845e00a138d93cfafa854f8020",
+  "failedRun": "out/workspace-isolation/20261128-105735",
+  "log": "out/workspace-isolation/20261128-105735/sandbox/log/idea.log",
+  "failure": "UpdateRequestsQueue: No update task to handle request(s)",
+  "trigger": "Reopen the large repository and immediately exit after restored editor becomes visible; initial scanning/refresh active",
+  "sourceFinding": "ChangeListManagerImpl.projectClosing disposes myUpdateDisposable, cancelling an active refresh, but myUpdater.stop runs only later in service dispose. RefreshRunnable restores its cancelled callbacks then checks pending-task invariant before stop.",
+  "fix": "Stop queue and release waiters in projectClosing before disposing refresh indicator. Preserve original cancellation, invariant check and idempotent dispose stop.",
+  "validationRequired": [
+    "Repeated rapid open/close including reopen while scanning",
+    "Same-ZIP full regression and fresh/cached scale measurements"
+  ],
+  "fixedArchiveSha256": "34fe9d03663213aca86617506a44d0074131fafed8d2f9a56751d8f37e7a4c2e",
+  "acceptance": "docs/evidence/shutdown-refresh-acceptance.json"
+}

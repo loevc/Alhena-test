@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "archiveSha256": "85f525e1b8170790f53856d0aa2769e9381144845e00a138d93cfafa854f8020",
+  "evidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\product-smoke\\20261128-105043",
+  "checks": [
+    "native first launch with missing config directory",
+    "original Git history shown automatically",
+    "independent product version in original About dialog",
+    "packaged version metadata matches pinned platform and runtime",
+    "staging enabled by default",
+    "source text fallback preserves existing language, binary and filename associations",
+    "original Git actions in product toolbar",
+    "IDE Run/Build/Code/Refactor menu entries removed",
+    "unrelated tool windows unavailable",
+    "IDE/plugin updates disabled",
+    "independent no-telemetry provider",
+    "welcome Open Repository and Clone Repository entries",
+    "no SEVERE/ERROR log entries"
+  ]
+}

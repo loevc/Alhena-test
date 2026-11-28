@@ -1,0 +1,155 @@
+{
+  "status": "cache_fix_validated_full_acceptance_pending",
+  "releaseReady": false,
+  "archive": "out/releases/alhena-0.1.0-dev-252.28539-2a71563a.win.zip",
+  "archiveSha256": "2a71563a782d2c7ef6e9d00e9b7c1cade03a316ff416184616c6d1558f278bdc",
+  "archiveBytes": 250141729,
+  "sourceChangesCommitted": false,
+  "sourceProductSha256": {
+    "product/alhena.product.iml": "5be7fbbdd7bba87f1a5ad652239d6da43c54029d812d56fc0db63f10cb0cf766",
+    "product/build/AlhenaBuildTarget.kt": "7198c4f36ba74ac39545a7690eccd02a2c7f2920e16e929fbf0f0472132a99a3",
+    "product/build/AlhenaProperties.kt": "9ac51edfcb7128abd1233934c1d1c7e6f626ff4a51df9602d95071ada8c83d31",
+    "product/platform-build/AlhenaPackaging.kt": "8df21e06601866c8d2aa9474e0b84746bdef6eab5bdafaeb9561e23f5259bf30",
+    "product/resources/alhena-excluded-modules.txt": "97b33c45d62c6bcf56a41d43abf416227ebfa686a9058cf2c101b0d0372d95c9",
+    "product/resources/alhena.svg": "36202fc62350fed794980f164cab128abc9344d39e832c745e678f69cc51d15f",
+    "product/resources/ProductivityFeaturesRegistry.xml": "eacd89a2260dfdd46cec99964f77efa2a6fd2868e9cefe39a93e06e312d6179e",
+    "product/resources/idea/AlhenaApplicationInfo.xml": "7b47b7f19c333e77913eb5e945eb2619c6f1ee5666e2f201e37c4b36f839f09d",
+    "product/resources/META-INF/AlhenaPlugin.xml": "2666b686d53b540a7c51e94ca332b8a46fd8fcdd697e8e2e86167fb25d792c62",
+    "product/src/alhena/AlhenaApplication.java": "0c50a1edec3f6f68ad2d0a63e82483ab2a6bfa50a66a677cc80e809afe334475",
+    "product/src/alhena/AlhenaConsent.java": "c673217469603c7617051ae611e79aa1482cde65caf7a3deabd18714d4f5e633",
+    "product/src/alhena/AlhenaDirectoryConfigurator.java": "d2894cd0a3ed9569677b7dbc8fbfac8e2392f3147fcbf4bae9b8d310ce0aabef",
+    "product/src/alhena/AlhenaProject.java": "854aced5c9024b7a3d6824692aaa94012b93e08298fe03fd42440dbef09818c8",
+    "product/src/alhena/AlhenaProjectStore.java": "06c3a9fb02042ee5c584991cdee5c987340a0826d0d9876483709e6b6fbd3487",
+    "product/src/alhena/AlhenaSourceFileTypes.java": "d59ff1be5cadf7bacdb22bf303802baf89a8d2c2897bf39a59c72a62374db43b",
+    "product/src/alhena/AlhenaUpdates.java": "d33758d29a8166a3db722b39b495c3ad6a699139a9365ca6004de3afac6099d3",
+    "product/src/alhena/AlhenaWelcome.java": "b7b920c6ed8f6078b56b469248bbabddfc75b34e428c705bb156423d48823c4e",
+    "product/src/alhena/GitSettingsAction.java": "476ef35e67d325eb91e838f8362c62175055c85754c2a2ee280ef0d7ee6997d9",
+    "product/src/alhena/HistoryAction.java": "dc0b92fd39b2a69806a184723b4c04741849dbdadf4b1dd14596c247bd1fc85e"
+  },
+  "patchManifestSha256": "fb190563aead0d2cdc666744e3b7d0cafce2e0de6ac67e9d168f7d636f20ccdb",
+  "packagedClassesMatchBuildOutput": {
+    "alhena/AlhenaApplication.class": {
+      "jar": "lib/app.jar",
+      "sha256": "b14b39898ee6e0985252966146e376444e92ec54162f9d93c5079ae0229d4c11"
+    },
+    "alhena/AlhenaProject.class": {
+      "jar": "lib/app.jar",
+      "sha256": "02f169b5c528155b350867227b724e7a28d8b8671dac3bc9da7ae35a875a1d79"
+    },
+    "alhena/HistoryAction.class": {
+      "jar": "lib/app.jar",
+      "sha256": "70f2e2fee2f03818674da9323b32247b8a1900c81cc9e4362ca7c8bdc69d9633"
+    },
+    "alhena/AlhenaSourceFileTypes.class": {
+      "jar": "lib/app.jar",
+      "sha256": "b49cf7b90ad6e23c9acef68da774115ab9de9c3c39dcad83b3e0e7602e0a5cf0"
+    },
+    "alhena/AlhenaProject$2.class": {
+      "jar": "lib/app.jar",
+      "sha256": "6b21e7a3e965a66f95c759ace6c032426c2e55fce38ff095ebca1e0914cf9b62"
+    },
+    "alhena/AlhenaProject$1.class": {
+      "jar": "lib/app.jar",
+      "sha256": "960beb1a6fab5313f2d1411bdd19bf98dad17d0f4b746faef802d8207577834f"
+    },
+    "com/intellij/workspaceModel/ide/impl/WorkspaceModelCacheSerializer.class": {
+      "jar": "lib/app.jar",
+      "sha256": "191c8ac534f219cf06a490008bb72024de37fea2834ad7feacbabd79167ae308"
+    },
+    "alhena/AlhenaUpdates.class": {
+      "jar": "lib/app.jar",
+      "sha256": "a0694e32d8d13fbb35ca44a1768a8643ac0542e09be7a9d3e5a9b08fb35c06cc"
+    },
+    "alhena/AlhenaConsent.class": {
+      "jar": "lib/app.jar",
+      "sha256": "b92080a04e0787289556c9f0c11a67a8affe6d1521082aec3bfe4ec6d04073f4"
+    },
+    "alhena/AlhenaDirectoryConfigurator.class": {
+      "jar": "lib/app.jar",
+      "sha256": "31b91959b9d9cd5a851eca1813969b93c3f44b694ca648b9f478bdf8e0acdb6a"
+    },
+    "alhena/AlhenaWelcome.class": {
+      "jar": "lib/app.jar",
+      "sha256": "9879484141a9e755157fd3a1f7d4bd46bf045299270f64802b3bbd5960f724f4"
+    },
+    "alhena/AlhenaProjectStore.class": {
+      "jar": "lib/app.jar",
+      "sha256": "d78e96766b38b130c3435dd0db3c8763ed3efd6f2bfa41a2c2898f6182f587d4"
+    },
+    "alhena/GitSettingsAction.class": {
+      "jar": "lib/app.jar",
+      "sha256": "b43244315218a6f12720f789d09be27cf8a6a1547a3a0f2cffe964322cbc699e"
+    },
+    "com/intellij/platform/ide/bootstrap/ApplicationLoader$loadApp$2$initTelemetryJob$1.class": {
+      "jar": "lib/app.jar",
+      "sha256": "b096282f066e409c836307bd41eb59997e0a6281715b04c6d6f54e5abf6f0589"
+    },
+    "com/intellij/openapi/vcs/changes/ChangeListManagerImpl$DataHolder.class": {
+      "jar": "lib/modules/intellij.platform.vcs.impl.jar",
+      "sha256": "10c6988ba94551d12d2a9955028ee05a52a0b73cc4b80064e071153b6b2ea3c8"
+    },
+    "com/intellij/openapi/vcs/changes/ChangeListManagerImpl$3.class": {
+      "jar": "lib/modules/intellij.platform.vcs.impl.jar",
+      "sha256": "57b2dec36095734d119e7cb8352f80710e9fbdefe4b0c68738e2c68e7e711a6a"
+    },
+    "com/intellij/openapi/vcs/changes/ChangeListManagerImpl$MyChangesDeltaForwarder.class": {
+      "jar": "lib/modules/intellij.platform.vcs.impl.jar",
+      "sha256": "62d3555df1911a630f200bd565274d3af98e7fff0c88e4b83729ca60ae7e0d27"
+    },
+    "com/intellij/openapi/vcs/changes/ChangeListManagerImpl$1.class": {
+      "jar": "lib/modules/intellij.platform.vcs.impl.jar",
+      "sha256": "c2d3210937b356dccb1437f734590b1bf9c94fe2c60dc88ffeb0b8b501aa82e6"
+    },
+    "com/intellij/openapi/vcs/changes/ChangeListManagerImpl$2.class": {
+      "jar": "lib/modules/intellij.platform.vcs.impl.jar",
+      "sha256": "25e95d4632b766e744a3c73199cb86af64a9c4e9e061589b4f232b8e38fec6f9"
+    },
+    "com/intellij/openapi/vcs/changes/ChangeListManagerImpl$MyStartupActivity.class": {
+      "jar": "lib/modules/intellij.platform.vcs.impl.jar",
+      "sha256": "ac6221a3cb1afc84fa3c830bbc1405657bdd91b3dff7c2d9b4a1f6c2b9e313bd"
+    },
+    "com/intellij/openapi/vcs/changes/ChangeListManagerImpl.class": {
+      "jar": "lib/modules/intellij.platform.vcs.impl.jar",
+      "sha256": "f88b1db264349fa2583706d52d6d25e175c01687ac55e3c2cd775d2e6de1f326"
+    },
+    "com/intellij/openapi/vcs/changes/ChangeListManagerImpl$DefaultIgnoredFileProvider.class": {
+      "jar": "lib/modules/intellij.platform.vcs.impl.jar",
+      "sha256": "9b999ba072cad3b58d880c8773e153601603721fa6a989814faf06bfc8d454cb"
+    },
+    "com/intellij/openapi/vcs/changes/ChangeListManagerImpl$4.class": {
+      "jar": "lib/modules/intellij.platform.vcs.impl.jar",
+      "sha256": "5bf7706e6eab9e6858dc278049bbf39efa8eb67884af76aae247536713aac9bb"
+    },
+    "com/intellij/vcs/log/ui/actions/OpenAnotherLogTabAction.class": {
+      "jar": "lib/modules/intellij.platform.vcs.log.impl.jar",
+      "sha256": "b5c0b35b13c7cc1c0ab288dcba40df8a019c013e4b8059c0320ab216d434b8f9"
+    },
+    "com/intellij/vcs/log/impl/IdeVcsLogManager.class": {
+      "jar": "lib/modules/intellij.platform.vcs.log.impl.jar",
+      "sha256": "ff609aad65ac22d6018b40fbd11d6e00632cbe90a44aabfd99e91c8358d1b88f"
+    },
+    "com/intellij/vcs/log/impl/VcsLogTabsManager.class": {
+      "jar": "lib/modules/intellij.platform.vcs.log.impl.jar",
+      "sha256": "ff0332d6edd527dd14148d7ba6dcffe2329a045bf69d838dfd545eaa8a4531f8"
+    }
+  },
+  "productInfoVersion": "0.1.0-dev",
+  "productInfoBuildNumber": "252.28539.SNAPSHOT",
+  "versionMetadata": {
+    "schemaVersion": 1,
+    "product": "Alhena",
+    "productVersion": "0.1.0-dev",
+    "platformVersion": "2025.2.6.5",
+    "platformTag": "idea/252.28539.166",
+    "platformCommit": "b0d717640ee577a15b73fa79194629ff2a1d3d72",
+    "runtimeBuild": "21.0.9b1038.91"
+  },
+  "remaining": [
+    "Same ZIP desktop, real remote, configuration isolation and corrected performance acceptance",
+    "Hosted package and source/Tag/Release association"
+  ],
+  "limits": [
+    "Historical reader process was not captured; exact matching reader-contention mechanism was reproduced",
+    "Short Windows read contention is retried; exhausted/permanent denial still propagates"
+  ]
+}

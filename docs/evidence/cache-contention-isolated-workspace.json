@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "archiveSha256": "2a71563a782d2c7ef6e9d00e9b7c1cade03a316ff416184616c6d1558f278bdc",
+  "fixture": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-performance-platform",
+  "evidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\workspace-isolation\\20261128-151835",
+  "metadataBaseline": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\workspace-isolation\\20261128-151835\\metadata-before.json",
+  "projectStore": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\workspace-isolation\\20261128-151835\\sandbox\\config\\repositories\\fc5f0ebcd85cbf87c257a636cdfd31fbcfdb7ab70fc4bb01158220165bea86d3\\.idea",
+  "moduleFile": "D:/resources/code/github/loevc/Alhena/out/workspace-isolation/20261128-151835/sandbox/config/repositories/fc5f0ebcd85cbf87c257a636cdfd31fbcfdb7ab70fc4bb01158220165bea86d3/.idea/repository.iml",
+  "checks": [
+    "central original Log ready",
+    "one plain module and config store outside repository; original base path retained",
+    "tracked change visible in original staging UI",
+    "original selected Stage writes real index",
+    "staged node refreshes",
+    "original selected Unstage preserves worktree",
+    "normal platform shutdown",
+    "central workspace restores from external config",
+    "normal platform shutdown",
+    "all original .idea and .iml bytes and file names unchanged after open, stage and reopen"
+  ]
+}

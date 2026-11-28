@@ -1,0 +1,63 @@
+{
+  "status": "passed",
+  "archiveSha256": "34fe9d03663213aca86617506a44d0074131fafed8d2f9a56751d8f37e7a4c2e",
+  "runs": [
+    {
+      "result": "docs/evidence/shutdown-refresh-isolation/20261128-110205.json",
+      "resultSha256": "da45adba1dc6665817fbea33246358c0dcd72e83630ecf926b921e6d2a558627",
+      "metadataBaselineSha256": "05cceee4693fcc4710fe7e16790e6566da52ae8621768fa582ed6c562e9ad439",
+      "preservedMetadataFiles": 3057,
+      "checks": [
+        "central original Log ready",
+        "one plain module and config store outside repository; original base path retained",
+        "tracked change visible in original staging UI",
+        "original selected Stage writes real index",
+        "staged node refreshes",
+        "original selected Unstage preserves worktree",
+        "normal platform shutdown",
+        "central workspace restores from external config",
+        "normal platform shutdown",
+        "all original .idea and .iml bytes and file names unchanged after open, stage and reopen"
+      ]
+    },
+    {
+      "result": "docs/evidence/shutdown-refresh-isolation/20261128-110351.json",
+      "resultSha256": "5a5118870163e81cbb7a5df32fa759cd24b4d1bff668ccf5751a67fb008cc5af",
+      "metadataBaselineSha256": "05cceee4693fcc4710fe7e16790e6566da52ae8621768fa582ed6c562e9ad439",
+      "preservedMetadataFiles": 3057,
+      "checks": [
+        "central original Log ready",
+        "one plain module and config store outside repository; original base path retained",
+        "tracked change visible in original staging UI",
+        "original selected Stage writes real index",
+        "staged node refreshes",
+        "original selected Unstage preserves worktree",
+        "normal platform shutdown",
+        "central workspace restores from external config",
+        "normal platform shutdown",
+        "all original .idea and .iml bytes and file names unchanged after open, stage and reopen"
+      ]
+    },
+    {
+      "result": "docs/evidence/shutdown-refresh-isolation/20261128-110447.json",
+      "resultSha256": "a0840cd8e0bbfefdbe92b7ea3750cca8a163d381b95a9fece42de4d2ba63f277",
+      "metadataBaselineSha256": "05cceee4693fcc4710fe7e16790e6566da52ae8621768fa582ed6c562e9ad439",
+      "preservedMetadataFiles": 3057,
+      "checks": [
+        "central original Log ready",
+        "one plain module and config store outside repository; original base path retained",
+        "tracked change visible in original staging UI",
+        "original selected Stage writes real index",
+        "staged node refreshes",
+        "original selected Unstage preserves worktree",
+        "normal platform shutdown",
+        "central workspace restores from external config",
+        "normal platform shutdown",
+        "all original .idea and .iml bytes and file names unchanged after open, stage and reopen"
+      ]
+    }
+  ],
+  "fixtureReadmeRestored": true,
+  "fixtureIndexEmpty": true,
+  "scope": "Three full Stage/Unstage + graceful exit + immediate restored-project exit cycles; existing project metadata retained; all severe log checks enforced"
+}

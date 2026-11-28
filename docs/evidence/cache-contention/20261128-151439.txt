@@ -1,0 +1,13 @@
+cacheService=com.intellij.workspaceModel.ide.impl.WorkspaceModelCacheImpl
+cacheFile=D:\resources\code\github\loevc\Alhena\out\cache-contention\20261128-151439\sandbox\system\projects\repo.a45584aa\project-model-cache\cache.data
+transientHold20Ms=25
+transientHold40Ms=48
+transientHold60Ms=70
+transientReaderRecovery=true
+persistentDenialMs=216
+persistentDenialVisible=true
+oldCachePreserved=true
+interruptionPreserved=true
+unheldStressSuccess=100
+temporaryFilesCleaned=true
+cacheProbePassed=true

@@ -1,0 +1,20 @@
+﻿{
+    "status":  "passed",
+    "archiveSha256":  "c9b5d639380786e3e1824c1d5e963c4582783c3c1ca6e05ed9be0cf14668434e",
+    "evidence":  "D:\\resources\\code\\github\\loevc\\Alhena\\out\\welcome-smoke\\20261127-194247",
+    "fixture":  "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-remote-20261127-194247-https",
+    "powerShellVersion":  "5.1.19041.6456",
+    "commandLineMode":  false,
+    "nativeSelection":  false,
+    "existingProject":  false,
+    "trustConfirmationObserved":  true,
+    "checks":  [
+                   "repository opens and displays Git history",
+                   "no automatic trust bypass",
+                   "no SEVERE/ERROR log entries",
+                   "real original Clone Repository dialog completed via https"
+               ],
+    "remote":  "https://github.com/loevc/Alhena-test.git",
+    "transport":  "https",
+    "head":  "15d2019b8f112e21652c77b957564b1b2ea4d872"
+}

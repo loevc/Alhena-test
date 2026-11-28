@@ -1,0 +1,17 @@
+{
+  "repository": "https://github.com/JetBrains/intellij-community.git",
+  "tag": "idea/252.28539.166",
+  "commit": "b0d717640ee577a15b73fa79194629ff2a1d3d72",
+  "applicationVersion": "2025.2.6.5",
+  "checkout": "upstream/intellij-community",
+  "buildModule": "intellij.idea.community.build",
+  "buildTarget": "AlhenaBuildTarget",
+  "runtime": {
+    "distribution": "LIGHTWEIGHT",
+    "build": "21.0.9b1038.91",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.9-windows-x64-b1038.91.tar.gz",
+    "cacheFile": "1tzurv2fz4-jbr-21.0.9-windows-x64-b1038.91.tar.gz",
+    "size": 93451253,
+    "sha256": "c6372a9c772b4fb0239344fb59a798f7a5683f701f233fca68a521c14a978407"
+  }
+}

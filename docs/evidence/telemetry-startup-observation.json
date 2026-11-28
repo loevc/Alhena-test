@@ -1,0 +1,15 @@
+{
+  "status": "fixed_bootstrap_policy_runtime_validated",
+  "archiveSha256": "34fe9d03663213aca86617506a44d0074131fafed8d2f9a56751d8f37e7a4c2e",
+  "failedMeasurement": "out/measurements/final-platform-scale-20261128-110550",
+  "log": "out/measurements/final-platform-scale-20261128-110550/repository-fresh-1/sandbox/log/idea.log",
+  "timing": "142ms lazy NOOP initialized; 161ms asynchronous setTelemetryManager rejected initialized instance",
+  "failure": "IllegalArgumentException at TelemetryManager.setTelemetryManager",
+  "fix": "Alhena bootstrap adopts original lazy NOOP manager, avoiding competing initialization; other platform products unchanged",
+  "validationRequired": [
+    "Runtime NOOP class and no span exporters",
+    "Fresh startup stress and exact-ZIP regression"
+  ],
+  "fixedArchiveSha256": "29f137bb7bc42ed16e1f2cfcf505de9210e4a2097041336115d3764a08b9df22",
+  "acceptance": "docs/evidence/current-desktop/product.json"
+}

@@ -1,0 +1,26 @@
+cacheService=com.intellij.workspaceModel.ide.impl.WorkspaceModelCacheImpl
+cacheFile=D:\resources\code\github\loevc\Alhena\out\diagnostics\cache-rename\instance-20261128-150521\sandbox\system\projects\repo.e25cc06\project-model-cache\cache.data
+unheldSaveBefore=true
+heldReaderException=java.nio.file.AccessDeniedException
+java.nio.file.AccessDeniedException: D:\resources\code\github\loevc\Alhena\out\diagnostics\cache-rename\instance-20261128-150521\sandbox\system\projects\repo.e25cc06\project-model-cache\cache1873814916493039346.tmp -> D:\resources\code\github\loevc\Alhena\out\diagnostics\cache-rename\instance-20261128-150521\sandbox\system\projects\repo.e25cc06\project-model-cache\cache.data
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:91)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:106)
+	at java.base/sun.nio.fs.WindowsFileCopy.move(WindowsFileCopy.java:328)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.move(WindowsFileSystemProvider.java:291)
+	at com.intellij.platform.core.nio.fs.DelegatingFileSystemProvider.move(DelegatingFileSystemProvider.java:211)
+	at java.base/java.nio.file.Files.move(Files.java:1431)
+	at com.intellij.workspaceModel.ide.impl.WorkspaceModelCacheSerializer.saveCacheToFile$intellij_platform_ide_impl(WorkspaceModelCacheSerializer.kt:93)
+	at com.intellij.workspaceModel.ide.impl.WorkspaceModelCacheImpl.doCacheSaving(WorkspaceModelCacheImpl.kt:133)
+	at com.intellij.workspaceModel.ide.impl.WorkspaceModelCacheImpl.saveCacheNow(WorkspaceModelCacheImpl.kt:108)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at CacheDiagnosticAgent.call(CacheDiagnosticAgent.java:18)
+	at CacheDiagnosticAgent.agentmain(CacheDiagnosticAgent.java:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:560)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallAgentmain(InstrumentationImpl.java:582)
+unheldSaveAfter=true
+unheldStressSuccess=100
+unheldStressAccessDenied=0
+diagnosticPassed=true
