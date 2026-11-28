@@ -1,0 +1,35 @@
+<idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- Retain platform services; the generated module descriptor removes the
+       explicit product exclusions shared with the distribution layout. -->
+  <xi:include href="/META-INF/PlatformLangPlugin.xml"/>
+  <xi:include href="/META-INF/AlhenaModules.xml"/>
+  <xi:include href="/META-INF/vcs-modules.xml"/>
+  <content>
+    <module name="intellij.libraries.microba"/>
+    <module name="intellij.platform.customization.min"/>
+    <module name="intellij.platform.lvcs.impl"/>
+    <module name="intellij.platform.collaborationTools"/>
+  </content>
+  <extensions defaultExtensionNs="com.intellij">
+    <applicationService serviceInterface="com.intellij.openapi.project.ProjectStorePathManager"
+                        serviceImplementation="alhena.AlhenaProjectStore" overrides="true"/>
+    <directoryProjectConfigurator implementation="alhena.AlhenaDirectoryConfigurator" order="first"/>
+    <fileTypeOverrider implementation="alhena.AlhenaSourceFileTypes" order="last"/>
+    <postStartupActivity implementation="alhena.AlhenaProject"/>
+    <welcomeScreenCustomization implementation="alhena.AlhenaWelcome"/>
+    <applicationService serviceInterface="com.intellij.openapi.updateSettings.UpdateStrategyCustomization"
+                        serviceImplementation="alhena.AlhenaUpdates" overrides="true"/>
+    <applicationService serviceInterface="com.intellij.ide.ConsentOptionsProvider"
+                        serviceImplementation="alhena.AlhenaConsent" overrides="true"/>
+  </extensions>
+  <applicationListeners>
+    <listener class="alhena.AlhenaApplication" topic="com.intellij.ide.AppLifecycleListener"/>
+  </applicationListeners>
+  <actions>
+    <action id="Alhena.History" class="alhena.HistoryAction" text="History" description="Show repository history" icon="AllIcons.Vcs.History"/>
+    <action id="Alhena.GitSettings" class="alhena.GitSettingsAction" text="Git Settings" description="Configure Git executable and authentication" icon="AllIcons.General.Settings"/>
+    <group id="Alhena.GitToolbar">
+      <add-to-group group-id="MainToolbarCenter"/>
+    </group>
+  </actions>
+</idea-plugin>

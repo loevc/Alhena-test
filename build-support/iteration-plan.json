@@ -1,0 +1,186 @@
+{
+  "objective": "按计划操作：完成下一轮 Alhena 日常使用稳定性与产品化计划",
+  "baselineCommit": "7c92dd2",
+  "scope": [
+    {
+      "id": "P0-open",
+      "requirement": "真实 Windows 原生选择器选择并确认仓库，已有 IDEA 项目、中文空格路径、取消、重复打开和脚本启动回归",
+      "status": "validated",
+      "evidence": [
+        "docs/evidence/native-existing-project-acceptance.json",
+        "docs/evidence/powershell51-existing-project-acceptance.json",
+        "docs/evidence/powershell7-existing-project-acceptance.json",
+        "docs/evidence/welcome-cancel-acceptance.json",
+        "docs/evidence/version-desktop/result.json"
+      ],
+      "currentArchiveSha256": "1e152f7e69f4162a1f619364758c458ec82d748ac6c9e54abc04c68f21ac13d4"
+    },
+    {
+      "id": "P0-remote",
+      "requirement": "专用真实远程 HTTPS/SSH Clone、认证、Fetch/Pull/Push，以及失败、取消和断网处理",
+      "status": "validated_with_limitations",
+      "evidence": [
+        "docs/evidence/remote-https-clone-acceptance.json",
+        "docs/evidence/remote-ssh-clone-acceptance.json",
+        "docs/evidence/remote-https-sync-acceptance.json",
+        "docs/evidence/remote-ssh-sync-acceptance.json",
+        "docs/evidence/remote-auth-rejection-acceptance.json",
+        "docs/evidence/remote-auth-cancel-acceptance.json",
+        "docs/evidence/remote-network-failure-acceptance.json",
+        "docs/evidence/central-remote/result.json",
+        "docs/evidence/version-remote/result.json"
+      ],
+      "externalInput": "用户已授权 loevc/Alhena-test 的 HTTPS/SSH 测试写入",
+      "remaining": [
+        "实际断开网络及重新联网的长时间恢复测试未覆盖；当前验证使用不可达进程专属代理"
+      ],
+      "currentArchiveSha256": "1e152f7e69f4162a1f619364758c458ec82d748ac6c9e54abc04c68f21ac13d4"
+    },
+    {
+      "id": "P0-release",
+      "requirement": "同一 ZIP 覆盖启动、暂存、提交、分支、同步、冲突与 Diff，提交/Tag/附件/哈希关联的发布门槛",
+      "status": "in_progress",
+      "evidence": [
+        "docs/evidence/current-workflow-acceptance.json",
+        "docs/evidence/current-git-diff-acceptance.json",
+        "docs/evidence/windows-cache-write-observation.json",
+        "docs/evidence/version-desktop/result.json"
+      ],
+      "remaining": [
+        "源码提交、Tag、Release附件与哈希关联尚未完成",
+        "偶发 Windows 项目模型缓存写入访问异常尚未定位",
+        "完成 P1/P2 后统一最终 ZIP 的真实远程与发布门槛回归",
+        "真实仓库首启竞态修复和大工作树项目导入隔离仍待统一验收"
+      ],
+      "currentArchiveSha256": "1e152f7e69f4162a1f619364758c458ec82d748ac6c9e54abc04c68f21ac13d4"
+    },
+    {
+      "id": "P1-git",
+      "requirement": "常用 Git 功能验收：取消暂存、丢弃、按块暂存、分支增删改、Stash、Cherry-pick、Rebase、Blame、文件历史",
+      "status": "validated",
+      "evidence": [
+        "docs/evidence/workspace-git-acceptance.json",
+        "docs/evidence/advanced-git-acceptance.json",
+        "docs/evidence/version-desktop/result.json"
+      ],
+      "validated": [
+        "取消所选文件暂存并保留工作内容",
+        "丢弃所选文件且不影响其他暂存文件",
+        "原版 Stash 保存与 Apply 恢复",
+        "原版弹窗按块暂存和取消暂存",
+        "原版分支创建、重命名、删除与切换",
+        "原版 Log Cherry-pick",
+        "原版 Rebase 对话框及提交关系验证",
+        "原版 Annotate 作者标注与逐行来源验证",
+        "原版文件历史界面与提交列表验证"
+      ],
+      "remaining": [],
+      "limits": "普通无冲突单仓库流程；强制删除、冲突型 Rebase/Cherry-pick 的继续与中止、逐行选择暂存未覆盖",
+      "currentArchiveSha256": "1e152f7e69f4162a1f619364758c458ec82d748ac6c9e54abc04c68f21ac13d4"
+    },
+    {
+      "id": "P1-workspace",
+      "requirement": "Git 提交图、变更和 Diff 为主要工作区，改善仓库切换、Git 配置和无关 IDE 入口",
+      "status": "validated",
+      "evidence": [
+        "docs/evidence/workspace-git-acceptance.json",
+        "docs/evidence/central-git-diff-acceptance.json",
+        "docs/evidence/central-native-existing-project-acceptance.json",
+        "docs/evidence/repository-switch-acceptance.json",
+        "docs/evidence/central-product-acceptance.json",
+        "docs/evidence/version-desktop/result.json"
+      ],
+      "validated": [
+        "中央原版 Git Log、变更选择与双栏 Diff",
+        "History 标签复用及正常退出恢复",
+        "原版 Git 设置页直达",
+        "主工具栏打开入口及无关执行目标移除",
+        "主窗口原生选择器取消、重复打开、切换第二仓库并切回，核对项目数量与不同提交图"
+      ],
+      "remaining": [],
+      "currentArchiveSha256": "1e152f7e69f4162a1f619364758c458ec82d748ac6c9e54abc04c68f21ac13d4"
+    },
+    {
+      "id": "P1-engineering",
+      "requirement": "Windows 构建/脚本自动检查、独立桌面 GUI 门槛、验收归档和安全缓存清理",
+      "status": "validated",
+      "evidence": [
+        "docs/evidence/generated-cache-cleanup.json",
+        "docs/evidence/central-desktop/result.json",
+        "docs/evidence/current-generated-cache-cleanup.json",
+        "docs/evidence/version-desktop/result.json",
+        "docs/evidence/windows-ci-checks.json",
+        "docs/evidence/windows-ci-package-acceptance.json"
+      ],
+      "remaining": [],
+      "implementation": [
+        ".github/workflows/windows.yml：源码检查及可选 Windows Package，固定 Actions 提交、记录候选包哈希",
+        "tools/desktop-gate.py：固定 ZIP 的八组串行桌面回归；tools/remote-matrix.py：专用真实远程七组回归及 finally 撤销测试密钥"
+      ],
+      "validated": [
+        "本地八组固定 ZIP 串行桌面门槛通过，源码/ZIP/结果哈希复核通过",
+        "26 项 Python 测试通过，包含 5.1/7 真实脚本语法检查",
+        "受控缓存清理已执行并保留日志与证据",
+        "授权测试仓库的精确构建源码快照已运行 Windows CI checks 成功",
+        "Windows hosted checks 与 Windows PowerShell 5.1 Package 实际运行成功，诊断附件 SHA-256 及内部程序包元数据已核验"
+      ],
+      "currentArchiveSha256": "1e152f7e69f4162a1f619364758c458ec82d748ac6c9e54abc04c68f21ac13d4",
+      "limits": "托管构建验证精确测试快照 af82d88；后续本地启动修复/配置隔离需最终源码提交后重新执行 CI；托管产物未做桌面验收，不是已发布 Release"
+    },
+    {
+      "id": "P2-performance",
+      "requirement": "真实规模仓库的日志/Diff/索引/启动/内存测量，按收益进行后续裁剪并回归",
+      "status": "in_progress",
+      "evidence": [
+        "docs/evidence/central-small-performance-pilot.json",
+        "docs/evidence/ripgrep-performance-acceptance.json",
+        "docs/evidence/large-workspace-import-observation.json",
+        "docs/evidence/isolated-workspace-acceptance.json",
+        "docs/evidence/isolated-workspace-metadata-preservation.json",
+        "docs/evidence/source-filetype-performance-observation.json",
+        "docs/evidence/async-editor-candidate.json"
+      ],
+      "remaining": [
+        "异步 Log 编辑器打开修复包 85f525e1 完成 249211 文件与真实历史 fresh/cached 各三次测量",
+        "同一最终 ZIP 的完整桌面、真实远程回归及性能报告"
+      ],
+      "validated": [
+        "外置工程存储、单一目录模块；3057 个原有 IDE 配置文件未变化，真实 Git 索引操作通过",
+        "新候选五次独立仓库启动与文件类型关联保护检查通过；完整测量正在进行"
+      ]
+    },
+    {
+      "id": "P2-maintenance",
+      "requirement": "区分产品与平台版本，记录上游升级与受保护补丁的回归流程",
+      "status": "validated",
+      "evidence": [
+        "docs/evidence/version-maintenance-acceptance.json",
+        "docs/evidence/version-product-acceptance.json",
+        "docs/evidence/version-desktop/result.json"
+      ],
+      "implementation": [
+        "docs/maintenance.md：当前版本含义、独立产品版本方案、固定上游升级与五个文件补丁回归流程"
+      ],
+      "remaining": [],
+      "validated": [
+        "单一应用描述符版本源用于原版 About、product-info 和 ZIP 名称；产品与平台版本明确区分",
+        "包内及 app.jar 内版本元数据匹配源码锁与 JBR",
+        "原有两处真实受保护补丁的原始 SHA、当前应用内容、升级漂移拒绝及运行工作流验证",
+        "已记录固定上游升级、回退及必跑回归流程"
+      ],
+      "limits": "验证当前固定平台；未来更换平台必须重新执行文档流程，不代表任意未来版本兼容"
+    }
+  ],
+  "deferred": [
+    "重新导出大型离线包",
+    "安装器",
+    "自动更新安装",
+    "其他操作系统支持"
+  ],
+  "safety": [
+    "不修改全局 Git 身份或信任配置",
+    "不在用户实际工作仓库制造测试提交",
+    "不将测试服务器或凭据写入发行包",
+    "清理仅处理受控工作区内的生成物并保留当前运行、发布包及编译缓存"
+  ]
+}

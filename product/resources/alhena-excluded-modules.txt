@@ -1,0 +1,8 @@
+# Runtime modules removed from both the content descriptor and packaging layout.
+# Keep the shared execution/debugger APIs: VCS hooks and platform UI still use them.
+intellij.platform.clouds
+intellij.platform.execution.serviceView
+intellij.platform.execution.serviceView.frontend
+intellij.platform.execution.dashboard
+intellij.platform.execution.dashboard.frontend
+intellij.platform.execution.dashboard.backend

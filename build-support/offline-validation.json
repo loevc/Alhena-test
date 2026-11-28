@@ -1,0 +1,79 @@
+{
+  "status": "passed",
+  "validatedAtUtc": "2026-11-26T14:35:50.877433+00:00",
+  "scope": "Same Windows x64 machine, new path containing spaces, isolated Maven home; no second physical device tested",
+  "archive": {
+    "path": "out/offline/alhena-offline-windows-x64-252.28539.zip",
+    "sha256": "35fee7d9ec7e5deca059c39ba244dfb24f85e60c6f476d5be306c4c0f709ea6e",
+    "size": 2864633344,
+    "recipeFingerprint": "68d6637ddff07a844e927c9be8a5678a0dc60bf926d2451931f4484a1b6aff91",
+    "payloadFiles": 12419
+  },
+  "finalRecoveryDirectory": "out/offline-final-recovery/Alhena portable",
+  "buildDirectory": "out/offline-rebuild-check/Alhena portable v2",
+  "initialBuildRecoveryArchiveSha256": "7eed83d77307e0dc54d59c3b4d3d2f8745486d72f904939f6f8d0d4c328946f8",
+  "buildSetupFixesAppliedDuringOfflineValidation": [
+    "build.ps1",
+    "tools/offline/NoNetwork.java"
+  ],
+  "finalDependencyPayloadIdentical": true,
+  "finalBuildInputsMatch": true,
+  "buildInputCount": 21,
+  "buildExitCode": 0,
+  "buildLog": "out/offline-rebuild-check/Alhena portable v2/out/logs/package-20261126-222833.log",
+  "cleanCompilationLog": "out/offline-rebuild-check/Alhena portable v2/out/logs/package-20261126-221049.log",
+  "productArchive": {
+    "path": "out/offline-rebuild-check/Alhena portable v2/upstream/intellij-community/out/alhena/artifacts/alhena-252.28539.SNAPSHOT.win.zip",
+    "sha256": "86c56fdd04f279c547d09041dc19ce6a952661ed017366d4950898aa82e421ee",
+    "size": 250057734
+  },
+  "productClassesIdenticalToAcceptedRelease": 7,
+  "networkGuard": {
+    "externalConnectionDenied": true,
+    "loopbackIpcAllowed": true,
+    "blockedOptionalHostsInPackagingLog": [
+      "plugins.jetbrains.com"
+    ],
+    "scope": "Pinned Java build processes, not an OS firewall"
+  },
+  "toolTests": {
+    "command": "python -m unittest discover -s tests -v",
+    "passed": 14
+  },
+  "powerShellSyntaxScriptsPassed": 9,
+  "checks": [
+    "Git submission recipe file set matches final kit",
+    "Current canonical source bytes match final kit",
+    "All final-kit payload files match independently recovered workspace",
+    "Independent recovery state points to final archive",
+    "Final dependency payload equals the payload used for offline compilation",
+    "All build inputs used for compilation match final kit",
+    "No product classes or JPS incremental state were carried in dependency kit",
+    "Personal Git configuration and Maven settings are absent",
+    "Recovered source revision is pinned: Alhena portable",
+    "Prepared overlays and compatibility patches have no drift: Alhena portable",
+    "Recovered source revision is pinned: Alhena portable v2",
+    "Prepared overlays and compatibility patches have no drift: Alhena portable v2",
+    "External Java connection denied and compiler loopback IPC allowed",
+    "Platform reports a clean product compilation without reusable classes",
+    "JPS dependency resolution completed with offline guard active",
+    "Build JVM inherited network guard and workspace Maven home",
+    "Build log contains no original user Maven repository",
+    "Windows native launcher exists",
+    "Only Git plugin is bundled",
+    "Offline build-only flags are absent from runtime VM options",
+    "Windows native launcher exists",
+    "Only Git plugin is bundled",
+    "Offline build-only flags are absent from runtime VM options",
+    "Offline-built Alhena product classes equal accepted release classes byte for byte"
+  ],
+  "notes": [
+    "Recovery trials exposed Windows long paths and PowerShell empty environment variables. The build setup was corrected; the final source files and dependencies match those used for the clean JPS product compilation.",
+    "The final archive was separately restored and prepared. All its files were checked against the recovered payload; its dependency payload and actual compilation inputs match the completed offline build.",
+    "After clean compilation, the managed sandbox denied the native local DirectoryLock socket used by packaging self-checks. Packaging was retried with local IPC permitted and the same Java external-network guard enabled.",
+    "Sandbox-to-normal account switching required a process-local safe.directory entry for the dedicated restored upstream path. No global Git trust configuration was changed.",
+    "Offline settings indexing also required a build-only idea.plugins.host override to avoid an optional Marketplace metadata refresh. The successful packaging log retains the external-network guard; runtime product options do not contain the override.",
+    "Other optional Marketplace client requests still attempted plugins.jetbrains.com and were denied by the guard. Those interceptions appear as exceptions in the log; they did not prevent dependency resolution, settings indexing or packaging from completing.",
+    "ZIP timestamp differences are expected. This verifies source rebuilding, not identical whole-ZIP hashes."
+  ]
+}
