@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "description": "Explicit Git submission and portable source snapshot inputs. Generated caches and local IDE state are excluded.",
+  "include": [
+    ".gitattributes",
+    ".gitignore",
+    "README.md",
+    "upstream.lock.json",
+    "build.ps1",
+    "run.ps1",
+    "build-support",
+    "product",
+    "patches",
+    "tools",
+    "tests",
+    "docs",
+    "experiments/wpf-history"
+  ],
+  "excludeDirectoryNames": ["__pycache__"],
+  "excludePaths": ["tests/tmp", "experiments/wpf-history/build"],
+  "excludeSuffixes": [".pyc", ".pyo"]
+}

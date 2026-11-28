@@ -1,0 +1,51 @@
+[
+  {
+    "path": "plugins/git4idea/src/git4idea/ui/branch/dashboard/BranchesTree.kt",
+    "reason": "The pinned baseline calls TreeUtil.expandAll (ReadAction) from launchOnShow's strict UI dispatcher. Preserve upstream locking rules by switching only initial model/tree expansion to EDT.",
+    "sha256": "44c5ec47a58e0e6c73520f7bf8a9ee42ead8da5d815ffcf87984167bafce85d5",
+    "old": "    tree.launchOnShow(\"Git Dashboard Tree\") {\n      updateTree()\n      checkCanceled()",
+    "new": "    tree.launchOnShow(\"Git Dashboard Tree\") {\n      withContext(Dispatchers.EDT) {\n        updateTree()\n      }\n      checkCanceled()"
+  },
+  {
+    "path": "plugins/git4idea/src/git4idea/index/ui/GitStageCommitPanel.kt",
+    "reason": "A resolved merge can have no index diff (Accept Left). Included, non-conflicted MERGING repositories still require a two-parent commit. Keep them in the original staging workflow's commit roots without allowing arbitrary empty commits or excluded roots.",
+    "sha256": "8aaccd13c721f24af9d5db6bdc8832bb494f9e41dcab690e91a972d9239798d0",
+    "old": "  val rootsToCommit get() = state.rootsToCommit",
+    "new": "  val rootsToCommit get() = state.rootsToCommit + state.includedRoots.filter { root ->\n    root !in state.conflictedRoots &&\n      git4idea.repo.GitRepositoryManager.getInstance(project).getRepositoryForRootQuick(root)?.state ==\n      com.intellij.dvcs.repo.Repository.State.MERGING\n  }"
+  },
+  {
+    "path": "platform/vcs-log/impl/src/com/intellij/vcs/log/impl/VcsLogTabsManager.kt",
+    "reason": "Opening an original Log editor can return its loading panel during asynchronous log recreation. Route the registered editor action through a void opening API, keeping tab state/listeners and existing synchronous APIs intact without dereferencing an uninitialized UI.",
+    "sha256": "d202d4256fd6093d14f2a212859fbf3d299cf564db51c56144b23d2e36e1b776",
+    "old": "  fun openAnotherLogTab(filters: VcsLogFilterCollection, location: VcsLogTabLocation): MainVcsLogUi {",
+    "new": "  // Editor creation may return a loading panel while the project log is being recreated.\n  // Actions do not need a synchronous MainVcsLogUi; preserve the original tab lifecycle.\n  fun openAnotherLogTabInEditor(filters: VcsLogFilterCollection) {\n    require(!isDisposed) { \"Already disposed\" }\n    val tabId = logManager.generateNewLogId()\n    uiProperties.resetState(tabId)\n    openEditorLogTab(tabId, true, filters)\n  }\n\n  fun openAnotherLogTab(filters: VcsLogFilterCollection, location: VcsLogTabLocation): MainVcsLogUi {"
+  },
+  {
+    "path": "platform/vcs-log/impl/src/com/intellij/vcs/log/impl/IdeVcsLogManager.kt",
+    "reason": "Opening an original Log editor can return its loading panel during asynchronous log recreation. Route the registered editor action through a void opening API, keeping tab state/listeners and existing synchronous APIs intact without dereferencing an uninitialized UI.",
+    "sha256": "7e4300d01017f7efd19b4b7d48394bac5542e57013ba5201bdfb0ed734edbbb4",
+    "old": "  @RequiresEdt\n  fun openNewLogTab(location: VcsLogTabLocation, filters: VcsLogFilterCollection): MainVcsLogUi {",
+    "new": "  @RequiresEdt\n  fun openNewEditorLogTab(filters: VcsLogFilterCollection) {\n    tabsManager.openAnotherLogTabInEditor(filters)\n  }\n\n  @RequiresEdt\n  fun openNewLogTab(location: VcsLogTabLocation, filters: VcsLogFilterCollection): MainVcsLogUi {"
+  },
+  {
+    "path": "platform/vcs-log/impl/src/com/intellij/vcs/log/ui/actions/OpenAnotherLogTabAction.java",
+    "reason": "Opening an original Log editor can return its loading panel during asynchronous log recreation. Route the registered editor action through a void opening API, keeping tab state/listeners and existing synchronous APIs intact without dereferencing an uninitialized UI.",
+    "sha256": "c8d85d6803d93289eefbc3b04bf811507684ae4a147fd7525f133188460bad44",
+    "old": "    logManager.openNewLogTab(getLocation(e), filters);",
+    "new": "    VcsLogTabLocation location = getLocation(e);\n    if (location == VcsLogTabLocation.EDITOR) {\n      logManager.openNewEditorLogTab(filters);\n    }\n    else {\n      logManager.openNewLogTab(location, filters);\n    }"
+  },
+  {
+    "path": "platform/vcs-impl/src/com/intellij/openapi/vcs/changes/ChangeListManagerImpl.java",
+    "reason": "Project closing cancels the dispose-aware refresh indicator before service dispose stops its queue. A running refresh can restore waiters with no future request, causing a false invariant failure during shutdown. Stop the queue and release waiters before disposing the refresh indicator; keep the later idempotent service stop.",
+    "sha256": "da7d1159917e4f5f7c547bd8bbf12c014675f7237bb51d2e47e0e18b443334c2",
+    "old": "          // Can't use Project disposable - it will be called after pending tasks are finished\n          Disposer.dispose(myUpdateDisposable);",
+    "new": "          // Stop and release refresh waiters before cancellation can restore them in a running refresh.\n          // The service disposable runs later, after pending tasks are finished.\n          myUpdater.stop();\n          Disposer.dispose(myUpdateDisposable);"
+  },
+  {
+    "path": "platform/platform-impl/bootstrap/src/com/intellij/platform/ide/bootstrap/ApplicationLoader.kt",
+    "reason": "Alhena intentionally uses platform NOOP telemetry. An early service can initialize that lazy manager before asynchronous full SDK installation, which then fails its single-initialization requirement. Adopt the same thread-safe lazy NOOP for Alhena in bootstrap; keep other products and the manager invariant unchanged.",
+    "sha256": "20c66cd5272491eb662bcd756174fb623c35e3968e1f6c47e1059bd162c30bff",
+    "old": "        TelemetryManager.setTelemetryManager(\n          TelemetryManagerImpl(coroutineScope = app.getCoroutineScope(), isUnitTestMode = app.isUnitTestMode))",
+    "new": "        if (System.getProperty(\"idea.platform.prefix\") == \"Alhena\") {\n          // Alhena has no telemetry exporters. Reuse the platform's thread-safe lazy NOOP\n          // manager even if an early background service has already requested a tracer.\n          TelemetryManager.getInstance()\n        }\n        else {\n          TelemetryManager.setTelemetryManager(\n            TelemetryManagerImpl(coroutineScope = app.getCoroutineScope(), isUnitTestMode = app.isUnitTestMode))\n        }"
+  }
+]
