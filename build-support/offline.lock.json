@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "platform": "windows-x64",
+  "createdAtUtc": "2026-11-26T14:31:16.395233+00:00",
+  "archiveName": "alhena-offline-windows-x64-252.28539.zip",
+  "archiveSize": 2864633344,
+  "archiveSha256": "35fee7d9ec7e5deca059c39ba244dfb24f85e60c6f476d5be306c4c0f709ea6e",
+  "manifestSha256": "e262f77e846f7ba23694aec9f7be7b7865b67dbb6cb66e13eded29fcc19fc479",
+  "upstreamCommit": "b0d717640ee577a15b73fa79194629ff2a1d3d72",
+  "recipeFingerprint": "68d6637ddff07a844e927c9be8a5678a0dc60bf926d2451931f4484a1b6aff91",
+  "payloadFiles": 12419,
+  "payloadBytes": 2857826714
+}
