@@ -1,0 +1,47 @@
+{
+  "status": "startup_fix_validated_on_history_dataset_large_import_issue_open",
+  "releaseReady": false,
+  "archive": "out/releases/alhena-0.1.0-dev-252.28539-9b3ed7d1.win.zip",
+  "archiveBytes": 250138815,
+  "archiveSha256": "9b3ed7d117532bb6ba56a5d3c1b6d20b0a388d13c2799e52551f8a3173109362",
+  "sourceProductSha256": {
+    "product/alhena.product.iml": "6050f09f7ccd856d7cd42aee6ff752f09593d2eed04ba72b21134664f9c5b4b2",
+    "product/build/AlhenaBuildTarget.kt": "7198c4f36ba74ac39545a7690eccd02a2c7f2920e16e929fbf0f0472132a99a3",
+    "product/build/AlhenaProperties.kt": "728540b4d31b339e2ea86994464d45334076296ec084ca490171ed7fd0ffb50e",
+    "product/platform-build/AlhenaPackaging.kt": "8df21e06601866c8d2aa9474e0b84746bdef6eab5bdafaeb9561e23f5259bf30",
+    "product/resources/alhena-excluded-modules.txt": "97b33c45d62c6bcf56a41d43abf416227ebfa686a9058cf2c101b0d0372d95c9",
+    "product/resources/alhena.svg": "36202fc62350fed794980f164cab128abc9344d39e832c745e678f69cc51d15f",
+    "product/resources/idea/AlhenaApplicationInfo.xml": "7b47b7f19c333e77913eb5e945eb2619c6f1ee5666e2f201e37c4b36f839f09d",
+    "product/resources/META-INF/AlhenaPlugin.xml": "68ee20750b6aec2394c15c9f7f7eee4be61ac5a3e30b9017b1b0fad3e825e168",
+    "product/resources/ProductivityFeaturesRegistry.xml": "eacd89a2260dfdd46cec99964f77efa2a6fd2868e9cefe39a93e06e312d6179e",
+    "product/src/alhena/AlhenaApplication.java": "0c50a1edec3f6f68ad2d0a63e82483ab2a6bfa50a66a677cc80e809afe334475",
+    "product/src/alhena/AlhenaConsent.java": "c673217469603c7617051ae611e79aa1482cde65caf7a3deabd18714d4f5e633",
+    "product/src/alhena/AlhenaProject.java": "854aced5c9024b7a3d6824692aaa94012b93e08298fe03fd42440dbef09818c8",
+    "product/src/alhena/AlhenaUpdates.java": "d33758d29a8166a3db722b39b495c3ad6a699139a9365ca6004de3afac6099d3",
+    "product/src/alhena/AlhenaWelcome.java": "b7b920c6ed8f6078b56b469248bbabddfc75b34e428c705bb156423d48823c4e",
+    "product/src/alhena/GitSettingsAction.java": "476ef35e67d325eb91e838f8362c62175055c85754c2a2ee280ef0d7ee6997d9",
+    "product/src/alhena/HistoryAction.java": "9d6cd7bd5b15ea4ab54e3510d6000b517eb247403d38647193945b437b3f4ca2"
+  },
+  "packagedClassesMatchBuildOutput": {
+    "alhena/AlhenaApplication.class": "b14b39898ee6e0985252966146e376444e92ec54162f9d93c5079ae0229d4c11",
+    "alhena/AlhenaConsent.class": "b92080a04e0787289556c9f0c11a67a8affe6d1521082aec3bfe4ec6d04073f4",
+    "alhena/AlhenaProject$1.class": "960beb1a6fab5313f2d1411bdd19bf98dad17d0f4b746faef802d8207577834f",
+    "alhena/AlhenaProject$2.class": "6b21e7a3e965a66f95c759ace6c032426c2e55fce38ff095ebca1e0914cf9b62",
+    "alhena/AlhenaProject.class": "02f169b5c528155b350867227b724e7a28d8b8671dac3bc9da7ae35a875a1d79",
+    "alhena/AlhenaUpdates.class": "a0694e32d8d13fbb35ca44a1768a8643ac0542e09be7a9d3e5a9b08fb35c06cc",
+    "alhena/AlhenaWelcome.class": "9879484141a9e755157fd3a1f7d4bd46bf045299270f64802b3bbd5960f724f4",
+    "alhena/GitSettingsAction.class": "b43244315218a6f12720f789d09be27cf8a6a1547a3a0f2cffe964322cbc699e",
+    "alhena/HistoryAction.class": "b1cc5bf148734afcdefde416a3d2df7d3aec4853d076a9f4e06c064949db849e"
+  },
+  "passedEvidence": [
+    "docs/evidence/startup-readiness-acceptance.json",
+    "docs/evidence/ripgrep-performance-acceptance.json"
+  ],
+  "openItems": [
+    "Large workspace imports .idea build metadata and exceeds initial indexing wait",
+    "New ZIP full desktop/remote regression pending",
+    "CI Package still running against earlier af82d88 snapshot",
+    "Source/Tag/Release association pending",
+    "Prior Windows cache write observation remains unresolved"
+  ]
+}

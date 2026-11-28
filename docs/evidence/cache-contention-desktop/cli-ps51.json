@@ -1,0 +1,25 @@
+﻿{
+    "status":  "passed",
+    "archiveSha256":  "2a71563a782d2c7ef6e9d00e9b7c1cade03a316ff416184616c6d1558f278bdc",
+    "evidence":  "D:\\resources\\code\\github\\loevc\\Alhena\\out\\welcome-smoke\\20261128-151656",
+    "fixture":  "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\history-20261128-151656 desktop 中文 repo",
+    "powerShellVersion":  "5.1.19041.6456",
+    "commandLineMode":  true,
+    "nativeSelection":  false,
+    "existingProject":  true,
+    "trustConfirmationObserved":  true,
+    "checks":  [
+                   "repository opens and displays Git history",
+                   "no automatic trust bypass",
+                   "no SEVERE/ERROR log entries",
+                   "run.ps1 -Repository executed in actual caller PowerShell",
+                   "all original repository IDE metadata unchanged after close"
+               ],
+    "metadataPreserved":  [
+                              {
+                                  "repository":  "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\history-20261128-151656 desktop 中文 repo",
+                                  "snapshot":  "D:\\resources\\code\\github\\loevc\\Alhena\\out\\welcome-smoke\\20261128-151656\\first-metadata-before.json",
+                                  "verified":  true
+                              }
+                          ]
+}

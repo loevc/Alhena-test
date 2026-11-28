@@ -1,0 +1,11 @@
+cacheService=com.intellij.workspaceModel.ide.impl.WorkspaceModelCacheImpl
+cacheFile=D:\resources\code\github\loevc\Alhena\out\cache-contention\20261128-151352\sandbox\system\projects\repo.76791ce9\project-model-cache\cache.data
+transientHold20Ms=23
+java.lang.IllegalStateException: Short reader contention was not recovered: java.nio.file.AccessDeniedException: D:\resources\code\github\loevc\Alhena\out\cache-contention\20261128-151352\sandbox\system\projects\repo.76791ce9\project-model-cache\cache16454759786753800296.tmp -> D:\resources\code\github\loevc\Alhena\out\cache-contention\20261128-151352\sandbox\system\projects\repo.76791ce9\project-model-cache\cache.data
+	at CacheSaveProbe.require(CacheSaveProbe.java:34)
+	at CacheSaveProbe.agentmain(CacheSaveProbe.java:66)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:560)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallAgentmain(InstrumentationImpl.java:582)
+cacheProbePassed=false

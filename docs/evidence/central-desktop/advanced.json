@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "archiveSha256": "0ab35f948c7a5a27466127ebf6c50e5cb8121857f2a10fd9ac18262eefbe4c86",
+  "evidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\advanced-git-smoke\\20261128-002951",
+  "fixture": {
+    "repository": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-advanced-20261128-002950",
+    "base": "288310318073f4c0120bc87fd1fb2b2cf88f706d",
+    "history": "ea884dda1bebeeac88aace40a62dd0b3faa50d0e",
+    "cherry": "50287a76e20f056ab5e096263ee7fe8cd7c636c4",
+    "upstream": "cd24b0033e39f9343aa600c90df14f7350b2dd54",
+    "feature": "e3ecfa96d6d349f5e5c3410df0954787778ff676"
+  },
+  "checks": [
+    "native Git ready",
+    "initial central workspace ready before opening fixture file",
+    "original staging line tracker sees two separated hunks",
+    "original hunk popup exposes Stage link",
+    "original hunk Stage writes index",
+    "selected hunk alone is staged, second hunk remains unstaged",
+    "original popup exposes Unstage link",
+    "original hunk Unstage clears index",
+    "staging panel ready",
+    "both fixture hunks staged for clean branch tests",
+    "original Commit prepares clean advanced fixture",
+    "original New Branch dialog",
+    "original Create dialog creates and checks out branch",
+    "original Rename Branch dialog",
+    "original Rename changes current branch",
+    "original checkout returns to main",
+    "original branch context Delete removes test branch",
+    "cherry-pick source visible in original Log",
+    "original Log Cherry-pick creates commit",
+    "original checkout selects rebase fixture",
+    "original Rebase dialog",
+    "original Rebase accepts selected upstream",
+    "original Rebase replays feature onto upstream",
+    "original Git annotation provider maps each line to expected revision",
+    "original Annotate renders expected abbreviated authors in editor gutter",
+    "original file history provider returns both expected commits",
+    "original File History displays both commits"
+  ]
+}

@@ -1,0 +1,1790 @@
+{
+  "schemaVersion": 1,
+  "candidate": "docs/evidence/current-candidate.json",
+  "sourceCommit": "515baddbd59a5b0cfb88e73e80a6729af136fd87",
+  "archiveSha256": "2a71563a782d2c7ef6e9d00e9b7c1cade03a316ff416184616c6d1558f278bdc",
+  "candidateIdentitySha256": "639ca435cb15e0e3b91356973db6fc5bce367a1af82c10da1552ac2e1d10e714",
+  "testedCiSourceCommit": false,
+  "sourceInputs": {
+    ".github/workflows/windows.yml": {
+      "originalSha256": "4b9d0e6b8cf414072f03481f127dccadc7095326d11552ca09bbdfeab58ec3d2",
+      "gitBlobSha256": "4b9d0e6b8cf414072f03481f127dccadc7095326d11552ca09bbdfeab58ec3d2",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "4b9d0e6b8cf414072f03481f127dccadc7095326d11552ca09bbdfeab58ec3d2"
+    },
+    "build-support/offline-validation.json": {
+      "originalSha256": "c748c0e67687b9d6c4b960f4bc23afb10d4d5b200d693cc57cf69e01bb034af9",
+      "gitBlobSha256": "c748c0e67687b9d6c4b960f4bc23afb10d4d5b200d693cc57cf69e01bb034af9",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "c748c0e67687b9d6c4b960f4bc23afb10d4d5b200d693cc57cf69e01bb034af9"
+    },
+    "build-support/offline.lock.json": {
+      "originalSha256": "012ce83c126502e3f69f83327866af74f385c9786d1cc55805b0bfc85694d959",
+      "gitBlobSha256": "012ce83c126502e3f69f83327866af74f385c9786d1cc55805b0bfc85694d959",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "012ce83c126502e3f69f83327866af74f385c9786d1cc55805b0bfc85694d959"
+    },
+    "build-support/source-manifest.json": {
+      "originalSha256": "b54a68c1d328c5ef9cb52c60d3f1d27f293a9223a06dfb7d2eeb163ceb3ec64f",
+      "gitBlobSha256": "b54a68c1d328c5ef9cb52c60d3f1d27f293a9223a06dfb7d2eeb163ceb3ec64f",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "b54a68c1d328c5ef9cb52c60d3f1d27f293a9223a06dfb7d2eeb163ceb3ec64f"
+    },
+    "build.ps1": {
+      "originalSha256": "466741e6959a38e81bdc816ac0e7d24451214d8aadd0c8afdc6001e6272fe854",
+      "gitBlobSha256": "466741e6959a38e81bdc816ac0e7d24451214d8aadd0c8afdc6001e6272fe854",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "466741e6959a38e81bdc816ac0e7d24451214d8aadd0c8afdc6001e6272fe854"
+    },
+    "patches/upstream.json": {
+      "originalSha256": "fb190563aead0d2cdc666744e3b7d0cafce2e0de6ac67e9d168f7d636f20ccdb",
+      "gitBlobSha256": "ce1b86050b788b1ac960f296970081f33642800a82ffa3e97534e297af06a9cb",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "ce1b86050b788b1ac960f296970081f33642800a82ffa3e97534e297af06a9cb"
+    },
+    "product/alhena.product.iml": {
+      "originalSha256": "5be7fbbdd7bba87f1a5ad652239d6da43c54029d812d56fc0db63f10cb0cf766",
+      "gitBlobSha256": "5be7fbbdd7bba87f1a5ad652239d6da43c54029d812d56fc0db63f10cb0cf766",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "5be7fbbdd7bba87f1a5ad652239d6da43c54029d812d56fc0db63f10cb0cf766"
+    },
+    "product/build/AlhenaBuildTarget.kt": {
+      "originalSha256": "7198c4f36ba74ac39545a7690eccd02a2c7f2920e16e929fbf0f0472132a99a3",
+      "gitBlobSha256": "7198c4f36ba74ac39545a7690eccd02a2c7f2920e16e929fbf0f0472132a99a3",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "7198c4f36ba74ac39545a7690eccd02a2c7f2920e16e929fbf0f0472132a99a3"
+    },
+    "product/build/AlhenaProperties.kt": {
+      "originalSha256": "9ac51edfcb7128abd1233934c1d1c7e6f626ff4a51df9602d95071ada8c83d31",
+      "gitBlobSha256": "9ac51edfcb7128abd1233934c1d1c7e6f626ff4a51df9602d95071ada8c83d31",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "9ac51edfcb7128abd1233934c1d1c7e6f626ff4a51df9602d95071ada8c83d31"
+    },
+    "product/platform-build/AlhenaPackaging.kt": {
+      "originalSha256": "8df21e06601866c8d2aa9474e0b84746bdef6eab5bdafaeb9561e23f5259bf30",
+      "gitBlobSha256": "8df21e06601866c8d2aa9474e0b84746bdef6eab5bdafaeb9561e23f5259bf30",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "8df21e06601866c8d2aa9474e0b84746bdef6eab5bdafaeb9561e23f5259bf30"
+    },
+    "product/resources/alhena-excluded-modules.txt": {
+      "originalSha256": "97b33c45d62c6bcf56a41d43abf416227ebfa686a9058cf2c101b0d0372d95c9",
+      "gitBlobSha256": "97b33c45d62c6bcf56a41d43abf416227ebfa686a9058cf2c101b0d0372d95c9",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "97b33c45d62c6bcf56a41d43abf416227ebfa686a9058cf2c101b0d0372d95c9"
+    },
+    "product/resources/alhena.svg": {
+      "originalSha256": "36202fc62350fed794980f164cab128abc9344d39e832c745e678f69cc51d15f",
+      "gitBlobSha256": "36202fc62350fed794980f164cab128abc9344d39e832c745e678f69cc51d15f",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "36202fc62350fed794980f164cab128abc9344d39e832c745e678f69cc51d15f"
+    },
+    "product/resources/idea/AlhenaApplicationInfo.xml": {
+      "originalSha256": "7b47b7f19c333e77913eb5e945eb2619c6f1ee5666e2f201e37c4b36f839f09d",
+      "gitBlobSha256": "7b47b7f19c333e77913eb5e945eb2619c6f1ee5666e2f201e37c4b36f839f09d",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "7b47b7f19c333e77913eb5e945eb2619c6f1ee5666e2f201e37c4b36f839f09d"
+    },
+    "product/resources/META-INF/AlhenaPlugin.xml": {
+      "originalSha256": "2666b686d53b540a7c51e94ca332b8a46fd8fcdd697e8e2e86167fb25d792c62",
+      "gitBlobSha256": "2666b686d53b540a7c51e94ca332b8a46fd8fcdd697e8e2e86167fb25d792c62",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "2666b686d53b540a7c51e94ca332b8a46fd8fcdd697e8e2e86167fb25d792c62"
+    },
+    "product/resources/ProductivityFeaturesRegistry.xml": {
+      "originalSha256": "eacd89a2260dfdd46cec99964f77efa2a6fd2868e9cefe39a93e06e312d6179e",
+      "gitBlobSha256": "eacd89a2260dfdd46cec99964f77efa2a6fd2868e9cefe39a93e06e312d6179e",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "eacd89a2260dfdd46cec99964f77efa2a6fd2868e9cefe39a93e06e312d6179e"
+    },
+    "product/src/alhena/AlhenaApplication.java": {
+      "originalSha256": "0c50a1edec3f6f68ad2d0a63e82483ab2a6bfa50a66a677cc80e809afe334475",
+      "gitBlobSha256": "0c50a1edec3f6f68ad2d0a63e82483ab2a6bfa50a66a677cc80e809afe334475",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "0c50a1edec3f6f68ad2d0a63e82483ab2a6bfa50a66a677cc80e809afe334475"
+    },
+    "product/src/alhena/AlhenaConsent.java": {
+      "originalSha256": "c673217469603c7617051ae611e79aa1482cde65caf7a3deabd18714d4f5e633",
+      "gitBlobSha256": "c673217469603c7617051ae611e79aa1482cde65caf7a3deabd18714d4f5e633",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "c673217469603c7617051ae611e79aa1482cde65caf7a3deabd18714d4f5e633"
+    },
+    "product/src/alhena/AlhenaDirectoryConfigurator.java": {
+      "originalSha256": "d2894cd0a3ed9569677b7dbc8fbfac8e2392f3147fcbf4bae9b8d310ce0aabef",
+      "gitBlobSha256": "d2894cd0a3ed9569677b7dbc8fbfac8e2392f3147fcbf4bae9b8d310ce0aabef",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "d2894cd0a3ed9569677b7dbc8fbfac8e2392f3147fcbf4bae9b8d310ce0aabef"
+    },
+    "product/src/alhena/AlhenaProject.java": {
+      "originalSha256": "854aced5c9024b7a3d6824692aaa94012b93e08298fe03fd42440dbef09818c8",
+      "gitBlobSha256": "854aced5c9024b7a3d6824692aaa94012b93e08298fe03fd42440dbef09818c8",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "854aced5c9024b7a3d6824692aaa94012b93e08298fe03fd42440dbef09818c8"
+    },
+    "product/src/alhena/AlhenaProjectStore.java": {
+      "originalSha256": "06c3a9fb02042ee5c584991cdee5c987340a0826d0d9876483709e6b6fbd3487",
+      "gitBlobSha256": "06c3a9fb02042ee5c584991cdee5c987340a0826d0d9876483709e6b6fbd3487",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "06c3a9fb02042ee5c584991cdee5c987340a0826d0d9876483709e6b6fbd3487"
+    },
+    "product/src/alhena/AlhenaSourceFileTypes.java": {
+      "originalSha256": "d59ff1be5cadf7bacdb22bf303802baf89a8d2c2897bf39a59c72a62374db43b",
+      "gitBlobSha256": "d59ff1be5cadf7bacdb22bf303802baf89a8d2c2897bf39a59c72a62374db43b",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "d59ff1be5cadf7bacdb22bf303802baf89a8d2c2897bf39a59c72a62374db43b"
+    },
+    "product/src/alhena/AlhenaUpdates.java": {
+      "originalSha256": "d33758d29a8166a3db722b39b495c3ad6a699139a9365ca6004de3afac6099d3",
+      "gitBlobSha256": "d33758d29a8166a3db722b39b495c3ad6a699139a9365ca6004de3afac6099d3",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "d33758d29a8166a3db722b39b495c3ad6a699139a9365ca6004de3afac6099d3"
+    },
+    "product/src/alhena/AlhenaWelcome.java": {
+      "originalSha256": "b7b920c6ed8f6078b56b469248bbabddfc75b34e428c705bb156423d48823c4e",
+      "gitBlobSha256": "b7b920c6ed8f6078b56b469248bbabddfc75b34e428c705bb156423d48823c4e",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "b7b920c6ed8f6078b56b469248bbabddfc75b34e428c705bb156423d48823c4e"
+    },
+    "product/src/alhena/GitSettingsAction.java": {
+      "originalSha256": "476ef35e67d325eb91e838f8362c62175055c85754c2a2ee280ef0d7ee6997d9",
+      "gitBlobSha256": "476ef35e67d325eb91e838f8362c62175055c85754c2a2ee280ef0d7ee6997d9",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "476ef35e67d325eb91e838f8362c62175055c85754c2a2ee280ef0d7ee6997d9"
+    },
+    "product/src/alhena/HistoryAction.java": {
+      "originalSha256": "dc0b92fd39b2a69806a184723b4c04741849dbdadf4b1dd14596c247bd1fc85e",
+      "gitBlobSha256": "dc0b92fd39b2a69806a184723b4c04741849dbdadf4b1dd14596c247bd1fc85e",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "dc0b92fd39b2a69806a184723b4c04741849dbdadf4b1dd14596c247bd1fc85e"
+    },
+    "run.ps1": {
+      "originalSha256": "cf0c0c9d2d9c40120fdb38e707af062379c9661c3fafb71ce48df93f40b0508d",
+      "gitBlobSha256": "cf0c0c9d2d9c40120fdb38e707af062379c9661c3fafb71ce48df93f40b0508d",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "cf0c0c9d2d9c40120fdb38e707af062379c9661c3fafb71ce48df93f40b0508d"
+    },
+    "tests/test_desktop_gate.py": {
+      "originalSha256": "31dffa8d6cb1c634677ede3fbf312ad74f2da30cd322950aeac2a238de8939ac",
+      "gitBlobSha256": "31dffa8d6cb1c634677ede3fbf312ad74f2da30cd322950aeac2a238de8939ac",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "31dffa8d6cb1c634677ede3fbf312ad74f2da30cd322950aeac2a238de8939ac"
+    },
+    "tests/test_metadata_snapshot.py": {
+      "originalSha256": "03c5cc8f445a8739c4399fbc949aa64c99e742bc00683288607ccd8e45e7ebec",
+      "gitBlobSha256": "03c5cc8f445a8739c4399fbc949aa64c99e742bc00683288607ccd8e45e7ebec",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "03c5cc8f445a8739c4399fbc949aa64c99e742bc00683288607ccd8e45e7ebec"
+    },
+    "tests/test_offline_kit.py": {
+      "originalSha256": "060ed70c44062796544c74ce89569dc8e40e2bcf864eb7581a19e178232ba3ad",
+      "gitBlobSha256": "060ed70c44062796544c74ce89569dc8e40e2bcf864eb7581a19e178232ba3ad",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "060ed70c44062796544c74ce89569dc8e40e2bcf864eb7581a19e178232ba3ad"
+    },
+    "tests/test_powershell_scripts.py": {
+      "originalSha256": "c8c9e7cce88c0a5e34c5a2fee34eca42e863bf1e2b4e3aec07a5eb35568514de",
+      "gitBlobSha256": "c8c9e7cce88c0a5e34c5a2fee34eca42e863bf1e2b4e3aec07a5eb35568514de",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "c8c9e7cce88c0a5e34c5a2fee34eca42e863bf1e2b4e3aec07a5eb35568514de"
+    },
+    "tests/test_remote_fixture.py": {
+      "originalSha256": "854fa905072afb72322f114126b3f82b1f41fcb83eacd4a35818abb0a0fcf6ae",
+      "gitBlobSha256": "854fa905072afb72322f114126b3f82b1f41fcb83eacd4a35818abb0a0fcf6ae",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "854fa905072afb72322f114126b3f82b1f41fcb83eacd4a35818abb0a0fcf6ae"
+    },
+    "tests/test_workspace.py": {
+      "originalSha256": "533322909d08076bb9df76d4fccbcc3bcfa0b4db8d129c3f83ff1ae62602c2ce",
+      "gitBlobSha256": "533322909d08076bb9df76d4fccbcc3bcfa0b4db8d129c3f83ff1ae62602c2ce",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "533322909d08076bb9df76d4fccbcc3bcfa0b4db8d129c3f83ff1ae62602c2ce"
+    },
+    "tools/advanced-git-smoke.ps1": {
+      "originalSha256": "ef4f0dd32fbdb0c9e31d7a3752e26364f5504576ebfe8de49deebae7551d3972",
+      "gitBlobSha256": "6aab293aec35e3457781d4b8ff311ce20641222b3b337a00431ec083013e43b0",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "6aab293aec35e3457781d4b8ff311ce20641222b3b337a00431ec083013e43b0"
+    },
+    "tools/cache-contention-smoke.ps1": {
+      "originalSha256": "eda01d5d1a3900adb4a93d69e4ab673ae0ca566e47a92e8112279bd2e6b49b08",
+      "gitBlobSha256": "0ef4c817887acf3036ea547a5da8611e12596271f59a82cc4e6c6856fe32eb33",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "0ef4c817887acf3036ea547a5da8611e12596271f59a82cc4e6c6856fe32eb33"
+    },
+    "tools/clean-generated.ps1": {
+      "originalSha256": "00de7d74b24f7fa4f3bb24e4f90995cb5830587df5b175313686bf263584001f",
+      "gitBlobSha256": "00de7d74b24f7fa4f3bb24e4f90995cb5830587df5b175313686bf263584001f",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "00de7d74b24f7fa4f3bb24e4f90995cb5830587df5b175313686bf263584001f"
+    },
+    "tools/compile-workflow-probe.ps1": {
+      "originalSha256": "fb8d26b27e941345559c231bd41f415b31d9d66a4aca54598cf412caf6ba19b6",
+      "gitBlobSha256": "3e50093c0a134c20fbc537c174ee461de27ad9e1f41d4e0d5cda53d6c7e38c1f",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "3e50093c0a134c20fbc537c174ee461de27ad9e1f41d4e0d5cda53d6c7e38c1f"
+    },
+    "tools/desktop-gate.py": {
+      "originalSha256": "6b102d2d19146ec3f70c81132d2207a4ea3902779b1f4df9960f10b9a3242dba",
+      "gitBlobSha256": "6b102d2d19146ec3f70c81132d2207a4ea3902779b1f4df9960f10b9a3242dba",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "6b102d2d19146ec3f70c81132d2207a4ea3902779b1f4df9960f10b9a3242dba"
+    },
+    "tools/distribution-report.py": {
+      "originalSha256": "55785c67fb46102059e410dde5943d0d20bbaa8a4de1b1075b3aacd573ea3d42",
+      "gitBlobSha256": "55785c67fb46102059e410dde5943d0d20bbaa8a4de1b1075b3aacd573ea3d42",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "55785c67fb46102059e410dde5943d0d20bbaa8a4de1b1075b3aacd573ea3d42"
+    },
+    "tools/isolated-workspace-smoke.ps1": {
+      "originalSha256": "9a8de341f0ce9914dbe24df3332a1ed7240ba272d9675cce0830a5fb8ace9c10",
+      "gitBlobSha256": "9a8de341f0ce9914dbe24df3332a1ed7240ba272d9675cce0830a5fb8ace9c10",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "9a8de341f0ce9914dbe24df3332a1ed7240ba272d9675cce0830a5fb8ace9c10"
+    },
+    "tools/make-advanced-fixture.py": {
+      "originalSha256": "4bde931fea3e17f0f7069c743b25223bc0b0fba7db5e6606a66a581ef8ab9b93",
+      "gitBlobSha256": "4bde931fea3e17f0f7069c743b25223bc0b0fba7db5e6606a66a581ef8ab9b93",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "4bde931fea3e17f0f7069c743b25223bc0b0fba7db5e6606a66a581ef8ab9b93"
+    },
+    "tools/make-fixture.py": {
+      "originalSha256": "097a6896ebf8e895042f7301009d894a568e02ad59c3cb077fa59c11363cf0d8",
+      "gitBlobSha256": "097a6896ebf8e895042f7301009d894a568e02ad59c3cb077fa59c11363cf0d8",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "097a6896ebf8e895042f7301009d894a568e02ad59c3cb077fa59c11363cf0d8"
+    },
+    "tools/make-workflow-fixture.py": {
+      "originalSha256": "0e8ba9869bb528ce3647ac155c3ae5bfa1de7d3234c19401589b89666e28e1c7",
+      "gitBlobSha256": "0e8ba9869bb528ce3647ac155c3ae5bfa1de7d3234c19401589b89666e28e1c7",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "0e8ba9869bb528ce3647ac155c3ae5bfa1de7d3234c19401589b89666e28e1c7"
+    },
+    "tools/measure.ps1": {
+      "originalSha256": "c0b7069b7ed47294f275cccbf2d14a21b5fb2c9485339b925bb8e2bed14c0e90",
+      "gitBlobSha256": "e5de8ede40979a052e38657d8742f3803a46a2b7454e33a3d1328cf86723434f",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "e5de8ede40979a052e38657d8742f3803a46a2b7454e33a3d1328cf86723434f"
+    },
+    "tools/metadata-snapshot.py": {
+      "originalSha256": "b2421d8eef42ca557b5e7cf314a43d7d9368cf55163694caced9034368afd1fa",
+      "gitBlobSha256": "b2421d8eef42ca557b5e7cf314a43d7d9368cf55163694caced9034368afd1fa",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "b2421d8eef42ca557b5e7cf314a43d7d9368cf55163694caced9034368afd1fa"
+    },
+    "tools/offline/NetworkProbe.java": {
+      "originalSha256": "d7c47f639b664708d25081cd7da36e1a27580ed1d37a782c64afa23f6673293c",
+      "gitBlobSha256": "d7c47f639b664708d25081cd7da36e1a27580ed1d37a782c64afa23f6673293c",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "d7c47f639b664708d25081cd7da36e1a27580ed1d37a782c64afa23f6673293c"
+    },
+    "tools/offline/NoNetwork.java": {
+      "originalSha256": "5793ad65b8f9535363ac5b0a3a68bab0e6beb648288fc250b3ea169fffc11567",
+      "gitBlobSha256": "5793ad65b8f9535363ac5b0a3a68bab0e6beb648288fc250b3ea169fffc11567",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "5793ad65b8f9535363ac5b0a3a68bab0e6beb648288fc250b3ea169fffc11567"
+    },
+    "tools/offline-kit.py": {
+      "originalSha256": "b6c40df259f9c6489965deac82dd931b22d533f691313081273585e94ed2cab3",
+      "gitBlobSha256": "b6c40df259f9c6489965deac82dd931b22d533f691313081273585e94ed2cab3",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "b6c40df259f9c6489965deac82dd931b22d533f691313081273585e94ed2cab3"
+    },
+    "tools/prefetch-runtime.ps1": {
+      "originalSha256": "5b9da4b2552c65e732d1ad3faf0e101b40dab15f2327f9657ed4d5858ad3761e",
+      "gitBlobSha256": "5b9da4b2552c65e732d1ad3faf0e101b40dab15f2327f9657ed4d5858ad3761e",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "5b9da4b2552c65e732d1ad3faf0e101b40dab15f2327f9657ed4d5858ad3761e"
+    },
+    "tools/product-smoke.ps1": {
+      "originalSha256": "ccfdd3f28501d419aa66e31931b49bccf6e0b34b6a8d8e1627da498c988c31d6",
+      "gitBlobSha256": "25c0d2570e7d32cf762519f9595466875ad58cb9986814c93a0a1e4b0cf54bdc",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "25c0d2570e7d32cf762519f9595466875ad58cb9986814c93a0a1e4b0cf54bdc"
+    },
+    "tools/remote-fixture.py": {
+      "originalSha256": "cad0ac485045a9db3e581ddb9b2624d02ba92f0a701ee8e8970a87a838c078c5",
+      "gitBlobSha256": "cad0ac485045a9db3e581ddb9b2624d02ba92f0a701ee8e8970a87a838c078c5",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "cad0ac485045a9db3e581ddb9b2624d02ba92f0a701ee8e8970a87a838c078c5"
+    },
+    "tools/remote-matrix.py": {
+      "originalSha256": "eb20c0fa0ac97119c4f92683aaf7035c768d19873f90d431fd9ba0d0878ad050",
+      "gitBlobSha256": "eb20c0fa0ac97119c4f92683aaf7035c768d19873f90d431fd9ba0d0878ad050",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "eb20c0fa0ac97119c4f92683aaf7035c768d19873f90d431fd9ba0d0878ad050"
+    },
+    "tools/remote-sync-smoke.ps1": {
+      "originalSha256": "3bf097e51eced6d9e68ad58ff1009fbc9afa70fabbed6817aef51796d624c34b",
+      "gitBlobSha256": "3bf097e51eced6d9e68ad58ff1009fbc9afa70fabbed6817aef51796d624c34b",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "3bf097e51eced6d9e68ad58ff1009fbc9afa70fabbed6817aef51796d624c34b"
+    },
+    "tools/repository-startup-smoke.ps1": {
+      "originalSha256": "ba5864413e9481dc69f10f09a6a957bacea4024c82fdb055d52dec782fbc6271",
+      "gitBlobSha256": "a2b331227085bf1e15401fa3afd4f683bc47131a8813bdf219230c07162d8d7c",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "a2b331227085bf1e15401fa3afd4f683bc47131a8813bdf219230c07162d8d7c"
+    },
+    "tools/smoke/AdvancedProbe.java": {
+      "originalSha256": "f3eec187d100a4e6577060d1b7a4554d1ab65688ad98f92123a678cb33de513e",
+      "gitBlobSha256": "f3eec187d100a4e6577060d1b7a4554d1ab65688ad98f92123a678cb33de513e",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "f3eec187d100a4e6577060d1b7a4554d1ab65688ad98f92123a678cb33de513e"
+    },
+    "tools/smoke/Attach.java": {
+      "originalSha256": "bd2fef81aa178fb8641f68b84f8416cd6b43735f4d7cf86fca0f8c27862bca34",
+      "gitBlobSha256": "bd2fef81aa178fb8641f68b84f8416cd6b43735f4d7cf86fca0f8c27862bca34",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "bd2fef81aa178fb8641f68b84f8416cd6b43735f4d7cf86fca0f8c27862bca34"
+    },
+    "tools/smoke/CacheSaveProbe.java": {
+      "originalSha256": "00d6d461b024f570b718f6bf11168076240672293a6b5683137ce563b26fc438",
+      "gitBlobSha256": "1aa1d86f5a5aab3a767e56f78ca7aae3ff53ffa923f3bf8c028932158f32c336",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "1aa1d86f5a5aab3a767e56f78ca7aae3ff53ffa923f3bf8c028932158f32c336"
+    },
+    "tools/smoke/NativeChooser.cs": {
+      "originalSha256": "1b6367902659d6e9d75c52ab07b65e302dbd7e4a2cbfbda9e99f423650cf65cf",
+      "gitBlobSha256": "fa0c82db80590460af91062796c309ea7ea43405405401dd7ef1d44a6eda633e",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "fa0c82db80590460af91062796c309ea7ea43405405401dd7ef1d44a6eda633e"
+    },
+    "tools/smoke/UiProbe.java": {
+      "originalSha256": "57ad78573d27a5b9b7ac692d57a42c4618e1af7feaa20f1769cc84e0a678e871",
+      "gitBlobSha256": "8b276c0743bcd2793f9e775f96b1b9320cdacf93788bf3265b3965e11f7f2db1",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "8b276c0743bcd2793f9e775f96b1b9320cdacf93788bf3265b3965e11f7f2db1"
+    },
+    "tools/smoke/WelcomeProbe.java": {
+      "originalSha256": "334b1f4c25d07f6dcd4f1a2269ebe6ed7f4bb7deeb4d070ac0d8a4b1c342fbc3",
+      "gitBlobSha256": "334b1f4c25d07f6dcd4f1a2269ebe6ed7f4bb7deeb4d070ac0d8a4b1c342fbc3",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "334b1f4c25d07f6dcd4f1a2269ebe6ed7f4bb7deeb4d070ac0d8a4b1c342fbc3"
+    },
+    "tools/smoke/WorkflowLoader.java": {
+      "originalSha256": "721160712e547fcc92973eb2b8f8dde4a2b9b920f35665ac937be0d091e5eae3",
+      "gitBlobSha256": "721160712e547fcc92973eb2b8f8dde4a2b9b920f35665ac937be0d091e5eae3",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "721160712e547fcc92973eb2b8f8dde4a2b9b920f35665ac937be0d091e5eae3"
+    },
+    "tools/smoke/WorkflowProbe.java": {
+      "originalSha256": "091302c4dfb1353cf7c3c5a83a444c7c96bd67b8416dc4cf255f9ee9aea40213",
+      "gitBlobSha256": "24de536d9e985b1c9974a5c5d64831ac509ea8699edcc8aee047caed646a5284",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "24de536d9e985b1c9974a5c5d64831ac509ea8699edcc8aee047caed646a5284"
+    },
+    "tools/smoke.ps1": {
+      "originalSha256": "ca4f91b3138a721fc5f806bd825cb1e2c53200b946453b8c7fa5342f02a36ed1",
+      "gitBlobSha256": "bdd15698c99639079f3b1cedb80f8a0e92137116be7168a35ae80c15423b7bd1",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "bdd15698c99639079f3b1cedb80f8a0e92137116be7168a35ae80c15423b7bd1"
+    },
+    "tools/summarize-measurements.py": {
+      "originalSha256": "87fafe9ff3b9a6f900f8f5e948dc1b392d0c9ac54fb8a55fc3fafc558dd59c8d",
+      "gitBlobSha256": "87fafe9ff3b9a6f900f8f5e948dc1b392d0c9ac54fb8a55fc3fafc558dd59c8d",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "87fafe9ff3b9a6f900f8f5e948dc1b392d0c9ac54fb8a55fc3fafc558dd59c8d"
+    },
+    "tools/verify-delivery.py": {
+      "originalSha256": "0dd293fd9035b5a3475b4217e5185ba2e882ceffad9b876eafec7b4081466e40",
+      "gitBlobSha256": "0dd293fd9035b5a3475b4217e5185ba2e882ceffad9b876eafec7b4081466e40",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "0dd293fd9035b5a3475b4217e5185ba2e882ceffad9b876eafec7b4081466e40"
+    },
+    "tools/welcome-smoke.ps1": {
+      "originalSha256": "e450e3f33adffaa252e790b1ae9b751705568428ca84ff89c41742a22e36c2ad",
+      "gitBlobSha256": "307488168e1b13cc43cdb560f2885f2d15a434826a953e28f5829a2554ac6192",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "307488168e1b13cc43cdb560f2885f2d15a434826a953e28f5829a2554ac6192"
+    },
+    "tools/workflow-probe.ps1": {
+      "originalSha256": "3d23eb14b04b5accec6fd8b811057f23e66aa2cf288eed7b82791d19f7ad7f56",
+      "gitBlobSha256": "3d23eb14b04b5accec6fd8b811057f23e66aa2cf288eed7b82791d19f7ad7f56",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "3d23eb14b04b5accec6fd8b811057f23e66aa2cf288eed7b82791d19f7ad7f56"
+    },
+    "tools/workflow-smoke.ps1": {
+      "originalSha256": "993c533d1fc74d05406b233e68ec9cf715c5c820990d7087dd8938b0c7b7c393",
+      "gitBlobSha256": "2361435cecafcdf3757aae562d20563b90981af6fc3f86d517ebc6ddea09ce9c",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "2361435cecafcdf3757aae562d20563b90981af6fc3f86d517ebc6ddea09ce9c"
+    },
+    "tools/workspace-git-smoke.ps1": {
+      "originalSha256": "08388a287f075aea6942ed1ded0961631d3bc01fcd75018f7014ae729d30aa94",
+      "gitBlobSha256": "3ffc575d3ce6e938ae628b8a7b4f5c5ad4f35c5a84c2ec79c3cb7075a54745ee",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "3ffc575d3ce6e938ae628b8a7b4f5c5ad4f35c5a84c2ec79c3cb7075a54745ee"
+    },
+    "tools/workspace.py": {
+      "originalSha256": "a0301e2cd60beabc72ebfde4f404eb19c278cc36f6fdafc5d46e05a52554d14d",
+      "gitBlobSha256": "a0301e2cd60beabc72ebfde4f404eb19c278cc36f6fdafc5d46e05a52554d14d",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "a0301e2cd60beabc72ebfde4f404eb19c278cc36f6fdafc5d46e05a52554d14d"
+    },
+    "upstream.lock.json": {
+      "originalSha256": "32fff8c54f2c1710c3b514a50600b2b34c5dfb37b783bf02adad29a75f7e5433",
+      "gitBlobSha256": "32fff8c54f2c1710c3b514a50600b2b34c5dfb37b783bf02adad29a75f7e5433",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1",
+      "testedCiBlobSha256": "32fff8c54f2c1710c3b514a50600b2b34c5dfb37b783bf02adad29a75f7e5433"
+    }
+  },
+  "evidenceFiles": {
+    "docs/evidence/advanced-git-acceptance.json": {
+      "originalSha256": "4e2c9582a741da288bb11cd3107e59af7c13f80d8dad8dcc29c7fd198a9b07b4",
+      "gitBlobSha256": "178c8a154411dc4195f913b6ce5b38a4204ba27023510ba0ee96e1ec90ec2ad2",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/async-editor-candidate.json": {
+      "originalSha256": "cf92f20f8efad7a8d06bae23a3137bdec60631c5e4eca940c9cef674b1b0efb0",
+      "gitBlobSha256": "5c4ed9d6201a30ed466cf893ec1e402a16293a75b6898a8582cb061d99ba1376",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/async-editor-startup-acceptance.json": {
+      "originalSha256": "349831ce9aced504a17021be5a1ca3e167fbf778084a51399f1c20656e629c1c",
+      "gitBlobSha256": "81cf8a8bfb15710f1d861726d1a5dfa40dfbd604d0f44092c7917c6d5e60bbcb",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-acceptance.json": {
+      "originalSha256": "4d7f41d30662890a0665402b00fbb66ebf2569a8093f5c00ce5c4fc907562ba8",
+      "gitBlobSha256": "ddc515a3be763d90799a6735f47017d930f3d68ee3c7ed0fb1513c4c392c8ed2",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-candidate.json": {
+      "originalSha256": "c3bdb96c50274fb6655c467e22a0a0474d013eaa8cb07c2786ef4d023c2f0950",
+      "gitBlobSha256": "4eca2b095ad01645cf94d9c3e19a0eb513a5ed1b380d483e2f7f9c4b1c3caf80",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-desktop/advanced.json": {
+      "originalSha256": "55bc207adc3ffe59b2064f52b9e92326a18d6b86579e3b07370aaf8317e1362d",
+      "gitBlobSha256": "58c952d196875c7eb353d10fee7a425be2631418e902a208c8fb5821e4af6cd1",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-desktop/advanced.log": {
+      "originalSha256": "73c7599244d7b30f3faad9043d1e859db1348d0d940226891f84609c0107277a",
+      "gitBlobSha256": "8173422816eb8c637e66692480f8f51d839d731d66c91d95d37de8703506e61b",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-desktop/cli-ps51.json": {
+      "originalSha256": "9c00628f50a651bda10827b890ba888d683885ffa577c5742d69486046d1def7",
+      "gitBlobSha256": "ac2d701697ccc41984d9c1535acc15d856186fb07d9f87b3cf62d6bfde6c3a03",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-desktop/cli-ps51.log": {
+      "originalSha256": "03af542a4aaf7569e232e67f2cd8722179a71b38c25d6a047e0b9702954b4208",
+      "gitBlobSha256": "e242ed6c13f03f43d5b25641c85e93f319400611c81861448021de54c51d9ea4",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-desktop/cli-ps7.json": {
+      "originalSha256": "b5f963de0ab6f73e53e264f62cfb6836e7ebae0556c909659d981f5060c425b6",
+      "gitBlobSha256": "dc0a9381951a5b01e342fb353e05b6e31986e7c9ef273ab854f8eef1618d4c8f",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-desktop/cli-ps7.log": {
+      "originalSha256": "b5f963de0ab6f73e53e264f62cfb6836e7ebae0556c909659d981f5060c425b6",
+      "gitBlobSha256": "dc0a9381951a5b01e342fb353e05b6e31986e7c9ef273ab854f8eef1618d4c8f",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-desktop/graph-diff.json": {
+      "originalSha256": "943af05d48347b6dbecc9027694437088af26735122eb034756978324ac64c39",
+      "gitBlobSha256": "552c41f5e37051d1b9b5cd717778c20e18d685b0f15854d83ca86867137ee247",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-desktop/graph-diff.log": {
+      "originalSha256": "497be4d9bb428a1aafe674e26d4fccf733459f1e3293c826be1b81f8786a1db8",
+      "gitBlobSha256": "eed74f85933f6fc30a978fa965acc0d6c45e5e58a83b06c58199630aae4ecdc7",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-desktop/native-switch.json": {
+      "originalSha256": "d54316258af3807b899d85887cc3f5aeb5092594233ef12cea89994dba4a44cf",
+      "gitBlobSha256": "353953cd292bd5f549def1d52c6d5e21d064509483d3e7eec4edd537b232b176",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-desktop/native-switch.log": {
+      "originalSha256": "a38a5801888ecc445d389ab68808afc700606ba618d614f1575f9537639c2312",
+      "gitBlobSha256": "727900417dbd303aba65947f21b1591aad9d0b272d12a1687728f58352f9cac7",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-desktop/product.json": {
+      "originalSha256": "97ad0e393b8e0b4f2190b7fcd7301348caff2344e68a28bab84d1f0ee0858310",
+      "gitBlobSha256": "47c1a3bc242b6f77e021e677f7e2c64343f878cff59d3a9102342b4074e7a9ba",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-desktop/product.log": {
+      "originalSha256": "97ad0e393b8e0b4f2190b7fcd7301348caff2344e68a28bab84d1f0ee0858310",
+      "gitBlobSha256": "47c1a3bc242b6f77e021e677f7e2c64343f878cff59d3a9102342b4074e7a9ba",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-desktop/result.json": {
+      "originalSha256": "ffe56bdd885635f0bf9dd45986a6d9126303295d649f6659f7dcb5d906f7eacb",
+      "gitBlobSha256": "172afc65f7f3d6cc721542b388808ede76ccdef53783964109cf19cab1831beb",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-desktop/workflow.json": {
+      "originalSha256": "38a846875417e3438322c158225e98552e4ff8bc5cce2b75cc501c9f76b5eeac",
+      "gitBlobSha256": "d4a8ec8f6c3feef4e2a339a1cc9fc372dd77601a2ddb2f3a16c1f5aa459b5577",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-desktop/workflow.log": {
+      "originalSha256": "712fa40a97388cd16f248b24db615150e8c1ee2e9671809fbd4c06401ae9cb6a",
+      "gitBlobSha256": "b3518996b91101c924e9a8e66adeba83ddf970b18286829292b9188905de1b07",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-desktop/workspace.json": {
+      "originalSha256": "2233e2400d07ad875cdf12b4830fef19dc9e9c02e06bba11f64e2181a408a488",
+      "gitBlobSha256": "202631c77f2afcc067a4c565699f7c7f19d8d39ec85448703fa297c9d75b32f8",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-desktop/workspace.log": {
+      "originalSha256": "853d7ecc23c6e2980d5bc7cbb6088a6964839886878d55af54b642f3a5b3159d",
+      "gitBlobSha256": "0302bd36c27c3afc9d9eabec84928deed4301b8e977ab267aab9074085fc608b",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-final-metadata.json": {
+      "originalSha256": "037ff75d2ae0022a5ae0005e1953d0fd9bf6662fceb5a3e5288025f046945788",
+      "gitBlobSha256": "12f3d617fcb28e9740d05ca418c71f14c98543652a39f7ebf29a34af4d9d6952",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-generated-cache-cleanup.json": {
+      "originalSha256": "bb49c5e822da023f6a71eaff961f7a69db8bcea28717cb4200cd9f2416b472dc",
+      "gitBlobSha256": "3f6dd082c93c9bc5c6efe8a82f693d71d22f76c150a21d746d6bdb7041197ee6",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-history-performance.json": {
+      "originalSha256": "976e65676d60492df4f84c33057c2e4d482730654dfa91b40cbbe2d7e7106f7d",
+      "gitBlobSha256": "c163a3a9a37f9c012133a6c9045fd8529c5e944df7ee6d325e3b5fe21c4289b9",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-isolated-workspace.json": {
+      "originalSha256": "f3f9a267499a69418ce01d3c856514926cc667cd0acc873e509e521622bc8924",
+      "gitBlobSha256": "9b476833a5996e3cf3834f81121ca1b121be3b7c7779022311d959fe2a91cf45",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-large-performance.json": {
+      "originalSha256": "5e888a6011029c9020e230df8f389c5bb44661b94f09d8c982a136ee62288504",
+      "gitBlobSha256": "97734ab92fe6760d8ca69ed29614ba797a87ea75a25d336b9ec2411409738603",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-maintenance-acceptance.json": {
+      "originalSha256": "c5fafb26c81ff772e6efda2a50c7dc458d219afdd322d421105228e30234392a",
+      "gitBlobSha256": "b9e4cca87a9516fed4c4e74e81dd6d1af92c07fec6088bf2715f80b7ef1817e3",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-remote/cleanup-retry.log": {
+      "originalSha256": "1874518c7e56013d49219d1d17108a5d19423b9908dc415b794c0a6b1222da8f",
+      "gitBlobSha256": "55ef7e32f5f1c8c296011ba3720a4ac8c80c51a0d380c7a6877318c1309036bc",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-remote/cleanup.log": {
+      "originalSha256": "4ddca8fa8ad68e7cd709962e8d1e1949dca59906dd26cac97515a87d0c9d0c7a",
+      "gitBlobSha256": "57c4ac18005426916740fa58d20a403b4981d68d8cbe6eeaabe6f29cfb87b956",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-remote/https-auth-cancel.json": {
+      "originalSha256": "1ece86bd0d2cd7ada67ad4241d311c8cde283774ce3037ea815c3ca1c0fe534e",
+      "gitBlobSha256": "6507418fe77b589f78a892c32a4d3ca3af98f84d4a312b428ba5d1ea14651c46",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-remote/https-auth-cancel.log": {
+      "originalSha256": "6228f58e1c37b3ea4ae142a7249a5224a05e3c5873eeb43d3d7086cd9cfd77dd",
+      "gitBlobSha256": "162f5e7dd2a40e59464d4495e5d3d59b569d3cdff65c7559a0d6d1c61fb33067",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-remote/https-clone.json": {
+      "originalSha256": "877049b932628dc9c04893240d4f0636509833f192533a0552a882768e03bce0",
+      "gitBlobSha256": "8c295004f2324baefa8d8f67be431e3da544e65f8595d9da3c48e4bf5cf46dc7",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-remote/https-clone.log": {
+      "originalSha256": "877049b932628dc9c04893240d4f0636509833f192533a0552a882768e03bce0",
+      "gitBlobSha256": "8c295004f2324baefa8d8f67be431e3da544e65f8595d9da3c48e4bf5cf46dc7",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-remote/https-sync.json": {
+      "originalSha256": "b57676820a3bfd64cf1b599b55678e36aed693572600753afade2f5902482a2c",
+      "gitBlobSha256": "089b07b0ca54b47714acadf67d7342155d7a307f83d5f2fc7da5e8aabdd8e559",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-remote/https-sync.log": {
+      "originalSha256": "277ae4cc09e0e40a741575fb1bce2de062b855307319b568f2b89de75b0e24ec",
+      "gitBlobSha256": "bdb73988c2518e999c44a3378e75b9a9d47816b1ad00cbf75205bb9ae9568209",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-remote/network-failure.json": {
+      "originalSha256": "274ae0623615ebe7e8d4dc1d0a624863c28f30a626b3455fdce3014de95411db",
+      "gitBlobSha256": "8763473111a6f1cbfccee6a1cef56d743f1b99d7e19c7918d2b5efa3b6c40c3e",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-remote/network-failure.log": {
+      "originalSha256": "274ae0623615ebe7e8d4dc1d0a624863c28f30a626b3455fdce3014de95411db",
+      "gitBlobSha256": "8763473111a6f1cbfccee6a1cef56d743f1b99d7e19c7918d2b5efa3b6c40c3e",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-remote/result-reconciled.json": {
+      "originalSha256": "b7bd955d55f73b0d319d5da97a8c4bac9a930c24bbcfff681e40e2271e9b6cf5",
+      "gitBlobSha256": "e01324c6efe973222ac5ce6560197c4b2d77eba713d647349298f54259fc9484",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-remote/result.json": {
+      "originalSha256": "5fcee293b9ea1572b847652f31bf2bfcfb0306b117d7cd86060eb45837441e00",
+      "gitBlobSha256": "070e6b89f23975a1269fc5877a7f26120dd0686c4cdc31f77465aa6769c5f54a",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-remote/ssh-auth-rejected.json": {
+      "originalSha256": "5540be90077bbc022eef453964ac3343c9994bbf069adcd7cb46ea6a54bab042",
+      "gitBlobSha256": "6e8fd2662bbf01d1fca027dc3dba36fb323ba66adfaea116f52dd7b201b70afd",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-remote/ssh-auth-rejected.log": {
+      "originalSha256": "5540be90077bbc022eef453964ac3343c9994bbf069adcd7cb46ea6a54bab042",
+      "gitBlobSha256": "6e8fd2662bbf01d1fca027dc3dba36fb323ba66adfaea116f52dd7b201b70afd",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-remote/ssh-clone.json": {
+      "originalSha256": "5d7d804adbcd094a7ceccfb9b629f5f3656aeff4369649457d1889426b91081f",
+      "gitBlobSha256": "5f2809d88070c827847b85bd3d8abc7688ee577774633691dbab3a66e2f4f5c2",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-remote/ssh-clone.log": {
+      "originalSha256": "5d7d804adbcd094a7ceccfb9b629f5f3656aeff4369649457d1889426b91081f",
+      "gitBlobSha256": "5f2809d88070c827847b85bd3d8abc7688ee577774633691dbab3a66e2f4f5c2",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-remote/ssh-sync.json": {
+      "originalSha256": "63c4cc88d64369987bdc947ca6791479b5f33dc3ad0e82d5482dca6a552a579e",
+      "gitBlobSha256": "058fd381b408f12663c0528503f14783a56279e42b45c7c0cb262e6c787ec145",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-remote/ssh-sync.log": {
+      "originalSha256": "928458a58ce6fa55669893607696bab59a0908abed380b709c03b30a98bac9b2",
+      "gitBlobSha256": "5eaaa6e3e30375d2e28d5ffd001f2ecfe26b205b7e186a86058f07c773063cc0",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-startup.json": {
+      "originalSha256": "c4d6d863a9d4b6ee445ba4d4bb0f9d6ee1286a52d48306dfaac1348dfb47ebfa",
+      "gitBlobSha256": "6a0e5dae134377063ec50ef596267a64f60ec08c0f2d095d0b266bdee5cb77b0",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-windows-ci-checks.json": {
+      "originalSha256": "9a1f31001ed9b5091fc1bd9c503ab831614b5ed74468a81d66659ae05373447c",
+      "gitBlobSha256": "1f968603cf25c6efe1b5c9a29cb741574c72309ccb9b42e7607630f5c126bfbc",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-windows-ci-package-acceptance.json": {
+      "originalSha256": "336de61f3e7ff65a9ffb9a21239d06c1f4d9264c1be3fda00c70bb4576795897",
+      "gitBlobSha256": "df63bf82a84a65ba4edab551fe395a588a642ad369f6f306fcaf36b317b79183",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention-windows-ci-package-metadata.json": {
+      "originalSha256": "d2267fb814f06849280c49f5e0d80cd3f207a7da6f0cd121a03a5b36f24da632",
+      "gitBlobSha256": "8f2fd30570cada271aa60d873258a8abf800697a7005acb8b86817dcf59f98d7",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention/20261128-151427.json": {
+      "originalSha256": "267648280a3907f63f8955ab3edf2626080abdf4a83b3ceb0196973c3d498bdc",
+      "gitBlobSha256": "91d67646626edc9807933f3ae81140ed4820298ebcde350f4c12fa652c33f9e5",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention/20261128-151427.txt": {
+      "originalSha256": "60a59f6c31addbc9c317ef84982d6f7e7c13398f14e250fa4a1c0db1276f03ae",
+      "gitBlobSha256": "89b47d90c000ee8b1cb949e93a508b3992b1763c37718f557204b5c7effe2818",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention/20261128-151439.json": {
+      "originalSha256": "77695bbfab388b3424d7fa3d48b2966b9a6e202275e9b63e54129fc275ad2d3a",
+      "gitBlobSha256": "2d5856aa111c0e35bc8aa112f9357948a4dad0c122b415f8f5f6b317f1e99e59",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention/20261128-151439.txt": {
+      "originalSha256": "f6552be3e68cf584a1f99b62b2cac5efba1fb74b5047ed4eebfcb667f0ffd266",
+      "gitBlobSha256": "77319e801ea8929e28c1cb7c2462f869bc4c922b619eea40b55bdd19ff5b80a7",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention/20261128-151447.json": {
+      "originalSha256": "8b37dce75352f64a19b170146ace15371fc9d73c4620ee6b72538c6e8355782b",
+      "gitBlobSha256": "4e6bce5f2abf61453a9fb73b5576c503cfc03d372ca3c1c32772e06bb92ac746",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention/20261128-151447.txt": {
+      "originalSha256": "aa9fcefe4ed115f73e8c55e5dac5d7675df2b3348e6476063ba6e728bf1504d7",
+      "gitBlobSha256": "4f2395f682fe7ebea2fb96f9dea2c87bed404655d407b4f2f5bbc796b90ad205",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention/negative-baseline.json": {
+      "originalSha256": "b900a7cc40779d125c8b0a40742be536926c72900d85826fd2313dffad510d60",
+      "gitBlobSha256": "b6ef805e224020b08fd7d560e9de9b25ece19c4c9fcc22b1855db60d77380138",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-contention/negative-baseline.txt": {
+      "originalSha256": "00decd33405914e0f317f001033ea94570c1014413458d9d0528af72aa43a9d8",
+      "gitBlobSha256": "6c84d54d0ec62131b3ff9209ace975fffab8f766f5eb7336aeec2455bdceebb6",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-rename-reproduction.json": {
+      "originalSha256": "f4be5d5a370d9e68717712998984c4e26a847a89ed5e89669532add9138e5554",
+      "gitBlobSha256": "a450f3c42fe3dbb8aa05d7873362851d1e84e1e2804936102084f4fbd182e3cf",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-rename-reproduction/CacheDiagnosticAgent.java": {
+      "originalSha256": "dc94b4736638268011f41bf6cb9e4016d4e1fcf45a3c9b4dc1a3a08e09d7f59b",
+      "gitBlobSha256": "4e1bea93143d65fa0d87f19521c97276089ed6591ec6604de434f2f2250dc43a",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-rename-reproduction/CacheRenameProbe.java": {
+      "originalSha256": "f346aec4eab6bb0b12f9ef6cae78d5fbc7e41eaba7d1ed7d96aef95262b3684d",
+      "gitBlobSha256": "78108b29aa24e923f99845dfd72af0462c87a5e1082f16fa9cbac7503d4ff2ea",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-rename-reproduction/original-cache-path.txt": {
+      "originalSha256": "9d403f02b1be2bd6133963e454bfbc3990b336ea92d3f327e717c2cafc1894bc",
+      "gitBlobSha256": "bf8611b865abd9c019dd91b749c4e05b0eb2f5530b6013eaedc3dda599244c54",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-rename-reproduction/result.json": {
+      "originalSha256": "15aa0cb1fd42ae273d31bfa259df0a4b563266f060bd87423817db8357ee8711",
+      "gitBlobSha256": "1b3c9779757ef6718c04bb2cd5c9a669ac9cfbc55a1149aaf584cac5c12cde8c",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/cache-rename-reproduction/result.txt": {
+      "originalSha256": "daea2d36894e494bbaf339376c82ab361dfaa027610980ed288cae55b97a9d88",
+      "gitBlobSha256": "53bf09cbe4abd49f71659cae2a449229dd1125bcb7d21a57f859b763c4e31c5d",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/central-desktop/advanced.json": {
+      "originalSha256": "9c60781af599395ba628031532183e6e52d4f0cbf9efb51e8440d7223fb09a42",
+      "gitBlobSha256": "a51c84bfa546f04f24b52afd5207963b4fad6826b50d60b426d8b883b3486be2",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/central-desktop/cli-ps51.json": {
+      "originalSha256": "3d689cf204b3530b982e06bd8127dd829f311b1198da8be7487401e4eb023ad2",
+      "gitBlobSha256": "368e22c07988db12e8c9bc1f9f4f68ee247e7d1c877cb1cdc0754a8bd79f4e4f",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/central-desktop/cli-ps7.json": {
+      "originalSha256": "d8261e7350b564c75436d2a83ecd8240a6c07ea7a3661e2af8ed130529837a3c",
+      "gitBlobSha256": "c4ee41da44ab0a505a436e0051739a92979dd58f5871d3843c0c5307e43a65ac",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/central-desktop/graph-diff.json": {
+      "originalSha256": "737cf413c4653871a92e664e4d3a04f875330e1dffcb6e780853f9b18df97a42",
+      "gitBlobSha256": "512931c22aa14d6c9545cd85b71787fb35cbd7af9438d35d0a9994a59d0b90bf",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/central-desktop/native-switch.json": {
+      "originalSha256": "4496cb152e89e46b5c12a6de77c6babddfe618fa9caa8758de5be07198146ebe",
+      "gitBlobSha256": "79d634a8b82265121fb09094216235773aaf6599da2a52ddb5418d40a9415231",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/central-desktop/product.json": {
+      "originalSha256": "032917d6cc42a000e560f760d562072440e80e6787dfbb666efff4fe36ccbcc4",
+      "gitBlobSha256": "9a954ce34b581b3241a9da67fa4b43a0a1b2aea7444bc4128a3f33c7ab8b108a",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/central-desktop/result.json": {
+      "originalSha256": "4ca42e5dc8116829eb065ecaa9d66f03020cb003347356da83a788c783a6edd1",
+      "gitBlobSha256": "aa2255618d8bef172fb168756df4898e139181983e1c6200870bdbafdd1aece9",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/central-desktop/workflow.json": {
+      "originalSha256": "0b780ffcd357b386d67d26c7af410ee2cd9eb548a9c026b29912c33e049496fb",
+      "gitBlobSha256": "2021f61712e26108e6cbd76a7949f817c9e9e88f03e7bc4a658ad36c85b7a3ee",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/central-desktop/workspace.json": {
+      "originalSha256": "51610d630f13bfddfbf55a64ae4ac64d079e512ef69efa78ac086e9de380cc25",
+      "gitBlobSha256": "e0be9e20c4758e897c37f75dd3fa75d086920bb87716173481e79cd73ce5c2a4",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/central-git-diff-acceptance.json": {
+      "originalSha256": "115b457b187e92568cd64bb7a4640ae1fcf7d18010e03cbc8ee9ef575b71333d",
+      "gitBlobSha256": "50e22bf353d949f70bf07fd24c7d89fa86a120687f4a84ecebcd0661ed702af7",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/central-measurement-observation.json": {
+      "originalSha256": "63c5bf2ee339598c830235db4451cffe87625030349ad2ab8aa3632a6b13e3f8",
+      "gitBlobSha256": "e99e46c4d1ce186b215a23d3acb5612e1997ba4c054adbc894bca5c17d4ea017",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/central-native-existing-project-acceptance.json": {
+      "originalSha256": "3280013ba302dfaaaf8dda9eb2e5171cd6c5c7609def575e470bd8c3ea22494e",
+      "gitBlobSha256": "1a527909c796fe0fd92c5207882133b3badcfefe7611a5f350e8d256f2348f19",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/central-product-acceptance.json": {
+      "originalSha256": "d8305c508aa410865cb3e7564b6ab990022d480ce3e1c2288bcc6a63c6325f92",
+      "gitBlobSha256": "efb153eb269c3b4d25879b67e72455984dd21f68e1e1ba559262723bf8072ac1",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/central-remote/https-auth-cancel.json": {
+      "originalSha256": "fb4ff6369a37a05f87a08e8fe1055681716b43902caa1fc9d954d9103edee5b4",
+      "gitBlobSha256": "62b58a17b7fea895e97e554c0e92771f08981ba7cdce210be0e5b767fc1e4ef7",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/central-remote/https-clone.json": {
+      "originalSha256": "f8904b7db8c34e84561ca7a5540b331fb549f047848beb7e70a63356702a4238",
+      "gitBlobSha256": "73f160a801220269ab8df3b2176f5c1b875d38e6121e55074f3b68d90a40afa0",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/central-remote/https-sync.json": {
+      "originalSha256": "d58f29012ed72241c04cc150ded0e6e7c9b3c361d812a2d04f9c970eac119813",
+      "gitBlobSha256": "ec4530f4a36c2f6feac73522a2312f70f5e9c340a8e48a107e9f0da43c495196",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/central-remote/network-failure.json": {
+      "originalSha256": "77dba7cea37e92c8c4a6c0b363d417665818762485b985268f165d7b72588e21",
+      "gitBlobSha256": "d5f784b915036bda94f3bfe8ff1b5a5e1832bc8f966595840eebada7043872f8",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/central-remote/result.json": {
+      "originalSha256": "d33e496e23b52ff21b2d03b700ea47583c966446fcf74be8038cd4c3119e4ddd",
+      "gitBlobSha256": "d176439aac09849f241440bc056e1f6896d94532e254376faf3affbde441ae80",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/central-remote/ssh-auth-rejected.json": {
+      "originalSha256": "d51034575a79f5846a2eb0cf3f1a2b91e50582ec905f9bc437151e06b3e0f1cc",
+      "gitBlobSha256": "743f2af4a1f74857b9bf6d4cf4b5c7763c7f52f23a660fcfaeb8bf4d52e87829",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/central-remote/ssh-clone.json": {
+      "originalSha256": "de2591ddbcc5a280d27128feaddddad8f92fc11189df6d401ca2d7d11cd1ddc4",
+      "gitBlobSha256": "02a37152ac0978ad96ceec5d25cf909f840a7cd2b0270d7d65c2a30c7b6cc466",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/central-remote/ssh-sync.json": {
+      "originalSha256": "89d5e083b967e445cefdde01d0d4eadc0446ec7c17b327e2bc2280492602a356",
+      "gitBlobSha256": "7b008f0378310ae7e9fe74fdbd8a743455edae9bee1013628510753073faefc8",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/central-small-performance-pilot.json": {
+      "originalSha256": "0d8223ef75b9d8cd93cb4e2723feeac58540651d5ddaed0e403f83a6b01b0823",
+      "gitBlobSha256": "4015a5ae9fe9a65f6a5dfa5781dd8a50d853b05fd6824238c039ce3c34bce5a8",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/central-workflow-acceptance.json": {
+      "originalSha256": "f1251f2f20bbd7f62213df4cae9be802209da6e2aa798e6058cebcbdd63230e3",
+      "gitBlobSha256": "a25d16f7e4a5e9a362025b84e06f2bec78c3113a7d0c09c479c3230da718fc34",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/central-workspace-candidate.json": {
+      "originalSha256": "086681ee1a822b59474f52bd39c56adc57dd5b36936d57b59c22d26632da084b",
+      "gitBlobSha256": "60fff5de1a2cfc678dd1dc7540f9fcfca579d7f794f200a10c834b180e28c3e5",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-central-history-performance.json": {
+      "originalSha256": "203899c447ff412cdaa1ca45db8750806e80a5453c69d30309a0900a4b78e494",
+      "gitBlobSha256": "0b1d613a34bcdc1d113618f71b3b04894f45d6adea7031ca0069b376b122f81d",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-central-large-performance.json": {
+      "originalSha256": "e6c23f0d5e5a4ff0114f7e8ee41fe9bbc2a94e0f00e65c7cad63cfb590c0d6c9",
+      "gitBlobSha256": "214aa137be246d5a2881983b372be37310732df72ae81779d3201597b0da94ba",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-desktop/advanced.json": {
+      "originalSha256": "ce277f62ea98a4bb93208ceae291dc58cb4013d10743e898970c32e09493c070",
+      "gitBlobSha256": "5956b91de1a21e54ed18b0660687af573054450b90829d72776a5052f9194c0a",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-desktop/advanced.log": {
+      "originalSha256": "c2766544247f4388981a23d2efd128d326b241a3d6d1ed23d8046cbf33242a90",
+      "gitBlobSha256": "a723f3c88200e5054e7af5a81b709ba2bcc586f056788a3468f949cb203b5a52",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-desktop/cli-ps51.json": {
+      "originalSha256": "cc866535e4aba83dbfd4713e48023b9592ca80a967ab4463a7cf9a151bea6526",
+      "gitBlobSha256": "dd5e50081094f6ee1b57ef082a25dd766852ec5d123e886e641a3d1f66700ccf",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-desktop/cli-ps51.log": {
+      "originalSha256": "b10496256a4ca1dd87fd8e23e486663b3418239e2ee0807597e4790037dabe48",
+      "gitBlobSha256": "63de7e140bbf4cc115afa9f793d2df30fa2dcbfaad2eea06e75548a60834a046",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-desktop/cli-ps7.json": {
+      "originalSha256": "c6455b07a01533a5779dfc916764221a0a278d28d8d1724bb4a2fc98e85cb63f",
+      "gitBlobSha256": "24fe79f8dc64d35639595aef9a2d98040220badf603a731a6113f9a2ace4920a",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-desktop/cli-ps7.log": {
+      "originalSha256": "c6455b07a01533a5779dfc916764221a0a278d28d8d1724bb4a2fc98e85cb63f",
+      "gitBlobSha256": "24fe79f8dc64d35639595aef9a2d98040220badf603a731a6113f9a2ace4920a",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-desktop/graph-diff.json": {
+      "originalSha256": "b6f2eb786476c0f32ff4489c63be3b234e2e9c32854f5ba3131d53a6ba4b4125",
+      "gitBlobSha256": "896caf7a652d17e34e8d0e71f241ce524ec18fbd8108549fdb6f6efb827f4a7c",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-desktop/graph-diff.log": {
+      "originalSha256": "d0819808bc6c5dc3d263dfa4143450f8b779a126607949188ef72bbf761a67e3",
+      "gitBlobSha256": "eca557e58d59b266c42ba32b9531b6e866cc04abbae8a1b5ca60168fd1a05102",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-desktop/native-switch.json": {
+      "originalSha256": "7ec622d269104b0c781daab9358563230fe09a8240153b32cc0e1425c7282573",
+      "gitBlobSha256": "bb50b56724027597417f7430b0a26110f619814f742bc0a959ac042ff9b1b4fd",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-desktop/native-switch.log": {
+      "originalSha256": "4a5a037a7627b13f5a78a5f8cf6385cb32748994b3ebfe1ccb3580fa9bbdb8e8",
+      "gitBlobSha256": "07010c2b1d3ef921b50bac89f8b21cc2fb68be9af0d1715b2944f2c2773c12ba",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-desktop/product.json": {
+      "originalSha256": "e9ae75d36dc6bcf81699c62bd64f4d66a14de97378cdab77122169a62b9c5206",
+      "gitBlobSha256": "b8eb6b92e74ed6602415dc5db733eb30275ae25e7ba1dbcca7e57192fdc33833",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-desktop/product.log": {
+      "originalSha256": "e9ae75d36dc6bcf81699c62bd64f4d66a14de97378cdab77122169a62b9c5206",
+      "gitBlobSha256": "b8eb6b92e74ed6602415dc5db733eb30275ae25e7ba1dbcca7e57192fdc33833",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-desktop/result.json": {
+      "originalSha256": "1bd3c928f9ad5638808990a80c35ef8933595cc814e69becc9304585236e1a5e",
+      "gitBlobSha256": "36cac3d2b865756829cf859b04b34f8272b37f5b0347de670bf69bdf819e720c",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-desktop/workflow.json": {
+      "originalSha256": "68f0d7362685a16c1173afbe193d557197bf368ca2ebd3c5e20a0109bb1d566b",
+      "gitBlobSha256": "97f88dd8a9044a703f123f26520e0e5e64680439b944f70a4a346e02efe96149",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-desktop/workflow.log": {
+      "originalSha256": "d769d3558f89eae766e42a280a6b2551c08aa6bdeb0e515b88d50e7b4dce0900",
+      "gitBlobSha256": "1fd967b15a2433bb94e60ca24af28a02ffe869646331b42537ea3648a5141e48",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-desktop/workspace.json": {
+      "originalSha256": "22a055d715a683ef7ec949f38e134917db3f6d5356766466ff887c08fad17ae6",
+      "gitBlobSha256": "6a88e428ea035653dae8b5977f02db0a320bde0cc47bec4820c4dc837beb0d8f",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-desktop/workspace.log": {
+      "originalSha256": "8ab50907a911cbe925e20847b2f056a4d8b64ad02470c7ac97e7088320c624cc",
+      "gitBlobSha256": "225be3eb3a7f44f23d15320c4663a33df73e67bead1f3e70af30007290ab3176",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-generated-cache-cleanup.json": {
+      "originalSha256": "54a302cb22fc44c1f206badb3da0a1a988a7649d2e1fddd49ce855cf4fdabd51",
+      "gitBlobSha256": "da2d61a1b850678d83637264fa0fb8e598e89884138084466a66a2a0a6251434",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-git-diff-acceptance.json": {
+      "originalSha256": "29781dcc628e13b757e5f179b72a1a71da94381bf3e21a5ef467a82f3029c65a",
+      "gitBlobSha256": "0e9431ae72faa2b88303080f9a04f7312840563f2e89fa86a5a44a968b87ecb1",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-history-performance-acceptance.json": {
+      "originalSha256": "13e3b4f356d5caf003f349d517bbbb3953e1483e249dbd555c5ba42d632a8c92",
+      "gitBlobSha256": "5f5b4a67d48599c93127d38a5337fec4b49a020b41fcd8c1c09f6d9246f5ef18",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-isolated-metadata-final.json": {
+      "originalSha256": "037ff75d2ae0022a5ae0005e1953d0fd9bf6662fceb5a3e5288025f046945788",
+      "gitBlobSha256": "12f3d617fcb28e9740d05ca418c71f14c98543652a39f7ebf29a34af4d9d6952",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-isolated-workspace-acceptance.json": {
+      "originalSha256": "f28dca46df879c7e58b63f68fe889a6856dd6c8b9a750db786aaa6e82428c641",
+      "gitBlobSha256": "89f8b7794049a44541dc7f9df11301d1a95589e861e6a9156a5e48ad6108f79d",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-maintenance-acceptance.json": {
+      "originalSha256": "4c4aacd3fc955733115e7d039909e89aea96bad19177fb4cb2e0c11a9211fad0",
+      "gitBlobSha256": "0bfae801323e9f331011c2bfe6cc5c9b511d3474ed9a6e0034704ac322026ea2",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-remote/cleanup.log": {
+      "originalSha256": "1874518c7e56013d49219d1d17108a5d19423b9908dc415b794c0a6b1222da8f",
+      "gitBlobSha256": "55ef7e32f5f1c8c296011ba3720a4ac8c80c51a0d380c7a6877318c1309036bc",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-remote/https-auth-cancel.json": {
+      "originalSha256": "113dba440f1924175f366829fdbc41e12cd1ba84d1cc8c69abc6131e4884fd58",
+      "gitBlobSha256": "fcb2b547442427cef56c694476126487f876a01a36a6039cd366917b284b1728",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-remote/https-auth-cancel.log": {
+      "originalSha256": "2c56a725dd3030ea7371dcadef43826d2c7a12e0000190ca8cd14451beb7b9b7",
+      "gitBlobSha256": "b391018678df5dd2faf2d26be645d155204f6e3dd959e3465a4e810973f640f4",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-remote/https-clone.json": {
+      "originalSha256": "7b3de6c6a368cd088571fe584b0fb50ae9054a70ca7b1eb076aac62969024357",
+      "gitBlobSha256": "8c372a5bf76e4002d87a57611909290b611189b2dcc6d614e3e34f834f547354",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-remote/https-clone.log": {
+      "originalSha256": "7b3de6c6a368cd088571fe584b0fb50ae9054a70ca7b1eb076aac62969024357",
+      "gitBlobSha256": "8c372a5bf76e4002d87a57611909290b611189b2dcc6d614e3e34f834f547354",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-remote/https-sync.json": {
+      "originalSha256": "f3609db5e52c940cdafcefafb608d0a90a6c93ed935588f5e5a6534485fad42f",
+      "gitBlobSha256": "239926b9c87664e571112ecc1e2cac2bf2e0a892c220026a1ccd9eef087d33ac",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-remote/https-sync.log": {
+      "originalSha256": "ca4a2c55c9e726e8af08039df4efb2f3921eb304743ed2b5a3abac95bd43fd90",
+      "gitBlobSha256": "f47594126ebaa426b3bb716457ca7ca78ce85a74245dec5bf48c777872ecca9a",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-remote/network-failure.json": {
+      "originalSha256": "0a7bbe87e8cb076762c2f725f3def89986d6cdad370585884a01e1a72b2fe07e",
+      "gitBlobSha256": "5594c82f67331ef304eb4d3585bdd5b6c5c5fd60f2eb117060d8bcb9062a766f",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-remote/network-failure.log": {
+      "originalSha256": "0a7bbe87e8cb076762c2f725f3def89986d6cdad370585884a01e1a72b2fe07e",
+      "gitBlobSha256": "5594c82f67331ef304eb4d3585bdd5b6c5c5fd60f2eb117060d8bcb9062a766f",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-remote/result.json": {
+      "originalSha256": "60952188c221d37700056a2ca62b429cede4ca2a007107ff009893357270bab4",
+      "gitBlobSha256": "5c305c4ee4d0b6f345cbf019941e5a69f4093a3c2794e28ddc09da2f29205398",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-remote/ssh-auth-rejected.json": {
+      "originalSha256": "3c8f9e99bb999f376ad06f94759412bb32d14a30d84eb0f53bc4dfc1caabdb3c",
+      "gitBlobSha256": "378241fecabb94c0cc005acd42f84d7bda59db88cedf810c7f3ec7e0ae4c1140",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-remote/ssh-auth-rejected.log": {
+      "originalSha256": "3c8f9e99bb999f376ad06f94759412bb32d14a30d84eb0f53bc4dfc1caabdb3c",
+      "gitBlobSha256": "378241fecabb94c0cc005acd42f84d7bda59db88cedf810c7f3ec7e0ae4c1140",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-remote/ssh-clone.json": {
+      "originalSha256": "82883a4dfd3cb8b92e7a0f18fb7a69f86620632f687b6595effe8a00a42170b8",
+      "gitBlobSha256": "3e487bfee5a635d0acb798aefea1c058727e8a329ff0e5ecd2cd4e730999c644",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-remote/ssh-clone.log": {
+      "originalSha256": "82883a4dfd3cb8b92e7a0f18fb7a69f86620632f687b6595effe8a00a42170b8",
+      "gitBlobSha256": "3e487bfee5a635d0acb798aefea1c058727e8a329ff0e5ecd2cd4e730999c644",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-remote/ssh-sync.json": {
+      "originalSha256": "7b0a2360cf9759582a02201e82af577fc07bf58ec235618a316df6138b5e390e",
+      "gitBlobSha256": "d44206e78c3edc3f0ade9e3062ca18cdc74b42b36642ea6fa500c0dde2dcc8f5",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-remote/ssh-sync.log": {
+      "originalSha256": "de95d31c4b9ed6d67580112508f7342164d5f2bd3bddad586c6c29c5c2ea19af",
+      "gitBlobSha256": "2ec569e24dc45ed7cfa32145096a5cc26a19caffa9221b1bb400f5a10cc5be32",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-startup-acceptance.json": {
+      "originalSha256": "1f738cc1dbe12b0267235d0786a03f658015d184913defab5cea0d0bef3e255a",
+      "gitBlobSha256": "62ea3526b0567e28fcd51a9380eb7dca5f3c31c204700fbf1bdd24bf8741ae08",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-windows-ci-checks.json": {
+      "originalSha256": "40d7ac9030e7a8b69cd410dbbb706e39c02c1346bb29c0a77df598a37126a5e9",
+      "gitBlobSha256": "ba21a261d58b20ca79fac17fa9f78af450173bc3d36c872c98d7deeab42d0ff9",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-windows-ci-package-acceptance.json": {
+      "originalSha256": "5b21a3d1c4521248bed69c88335df619f25c4c7961f469bf99fcf74e59449c4e",
+      "gitBlobSha256": "3b2285ab15d471484fe473ce021140b339be6cf813afa525e11e498831cdd76e",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-windows-ci-package-metadata.json": {
+      "originalSha256": "ced2f1ddcb2f6e5477e2ed777f40a469ced1265b3871a592f1aff4adc4457de2",
+      "gitBlobSha256": "392626ae9a35a91abfdbe2de0fdc52e4c1729e5091178d53100c45c8a4ded98d",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/current-workflow-acceptance.json": {
+      "originalSha256": "df3c95d3b98c035fffb3758a99ab6dc42f45d44f3ebcc9d0610987790fd5c250",
+      "gitBlobSha256": "8c883eae655771e281e9308c5822085b6735b09aa4afb973e483c8dbee756666",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/delivery.json": {
+      "originalSha256": "f277c36454ec620690457221337841f3e28f27e8735e19ca541e594dfaedd089",
+      "gitBlobSha256": "fafb92869f1ea7d481efa2e4ea64777528467c88039205242c56b0ad97b2c6a0",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/distribution-comparison.json": {
+      "originalSha256": "d9cd06cbbe1120cf683ebe7b1806f7cb44b7f27199dfb9ca11c16e65e1736424",
+      "gitBlobSha256": "cd02cec1cca6cea3c3ca2cb6a902cedec7903f59ad1afad265a9da375ef1a4ca",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/final-generated-cache-cleanup.json": {
+      "originalSha256": "613d6fee8b6e28c9a445bf58836d354932d75af4796244e83c00fa4772e81d37",
+      "gitBlobSha256": "c3fb71649241fa745332cdcc93a0cf6ef970ef91e85a3b23e0ea944f32d107cc",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/generated-cache-cleanup.json": {
+      "originalSha256": "7bd0d2931250d94a59d5afbdfc434d99e69e261ad89401fc94681a22c2f3e0d7",
+      "gitBlobSha256": "d45d684623ef22447317511907fda8467660d5e90b70bd3cbc1bf5e2e247dff5",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/git-log-diff-acceptance.json": {
+      "originalSha256": "8ca26ae07995682799d298e57b2b3ca646a36c67094061f77085e791bbef9b42",
+      "gitBlobSha256": "189322bb385746bd3768c64ceb3fd77d4254d310687290d08870aa692931296c",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/https-disconnect-recovery-acceptance.json": {
+      "originalSha256": "8e42bb9d62ed30ae3e0aa4084cbd47f28ab0add006120bc05aa8863f11e1bc61",
+      "gitBlobSha256": "ea7b1238e27ecb08bf07063c0dc436f5e32a28624c5877d32b2ff1b4104dc228",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/https-disconnect-recovery/git-fsck.txt": {
+      "originalSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "gitBlobSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/https-disconnect-recovery/notifications-after-cut.txt": {
+      "originalSha256": "5fa8acd12dcc78bf796c43b288a7d55735522fa39b1f75fed86b6c750648dd17",
+      "gitBlobSha256": "14868888106e6a970a181c2a9375633aab603a637849c1b68c1806be64214841",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/https-disconnect-recovery/probe-sources/NetworkNotificationProbe.java": {
+      "originalSha256": "821bf3d08a3b1121e60aa6305ad2d04906dae49a6618df853e7fd34435992d75",
+      "gitBlobSha256": "be98e4279ed650e22e9dda246f113d962ffd6fdc35c1b30d884cabeeca2e6f23",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/https-disconnect-recovery/probe-sources/relay.py": {
+      "originalSha256": "6825712a49f48a4416d25df2dd6245112e95303ac340f8869125969d129f0ab5",
+      "gitBlobSha256": "8bacff5545382850adfefde332f7a293a3fad90ffb206b02e2d06c303cbe44b4",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/https-disconnect-recovery/probe-sources/run.py": {
+      "originalSha256": "534415e68d79355c2645f0e413fb8ab0bb72bbc4378ac7bf00b3380304b0dae4",
+      "gitBlobSha256": "a251e4221c0eb646739aedff1fa09136bda98c736d821d3835148afe6258046e",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/https-disconnect-recovery/relay-config.json": {
+      "originalSha256": "6909ef8c252dbd67bed4a8352096cbb162c09f078acded0b007d9af961ce1b54",
+      "gitBlobSha256": "6909ef8c252dbd67bed4a8352096cbb162c09f078acded0b007d9af961ce1b54",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/https-disconnect-recovery/relay-events.jsonl": {
+      "originalSha256": "73e3117fe50417c7cd7903da7ae59fd9bae8264a6bbc1af043a97008dc6d7c32",
+      "gitBlobSha256": "233eb46e128ca5652eba86f9f7508be51742963ea8fd58f7c8625cf5967be714",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/https-disconnect-recovery/result.json": {
+      "originalSha256": "162deb0f5000d8cf713595ac27f86622b1dba8609c58f068c34f3963e8d9bcb6",
+      "gitBlobSha256": "e051dfec425da7df53c465c5f0ff484cbfa8513527c1961a621767970551ae23",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/isolated-workspace-acceptance.json": {
+      "originalSha256": "c9fcb9699559eb76c0ee158b452c691e253a1fe94a528d7be2aaa2ab940541b2",
+      "gitBlobSha256": "3d313ae724a3d975636361199072bb127b7390223dda57ad3da094b5ba621f34",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/isolated-workspace-candidate.json": {
+      "originalSha256": "00a793419e1336e07656b484f08c200eb95e2925dafbcaaeff2dd59191379bc4",
+      "gitBlobSha256": "4816d901923d65b110b2522ad071623dad53a00c8ffc0d43b400a717deda6ae5",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/isolated-workspace-metadata-preservation.json": {
+      "originalSha256": "6eb87aa779066c3d1d3c47f7edbb042a7129bff9e6942d7820d4f0be5c20322e",
+      "gitBlobSha256": "4e0697782a6d350111d3d3a11f0120e58da00adc6bc655a9b851b5b36409f191",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/large-workspace-import-observation.json": {
+      "originalSha256": "7dcc55698b68758d1040f2f5ee209c75dc7f61d2dae29b19856a6fc89fb762a5",
+      "gitBlobSha256": "53a9fe437349c3accf703b41cf0baf7679816eb8851f5a7ccad75a4afa9ced48",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/large-workspace-performance-acceptance.json": {
+      "originalSha256": "7c2aa0a49f6e69ed5a442bd41dc1dc57926d35bde1246ec8a213962601179e6d",
+      "gitBlobSha256": "dddcf73481d7a6f4f03845199f049bfa3a88454e6c20c460232c3e3cdfa43212",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/native-existing-project-acceptance.json": {
+      "originalSha256": "f948730a18b6fed58c491f0c279a07c2fd2edacca21b6d14c18407b79f95b598",
+      "gitBlobSha256": "ced70f69aede610aa8ca776e091661a6ba9cf9e2a54b31df3cae8243c58bdb5b",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/noop-bootstrap-candidate.json": {
+      "originalSha256": "115f207da58fbe398925e49c23cc7a16690c89aeea9b0e05d9728cc402d84009",
+      "gitBlobSha256": "488d6db20e2053dad14819861defdbb541cb9b8160e14659a9ad56358939a1c4",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/noop-initial-desktop/advanced.json": {
+      "originalSha256": "7f162edc90737d2fed0bd7f437463c83986119be345be6b83a501468400da48e",
+      "gitBlobSha256": "f72d28347cbdfd509ef670707208f15dd00d68d065488c461aa7b4fcd57ae581",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/noop-initial-desktop/advanced.log": {
+      "originalSha256": "2b6e96f13bfa6d3c4977307ba613e0367ecf72b7c80d451133b09eb8b1a8499f",
+      "gitBlobSha256": "8e150b0b842c3da229f8e8a7d75bd4b975f497cb8e9f4a045461861aaaedec5f",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/noop-initial-desktop/cli-ps51.json": {
+      "originalSha256": "a7ec2ac817ec099df3b8803e9c1a0d01dbb2372579b0efb859d2792025bfe3a5",
+      "gitBlobSha256": "95a6ea8c2e1bd4537c6e64796f1f2b468798ad2920bb839ff5d77845e92c958c",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/noop-initial-desktop/cli-ps51.log": {
+      "originalSha256": "3a93567617176d26a5f9037a8608859de36ebb59f226cae260dcfd2a80e9068b",
+      "gitBlobSha256": "94fe24567bbcf8d0d6700b0c4d36a255ec585e3e700f58800f0f7d7c853f92fb",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/noop-initial-desktop/cli-ps7.json": {
+      "originalSha256": "2cd7c1600624254ce7c61765cd3cd15e43fc5029781de57d35d617b722074080",
+      "gitBlobSha256": "ca503bab9ab728278c1c2e28ba7b2082e394e0cc25063f6d35fe8314929d663f",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/noop-initial-desktop/cli-ps7.log": {
+      "originalSha256": "2cd7c1600624254ce7c61765cd3cd15e43fc5029781de57d35d617b722074080",
+      "gitBlobSha256": "ca503bab9ab728278c1c2e28ba7b2082e394e0cc25063f6d35fe8314929d663f",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/noop-initial-desktop/graph-diff.json": {
+      "originalSha256": "c715b5382231a82d231a58d266d2579c722e82a38261e5f5855156fc1ae8cf08",
+      "gitBlobSha256": "f5a78e440ef7f32e404314d5add89c434965198a89e7f1e4514cb037247a9acb",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/noop-initial-desktop/graph-diff.log": {
+      "originalSha256": "abf20ae65e0c62c5a9cb91a2d91bb4ff781cc4464dc6745372920380cfbc27d9",
+      "gitBlobSha256": "4c95c1671991bdd4e4696309df1156e3a55e2ba9ce82426e89607f162155fd74",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/noop-initial-desktop/native-switch.json": {
+      "originalSha256": "ac3106933328c5d19175f46730086cbc4991afc52c848a60588546528732ca59",
+      "gitBlobSha256": "671097d6a145c2ae3bab8f5e5d557fb5ddd4c2436341a9a9f2e5fe9f8c0fdbeb",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/noop-initial-desktop/native-switch.log": {
+      "originalSha256": "8052800d9f95a48d02fe6648bfd4f6e4b1c21f6b2f76b3b3d6964058eed060c6",
+      "gitBlobSha256": "da8e1b28d6177e9c75081abdbb76c7273403cfd36b95a5e9a71a7e8fbd6a877e",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/noop-initial-desktop/product.json": {
+      "originalSha256": "02473c6356e7bd56cf183e3d5cb477900df05ff4e184ceea7ec2ec701112b1b7",
+      "gitBlobSha256": "5fb7be10c0de8b1c4c2c667cc902681faa500a15a6f7f638a5b8fa4c2be12356",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/noop-initial-desktop/product.log": {
+      "originalSha256": "02473c6356e7bd56cf183e3d5cb477900df05ff4e184ceea7ec2ec701112b1b7",
+      "gitBlobSha256": "5fb7be10c0de8b1c4c2c667cc902681faa500a15a6f7f638a5b8fa4c2be12356",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/noop-initial-desktop/result.json": {
+      "originalSha256": "45b14e8d9bc901f6b93cc0715d1f8a98f50c0b64cd5e9542efcf29d438681d59",
+      "gitBlobSha256": "5a57444515b8ad7b4cb5a438e393797c112297fe6dbc6f430597f794dd98a5d8",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/noop-initial-desktop/workflow.json": {
+      "originalSha256": "a1481881e63975eb29b0486c8cb66d36823ffedbb27da7948dcb8c969816b54a",
+      "gitBlobSha256": "4e028493cc495a5d31bc3a51aa3c52653c200ff78e050d58ba7bdab1bf73b6a7",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/noop-initial-desktop/workflow.log": {
+      "originalSha256": "19b5a4a4a38225cb8d7db7955bcbfa0ecceec3a1cd178662b8e70f8bd2df2a98",
+      "gitBlobSha256": "625b7a3fe142b964741d58582b5bdd2dfc0f47dd8629a42068fea929c05ece29",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/noop-initial-desktop/workspace.json": {
+      "originalSha256": "0bc7a8a279a99f53d6ce6af68f2db7a5f885533a6338de5164bb7707a8ac49d5",
+      "gitBlobSha256": "d6695487bc38328d9cb01e43a2112afdb48f0add61c9714ce1e92a3dae4aba3c",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/noop-initial-desktop/workspace.log": {
+      "originalSha256": "c77e3813afe902a911482f3607f805a3891b0bfadf06569e71104e4d99fef9a4",
+      "gitBlobSha256": "6ad2b050dcb15820d39f0f8965170ff63418319408e80d35c7d933a6d141f6b6",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/noop-validated-candidate.json": {
+      "originalSha256": "15df154bff13857d7b8c0e9ba5786351b817a1d79f8b23fa0329685ede3dad0a",
+      "gitBlobSha256": "85e02a764cf534b34257bf5b9a9036d63ae409e7688c573747f31998e6c48680",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/performance-baseline.json": {
+      "originalSha256": "37734a32e7a9efdddf69a2c77b1d4c0df2f8b119fbeb479738dbc7ad1ece281e",
+      "gitBlobSha256": "15b17501f5c72d2cbda40786567a2f5ae61a04f808a9f32f5cae057c25a7b30b",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/performance-trimmed.json": {
+      "originalSha256": "07d5bdca8e4a0d48cbf7a7a860e102f2202c68cdbaee3f976840f1a4e14a5879",
+      "gitBlobSha256": "9b088e7a372993122b1cb6a83952ca4da27cbf20ce14c93da7671615ab03c415",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/powershell51-existing-project-acceptance.json": {
+      "originalSha256": "5af556a8a1c3942b2cb567dce3db7a8aac81bdcce1f3d8c4ef7e0e2d9d3f9631",
+      "gitBlobSha256": "2c10897b395a5f954ae1eadcdc5046fb25ee4ae9796819eeea7d28ed1956760b",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/powershell51-launch-acceptance.json": {
+      "originalSha256": "f34dce4ec97b71e57f68de0407f529e25ce42b773589c80cff0268026556b5d6",
+      "gitBlobSha256": "868cbaf813e1d5cca743595481576580b3e6f213d914c22e98c0473003ceb4fd",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/powershell7-existing-project-acceptance.json": {
+      "originalSha256": "91d048594825cdbe9db16a58fce089bd0831251b6dc3313709d5aa168bf2e1c2",
+      "gitBlobSha256": "a1d15c36d3588fe76736243166935d2af3eec9311fffda2f5670c74a26cb5147",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/product-acceptance.json": {
+      "originalSha256": "1228645dc174c39e00e39f5e7284f302118c941cad25f46ec1a3ce0778fc92d7",
+      "gitBlobSha256": "3ba0850787d149e4605463573e142e9dd621577ed647e4f940fd4ea66f8b5ea4",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/readiness-candidate.json": {
+      "originalSha256": "4a47069dbb40c111fd293cfdfe6aad5f1044b6250a1c6cb4813dfe4226e6cf96",
+      "gitBlobSha256": "c44308d6c549b6830e1034e6fba71b898b52904ea591d947b2192b6a5a0895e2",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/remote-auth-cancel-acceptance.json": {
+      "originalSha256": "556dba2a0cf850dc2ad45c29634fc923573cd8209b7f098ddba7c461a1c4a7d1",
+      "gitBlobSha256": "6565bb70c5e4207cb56abf1f36ab69f4867610eb38cbf111ce69e3ae64c084a4",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/remote-auth-rejection-acceptance.json": {
+      "originalSha256": "f9599e213323fcc11809f2ee87aac86aba824d4c9497dc8864dfa28a704e9bde",
+      "gitBlobSha256": "68640f414c2139f8da8a1c97044416bb6c1a925434a836f11cbb7fe833a7f501",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/remote-baseline-candidate.json": {
+      "originalSha256": "dc569c72c42e45d6caf1711bf6f5974e74008a4ff4fe70eecbddfa56ce368720",
+      "gitBlobSha256": "061e5c6d86037006a256df3793452ebefef3a33c0cbb99d48d9cda85c422053e",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/remote-https-clone-acceptance.json": {
+      "originalSha256": "c4ce5f77f5c5a69c5dfd9d0191b892095698ac1fa3827a24daafdc4bb65ee24c",
+      "gitBlobSha256": "01ac50b2ebd42a5699f7967d3b7a5b0547109411828d824825b7c69233316e37",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/remote-https-sync-acceptance.json": {
+      "originalSha256": "bb018ed3116df3c8abbe474c8fdd85eccaf21a6e7cd95cecca9190adc55f5aed",
+      "gitBlobSha256": "087cef30eed4f7abb53cf112c3635f6bacd63f12e8aa598313353d97a9eda17e",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/remote-network-failure-acceptance.json": {
+      "originalSha256": "f78b1760a5cdd294d1cd587f99d571439cc20b05b760f138a111295fa9570b06",
+      "gitBlobSha256": "422f0c31d576d58f8941eef87b76269ac4e96eeccd6359249a45fe0548afba47",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/remote-ssh-clone-acceptance.json": {
+      "originalSha256": "d9c7e1cc731d359d66ae28cd813b5c47f6ca094d47b4dc293ce951d9956ac35c",
+      "gitBlobSha256": "0f959b7b1f5634b240aac4e9dbc2eb65dcb982e40c7f28c3ec899ac97d3993e1",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/remote-ssh-sync-acceptance.json": {
+      "originalSha256": "1b32af6f2be30793f86c486898e334056caebb88fcfc2883d8b4b7c2aec84ad8",
+      "gitBlobSha256": "b5500894e9f8a8101eb0c40a6de68174dd078be42965090d90fdab8c929ed9f8",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/repository-switch-acceptance.json": {
+      "originalSha256": "550ad42f514930554a665daff8b785d23a08752f5d0f5de9ab29f5d77abdb3b6",
+      "gitBlobSha256": "36a0ddae43909c1f9a1e27a8458a045c7c5377be1046687d74e3dba377cf8a4c",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/ripgrep-performance-acceptance.json": {
+      "originalSha256": "52d7ddea4f6dd0909064fc9a0c57e71cd2659d7d2f4432c90d4bf603f413a796",
+      "gitBlobSha256": "bdfabff65dda752687da6578700cb43028ffe63702ea66b5347fe116f491e145",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/shutdown-refresh-acceptance.json": {
+      "originalSha256": "aa0e5ec7364ad260fc6eb87fc7f44bd094fc0bdcca4bd05bd589934e935a1104",
+      "gitBlobSha256": "bd8fa83bf86c6cbc6ec3788b3f8209f656c14a1b4d662dfbaed99aaebe628ab9",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/shutdown-refresh-candidate.json": {
+      "originalSha256": "757b10a106d20e4fab31341d2e7915b0e777cd75627fbc183fccc80afafedf02",
+      "gitBlobSha256": "9ed7681de07ba3f5a02fa926a8ad67dc06870d6f0c554d6330798d9e84d40f5d",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/shutdown-refresh-isolation/20261128-110205.json": {
+      "originalSha256": "da45adba1dc6665817fbea33246358c0dcd72e83630ecf926b921e6d2a558627",
+      "gitBlobSha256": "64865b23917963750789eeb1f843da71fb3aae4106926c97f3039564d8d7fbc5",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/shutdown-refresh-isolation/20261128-110351.json": {
+      "originalSha256": "5a5118870163e81cbb7a5df32fa759cd24b4d1bff668ccf5751a67fb008cc5af",
+      "gitBlobSha256": "dafba0e160af6eafd70082c5736ef45c75a83ea9c2f5169c9b6cb1133112af95",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/shutdown-refresh-isolation/20261128-110447.json": {
+      "originalSha256": "a0840cd8e0bbfefdbe92b7ea3750cca8a163d381b95a9fece42de4d2ba63f277",
+      "gitBlobSha256": "7a79f1db86602734dcbf7b165fbcffda5c1138d49103e03eab955d696535dc49",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/shutdown-refresh-observation.json": {
+      "originalSha256": "95f9b7e908c617257d593fc425c2ef0806d91d65785297f3b5131a1a7a261ae7",
+      "gitBlobSha256": "b171e8091e04a710d930f0958a7a09730facf571868dbc6417974e8b621e1c1c",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/source-filetype-candidate.json": {
+      "originalSha256": "49d1e4d2392923a2d77afeb7273a743387d10148adc0a6a1a06031c52f3e8337",
+      "gitBlobSha256": "632ed99eb2faf72ccba7aaee197f7f79120871b253fdf90eca3c43c3bb0cf49f",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/source-filetype-performance-observation.json": {
+      "originalSha256": "f7a671667b48072d613a30720a8a140abc45d9f7ca73b7c0187dd64005bddfb6",
+      "gitBlobSha256": "c05648eb67fa856702234cf614f719c60d187a2f964eca7954ff7a09b65201a1",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/source-filetype-product-acceptance.json": {
+      "originalSha256": "e8c097e3dee1a271bb56e92c9d88182936bb2d49989027bfa519a8715f7056ab",
+      "gitBlobSha256": "7b68c70f55792bdd1f1a6990780a5c5127431a5aac516406cc5462bb357e7aa8",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/startup-fix-git-diff-acceptance.json": {
+      "originalSha256": "f2be9aeb783be3d8469d677dd048d8e9f8b8bad94dfeaf8885e92a19e7987bbc",
+      "gitBlobSha256": "3a58191e1214f05a7ee7ccffa23336d50c50f760361f8867b1780b38ddd28fa1",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/startup-readiness-acceptance.json": {
+      "originalSha256": "3c35dfdf600dfe561f9c4362e3ac92251cd577602e3ff1b187944c5b6b41d106",
+      "gitBlobSha256": "02cc0bcaf23c4c3f5ac98ce4fbc5a0675dfad45536c1235f7d40a963c5424258",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/startup-readiness-observation.json": {
+      "originalSha256": "bdaa7ead0a41951177edf4b89fce00988edee53a2e9375d3018765fbd5b66f17",
+      "gitBlobSha256": "0b4e88946d5db153fc0466979429689c51aa52de3d8a50ea794ee89346355595",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/telemetry-startup-observation.json": {
+      "originalSha256": "732cedd48fdab51e06763a2d6a82c7ea9a8b16680778eebe09615f266af73dd6",
+      "gitBlobSha256": "4e09cf80b3c2b8b176429e6c9f6c3426e11d03ee3eee517b08866de0da7039c2",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/version-candidate.json": {
+      "originalSha256": "c5faaff5a93d3db519aa4da0088f6181c9c30a96b898993ea433a1357b0b012d",
+      "gitBlobSha256": "6b8dafdf3289e442073c426f42bfcdf9c2bfd541598359710003aaa7c584ae15",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/version-desktop/advanced.json": {
+      "originalSha256": "9a4eb37b15b6cc5ee262ed4f128b64fb98ee274f73559f18cbdca3ff43b9daf9",
+      "gitBlobSha256": "82e2cd6d53d87abe0de9f45aa26a6d5317c38dc6963988a00a9c07cf97747d4e",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/version-desktop/cli-ps51.json": {
+      "originalSha256": "4d133b2b63025f975bca8e444371a057a775fec363e1c7ddf36dec17a6c47283",
+      "gitBlobSha256": "fb479ec721e67952ce65b5e54ce8256873ad0f6626b29485297d40fd71d9a965",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/version-desktop/cli-ps7.json": {
+      "originalSha256": "df4f1100624b66233f660763ff4987577e70db43597c359ad8e4c5182692f314",
+      "gitBlobSha256": "ee375434eb316ba10fad141c5a5b9d11d154a599972cdccd42af6f3a62b63d53",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/version-desktop/graph-diff.json": {
+      "originalSha256": "a688e02b258c43f266e56f002450ead314b2bacfcab94a290c0e60bd89668cbe",
+      "gitBlobSha256": "e4164d508a52d6b793e49f4c66aa5caccac2dbeec7acabaaf8020f27d793d18e",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/version-desktop/native-switch.json": {
+      "originalSha256": "b5d34506a5d333bab5aae99f1617e71362eb9d67717ddb11e36136c0fa734a02",
+      "gitBlobSha256": "f3cb86a712770ed2a3a4e6cb690a9aaadd58bd1fdb9b2cfb288f702e6551b5cf",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/version-desktop/product.json": {
+      "originalSha256": "ba5f643dd5ef838ce6674e06f1fc1267172784d1a7e6bc4788db697cfbe07130",
+      "gitBlobSha256": "fb7395d2afefcf4662cef1d9c8bdc5bb8ed1c3d03b9f769560323ac160ae3fd8",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/version-desktop/result.json": {
+      "originalSha256": "859ad67a2c896a3dd306711ea4250ea6adec89ab60d39a455648c848f5f6db23",
+      "gitBlobSha256": "63eeeb18306a0195d4a372db2d790b251fe63aaf10efee1ead28fcbbc2189a81",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/version-desktop/workflow.json": {
+      "originalSha256": "01b42e0ef58ed531d64c678e159360807ac92ae6f7e9bcda3ab9b27e13604df8",
+      "gitBlobSha256": "620daa106cd406cf74de869db284dbf5b937ce929a3fc00e04b96e2b193eebfc",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/version-desktop/workspace.json": {
+      "originalSha256": "3f1ea0d00322bac41d05ebeb493d21aa9df2d5fae0891269422cd8ec24e129e5",
+      "gitBlobSha256": "93f666b9c09ef0eafce6919f2a2750371d7a083a7a80b1cead6f000d7f93cab1",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/version-maintenance-acceptance.json": {
+      "originalSha256": "987c0f1f1e5739e7f48880d5ba32bc4e73c12166b0a6b5855ad122d5993814d1",
+      "gitBlobSha256": "0e12329523851d6e6cf043aa8f5dde96d07f671abfeaa07506ca97eb6c9d2dae",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/version-product-acceptance.json": {
+      "originalSha256": "e10078e57bafdc9b87e44e4d54204a5472aaa3014ef51c3b3157000627bf7f6d",
+      "gitBlobSha256": "400246f9501182467958ba523bc644105b501c81a90918c01382b6a5b6d69844",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/version-remote/cleanup-first-attempt.log": {
+      "originalSha256": "4ddca8fa8ad68e7cd709962e8d1e1949dca59906dd26cac97515a87d0c9d0c7a",
+      "gitBlobSha256": "57c4ac18005426916740fa58d20a403b4981d68d8cbe6eeaabe6f29cfb87b956",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/version-remote/cleanup-retry.log": {
+      "originalSha256": "1874518c7e56013d49219d1d17108a5d19423b9908dc415b794c0a6b1222da8f",
+      "gitBlobSha256": "55ef7e32f5f1c8c296011ba3720a4ac8c80c51a0d380c7a6877318c1309036bc",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/version-remote/first-attempt-result.json": {
+      "originalSha256": "b2410371042a8b318c42d3ca21fe860fd9dbacb7428c848ad567f4b92a858b54",
+      "gitBlobSha256": "7ce211c335a2ea62aea25c6157b573d15e8ddc251d41ad864507534027fc13c4",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/version-remote/https-auth-cancel.json": {
+      "originalSha256": "eca1bf7e13d2f7952709ffa30c3d7ce46cabea51a3700dffbfbc80decbd1baac",
+      "gitBlobSha256": "7a1ff4b335b8dbb02dc8b37ca933e22543aa3f48a37ac8c64de1952fa134b6ac",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/version-remote/https-clone.json": {
+      "originalSha256": "d826ec3d5e52e281022daaea79e2a713826e70235cbf467d5fa1782ea334aee1",
+      "gitBlobSha256": "e2971e0608e6dced120fe1d31b1f01f1e030da41b504e39b432b319699ab4331",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/version-remote/https-sync.json": {
+      "originalSha256": "c113b5b01919bd1bae3e408a94c75d200af38805a91cd924cace4b531193bffd",
+      "gitBlobSha256": "58e86e9cab5cd1cbf55a5f6afce076547db2b304cf8b72a9e5295ff5bef21e2c",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/version-remote/network-failure.json": {
+      "originalSha256": "b65fff67c729687b15c32bfad2a54a602aaaeec28398ec4ebf21469e2de56e49",
+      "gitBlobSha256": "0efda6ba221cc55ac6d911a003f4ac344f5ac6fd45cae7fec649d80aeeb41c43",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/version-remote/result.json": {
+      "originalSha256": "d92b804687b23e257c300bddbadd04e31e16c5d611abbdb6fcc5d43f35263212",
+      "gitBlobSha256": "6a667d59ce3208067a4e35002ab8d99f867413bd99cfcd449ee65f8938aa1198",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/version-remote/ssh-auth-rejected.json": {
+      "originalSha256": "cc86ab532c1aff70ea63f548c23b42d99fa3feec9d57cfcc92e5880a39bbe221",
+      "gitBlobSha256": "566a4094199c5fb7bacb2222dcbc30b099211d728024a4f69da2950214f0c720",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/version-remote/ssh-clone.json": {
+      "originalSha256": "fb92759772f62f1c17aacacf0ce400fb80fc41104e535540d2c6df4582d2a383",
+      "gitBlobSha256": "74d51b173afe2cebc583f1480b891649c8247e49ebe8e9ae577fbaa5fe705e72",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/version-remote/ssh-sync.json": {
+      "originalSha256": "2e5cc8f0f626403f19a54528ab6e2093e684d2d9e018a08a59fde9ec8c690180",
+      "gitBlobSha256": "afd267597ad5382a52d8070dbc7956c46540dddffebcae2099a9301d329ecc05",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/welcome-cancel-acceptance.json": {
+      "originalSha256": "15f18b15aacf85a8e74a81ff0c70709c7bc72ff00bfd208233724e42690026a0",
+      "gitBlobSha256": "975e2fe1fef6683afdc94c047c0f890e2832ba88ecdddf0ed35f5d48615ffb1f",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/welcome-open-acceptance.json": {
+      "originalSha256": "e7ca0e1a425baaf5e4f355a3162e93fa82c216b90a6f3074a78dcc1b9e2aef32",
+      "gitBlobSha256": "fd6ce18f479e593db235b1581ea5160a7f1c0d002e41bfa6241af04301a00471",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/windows-cache-write-observation.json": {
+      "originalSha256": "05583ea3cd41bb784e9a764acc7cff68b91f1e1123d0fbc1545053d77fe4969a",
+      "gitBlobSha256": "117ef1e339a78225a3b73813b437970a76103d2d1df137579a16cea0d3daf9f5",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/windows-ci-checks.json": {
+      "originalSha256": "20f7a16102788443645b41e6970275a4c754fbfb30f696752c3b8a66248e3ac3",
+      "gitBlobSha256": "aee32d4d52efec1c0bd527f1e159ccfdf5a7fecde8823c8b416e4a67f24afeed",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/windows-ci-package-acceptance.json": {
+      "originalSha256": "4b6b7b953a4493b01fd67c13018414f2e99b54ee7ea31c67dde616a4a019d0bb",
+      "gitBlobSha256": "7b7b83554b56bbd90d530b0d52f5205e00b952eeb5a03c00e69917193d67d53a",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/windows-ci-package-metadata.json": {
+      "originalSha256": "370ede10634744ec5807e92787259e3ed194f6a1e7e976e5a8777c85a686f123",
+      "gitBlobSha256": "f96c2c7c7397e9b00e30f2f9bbf7f07d1596636e942b7607fd3698ab5271d204",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/workflow-acceptance.json": {
+      "originalSha256": "c053509107f74c1e9355c1ce2f18e777b9bb7e5a0dd1bcaedaa5fc3180e62183",
+      "gitBlobSha256": "14fee9ded346442e6f761caabfdeb3e042045622196828b1a4876ebecff46415",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    },
+    "docs/evidence/workspace-git-acceptance.json": {
+      "originalSha256": "070663baf30b0d31242ad652c65160c8efaf90b7d853f9fbcddaf290045ee402",
+      "gitBlobSha256": "bffef88e785c02c845946240093cc34d2452ebde6781854122daa6057f3a10e8",
+      "bytePolicy": "utf8-crlf-to-lf-preserve-bom-v1"
+    }
+  },
+  "rawDigestLinks": [
+    {
+      "parent": "docs/evidence/cache-contention-desktop/result.json",
+      "keys": [
+        "cases",
+        "native-switch",
+        "resultSha256"
+      ],
+      "child": "docs/evidence/cache-contention-desktop/native-switch.json"
+    },
+    {
+      "parent": "docs/evidence/cache-contention-desktop/result.json",
+      "keys": [
+        "cases",
+        "cli-ps51",
+        "resultSha256"
+      ],
+      "child": "docs/evidence/cache-contention-desktop/cli-ps51.json"
+    },
+    {
+      "parent": "docs/evidence/cache-contention-desktop/result.json",
+      "keys": [
+        "cases",
+        "cli-ps7",
+        "resultSha256"
+      ],
+      "child": "docs/evidence/cache-contention-desktop/cli-ps7.json"
+    },
+    {
+      "parent": "docs/evidence/cache-contention-desktop/result.json",
+      "keys": [
+        "cases",
+        "product",
+        "resultSha256"
+      ],
+      "child": "docs/evidence/cache-contention-desktop/product.json"
+    },
+    {
+      "parent": "docs/evidence/cache-contention-desktop/result.json",
+      "keys": [
+        "cases",
+        "graph-diff",
+        "resultSha256"
+      ],
+      "child": "docs/evidence/cache-contention-desktop/graph-diff.json"
+    },
+    {
+      "parent": "docs/evidence/cache-contention-desktop/result.json",
+      "keys": [
+        "cases",
+        "workflow",
+        "resultSha256"
+      ],
+      "child": "docs/evidence/cache-contention-desktop/workflow.json"
+    },
+    {
+      "parent": "docs/evidence/cache-contention-desktop/result.json",
+      "keys": [
+        "cases",
+        "workspace",
+        "resultSha256"
+      ],
+      "child": "docs/evidence/cache-contention-desktop/workspace.json"
+    },
+    {
+      "parent": "docs/evidence/cache-contention-desktop/result.json",
+      "keys": [
+        "cases",
+        "advanced",
+        "resultSha256"
+      ],
+      "child": "docs/evidence/cache-contention-desktop/advanced.json"
+    },
+    {
+      "parent": "docs/evidence/cache-contention-remote/result-reconciled.json",
+      "keys": [
+        "cases",
+        "https-clone",
+        "resultSha256"
+      ],
+      "child": "docs/evidence/cache-contention-remote/https-clone.json"
+    },
+    {
+      "parent": "docs/evidence/cache-contention-remote/result-reconciled.json",
+      "keys": [
+        "cases",
+        "https-sync",
+        "resultSha256"
+      ],
+      "child": "docs/evidence/cache-contention-remote/https-sync.json"
+    },
+    {
+      "parent": "docs/evidence/cache-contention-remote/result-reconciled.json",
+      "keys": [
+        "cases",
+        "ssh-clone",
+        "resultSha256"
+      ],
+      "child": "docs/evidence/cache-contention-remote/ssh-clone.json"
+    },
+    {
+      "parent": "docs/evidence/cache-contention-remote/result-reconciled.json",
+      "keys": [
+        "cases",
+        "ssh-sync",
+        "resultSha256"
+      ],
+      "child": "docs/evidence/cache-contention-remote/ssh-sync.json"
+    },
+    {
+      "parent": "docs/evidence/cache-contention-remote/result-reconciled.json",
+      "keys": [
+        "cases",
+        "https-auth-cancel",
+        "resultSha256"
+      ],
+      "child": "docs/evidence/cache-contention-remote/https-auth-cancel.json"
+    },
+    {
+      "parent": "docs/evidence/cache-contention-remote/result-reconciled.json",
+      "keys": [
+        "cases",
+        "ssh-auth-rejected",
+        "resultSha256"
+      ],
+      "child": "docs/evidence/cache-contention-remote/ssh-auth-rejected.json"
+    },
+    {
+      "parent": "docs/evidence/cache-contention-remote/result-reconciled.json",
+      "keys": [
+        "cases",
+        "network-failure",
+        "resultSha256"
+      ],
+      "child": "docs/evidence/cache-contention-remote/network-failure.json"
+    },
+    {
+      "parent": "docs/evidence/cache-contention-remote/result-reconciled.json",
+      "keys": [
+        "originalMatrixSha256"
+      ],
+      "child": "docs/evidence/cache-contention-remote/result.json"
+    },
+    {
+      "parent": "docs/evidence/cache-contention-remote/result-reconciled.json",
+      "keys": [
+        "cleanupRecovery",
+        "logSha256"
+      ],
+      "child": "docs/evidence/cache-contention-remote/cleanup-retry.log"
+    },
+    {
+      "parent": "docs/evidence/https-disconnect-recovery-acceptance.json",
+      "keys": [
+        "resultSha256"
+      ],
+      "child": "docs/evidence/https-disconnect-recovery/result.json"
+    },
+    {
+      "parent": "docs/evidence/https-disconnect-recovery-acceptance.json",
+      "keys": [
+        "externalProbeSourceSha256",
+        "run.py"
+      ],
+      "child": "docs/evidence/https-disconnect-recovery/probe-sources/run.py"
+    },
+    {
+      "parent": "docs/evidence/https-disconnect-recovery-acceptance.json",
+      "keys": [
+        "externalProbeSourceSha256",
+        "relay.py"
+      ],
+      "child": "docs/evidence/https-disconnect-recovery/probe-sources/relay.py"
+    },
+    {
+      "parent": "docs/evidence/https-disconnect-recovery-acceptance.json",
+      "keys": [
+        "externalProbeSourceSha256",
+        "NetworkNotificationProbe.java"
+      ],
+      "child": "docs/evidence/https-disconnect-recovery/probe-sources/NetworkNotificationProbe.java"
+    }
+  ],
+  "gates": {
+    "desktop": "docs/evidence/cache-contention-desktop/result.json",
+    "remote": "docs/evidence/cache-contention-remote/result-reconciled.json"
+  },
+  "ciEvidence": "docs/evidence/cache-contention-maintenance-acceptance.json"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "archiveSha256": "0ab35f948c7a5a27466127ebf6c50e5cb8121857f2a10fd9ac18262eefbe4c86",
+  "evidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\welcome-smoke\\20261128-002457",
+  "fixture": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-remote-20261128-002457-https",
+  "remote": "https://github.com/loevc/Alhena-test.git",
+  "transport": "https",
+  "scenario": "unreachable per-process HTTP proxy",
+  "checks": [
+    "original Clone reports expected failure diagnostic",
+    "welcome UI remains usable",
+    "no cloned repository left behind",
+    "no global network or authentication configuration changed"
+  ]
+}

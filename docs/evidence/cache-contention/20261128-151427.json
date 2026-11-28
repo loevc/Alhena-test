@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "evidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\cache-contention\\20261128-151427",
+  "checks": [
+    "original cache service and owned sandbox guard",
+    "20/40/60ms read contention recovers and cache deserializes",
+    "persistent denial bounded and visible",
+    "old cache bytes preserved on failure",
+    "interruption exits retry and preserves thread flag",
+    "all temporary files cleaned",
+    "100 unheld saves and final deserialize"
+  ],
+  "archiveSha256": "2a71563a782d2c7ef6e9d00e9b7c1cade03a316ff416184616c6d1558f278bdc",
+  "fixture": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-20261128-151429\\repo",
+  "normalExit": true
+}

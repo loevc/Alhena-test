@@ -1,0 +1,271 @@
+{
+  "machine": {
+    "os": "Microsoft Windows 10 \u4e13\u4e1a\u7248",
+    "osVersion": "10.0.19045",
+    "cpu": "Intel(R) Core(TM) i7-14700K",
+    "logicalProcessors": 28,
+    "physicalMemoryBytes": 68388044800,
+    "upstream": "b0d717640ee577a15b73fa79194629ff2a1d3d72",
+    "repository": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\history-20261126-193238",
+    "commits": 5,
+    "files": 3,
+    "runs": 3,
+    "method": "Instrumented Swing readiness, no forced GC; graceful platform exit saves settings and VFS between cached launches. Fresh application config is not cold OS cache. Includes attach/poll overhead."
+  },
+  "baseline": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\measurements\\baseline-clean-20261126-193237\\results.json",
+  "current": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\measurements\\trimmed-clean-20261126-193414\\results.json",
+  "rows": [
+    {
+      "scenario": "empty-fresh",
+      "metric": "\u4e3b\u7a97\u53e3/EDT \u5c31\u7eea (ms)",
+      "baseline": {
+        "median": 1339.0,
+        "min": 1015.0,
+        "max": 2010.0
+      },
+      "current": {
+        "median": 1445.0,
+        "min": 1420.0,
+        "max": 1954.0
+      }
+    },
+    {
+      "scenario": "empty-fresh",
+      "metric": "\u4e3b\u7a97\u53e3\u5de5\u4f5c\u96c6 (MiB)",
+      "baseline": {
+        "median": 449.89453125,
+        "min": 428.40625,
+        "max": 454.91015625
+      },
+      "current": {
+        "median": 426.30078125,
+        "min": 425.34375,
+        "max": 430.078125
+      }
+    },
+    {
+      "scenario": "empty-fresh",
+      "metric": "\u4efb\u52a1\u7ed3\u675f\u540e\u5de5\u4f5c\u96c6 (MiB)",
+      "baseline": {
+        "median": 485.98046875,
+        "min": 479.78515625,
+        "max": 496.10546875
+      },
+      "current": {
+        "median": 462.45703125,
+        "min": 440.09375,
+        "max": 463.38671875
+      }
+    },
+    {
+      "scenario": "empty-fresh",
+      "metric": "\u4efb\u52a1\u7ed3\u675f\u540e heap used (MiB)",
+      "baseline": {
+        "median": 102.94925689697266,
+        "min": 88.46839904785156,
+        "max": 115.62801361083984
+      },
+      "current": {
+        "median": 93.36903381347656,
+        "min": 90.04493713378906,
+        "max": 95.37975311279297
+      }
+    },
+    {
+      "scenario": "repository-fresh",
+      "metric": "\u4e3b\u7a97\u53e3/EDT \u5c31\u7eea (ms)",
+      "baseline": {
+        "median": 1159.0,
+        "min": 1142.0,
+        "max": 1766.0
+      },
+      "current": {
+        "median": 1570.0,
+        "min": 1540.0,
+        "max": 1601.0
+      }
+    },
+    {
+      "scenario": "repository-fresh",
+      "metric": "Git Log \u9996\u5c4f (ms)",
+      "baseline": {
+        "median": 3147.0,
+        "min": 2515.0,
+        "max": 3631.0
+      },
+      "current": {
+        "median": 3112.0,
+        "min": 3013.0,
+        "max": 3537.0
+      }
+    },
+    {
+      "scenario": "repository-fresh",
+      "metric": "\u4e3b\u7a97\u53e3\u5de5\u4f5c\u96c6 (MiB)",
+      "baseline": {
+        "median": 446.3984375,
+        "min": 421.62890625,
+        "max": 470.65234375
+      },
+      "current": {
+        "median": 482.39453125,
+        "min": 419.8671875,
+        "max": 514.7109375
+      }
+    },
+    {
+      "scenario": "repository-fresh",
+      "metric": "Git Log \u9996\u5c4f\u5de5\u4f5c\u96c6 (MiB)",
+      "baseline": {
+        "median": 684.01953125,
+        "min": 680.578125,
+        "max": 769.85546875
+      },
+      "current": {
+        "median": 686.07421875,
+        "min": 679.0,
+        "max": 739.64453125
+      }
+    },
+    {
+      "scenario": "repository-fresh",
+      "metric": "Git Log \u9996\u5c4f heap used (MiB)",
+      "baseline": {
+        "median": 123.81932067871094,
+        "min": 122.17314147949219,
+        "max": 133.17066955566406
+      },
+      "current": {
+        "median": 109.59346771240234,
+        "min": 107.0,
+        "max": 134.80859375
+      }
+    },
+    {
+      "scenario": "repository-fresh",
+      "metric": "\u4efb\u52a1\u7ed3\u675f\u540e\u5de5\u4f5c\u96c6 (MiB)",
+      "baseline": {
+        "median": 721.5703125,
+        "min": 707.78125,
+        "max": 798.19921875
+      },
+      "current": {
+        "median": 701.20703125,
+        "min": 685.3203125,
+        "max": 760.046875
+      }
+    },
+    {
+      "scenario": "repository-fresh",
+      "metric": "\u4efb\u52a1\u7ed3\u675f\u540e heap used (MiB)",
+      "baseline": {
+        "median": 148.6115951538086,
+        "min": 110.14419555664062,
+        "max": 159.16134643554688
+      },
+      "current": {
+        "median": 126.38876342773438,
+        "min": 117.42932891845703,
+        "max": 139.28672790527344
+      }
+    },
+    {
+      "scenario": "repository-cached",
+      "metric": "\u4e3b\u7a97\u53e3/EDT \u5c31\u7eea (ms)",
+      "baseline": {
+        "median": 1435.0,
+        "min": 1231.0,
+        "max": 1663.0
+      },
+      "current": {
+        "median": 1393.0,
+        "min": 910.0,
+        "max": 1849.0
+      }
+    },
+    {
+      "scenario": "repository-cached",
+      "metric": "Git Log \u9996\u5c4f (ms)",
+      "baseline": {
+        "median": 2910.0,
+        "min": 2213.0,
+        "max": 3063.0
+      },
+      "current": {
+        "median": 2765.0,
+        "min": 2334.0,
+        "max": 3253.0
+      }
+    },
+    {
+      "scenario": "repository-cached",
+      "metric": "\u4e3b\u7a97\u53e3\u5de5\u4f5c\u96c6 (MiB)",
+      "baseline": {
+        "median": 461.8828125,
+        "min": 461.65234375,
+        "max": 494.3203125
+      },
+      "current": {
+        "median": 485.59375,
+        "min": 460.953125,
+        "max": 498.85546875
+      }
+    },
+    {
+      "scenario": "repository-cached",
+      "metric": "Git Log \u9996\u5c4f\u5de5\u4f5c\u96c6 (MiB)",
+      "baseline": {
+        "median": 664.54296875,
+        "min": 654.30859375,
+        "max": 666.34765625
+      },
+      "current": {
+        "median": 659.546875,
+        "min": 659.375,
+        "max": 705.75390625
+      }
+    },
+    {
+      "scenario": "repository-cached",
+      "metric": "Git Log \u9996\u5c4f heap used (MiB)",
+      "baseline": {
+        "median": 108.97927856445312,
+        "min": 101.24956512451172,
+        "max": 129.79425048828125
+      },
+      "current": {
+        "median": 131.83018493652344,
+        "min": 128.68092346191406,
+        "max": 138.92411041259766
+      }
+    },
+    {
+      "scenario": "repository-cached",
+      "metric": "\u4efb\u52a1\u7ed3\u675f\u540e\u5de5\u4f5c\u96c6 (MiB)",
+      "baseline": {
+        "median": 689.640625,
+        "min": 676.71484375,
+        "max": 693.0625
+      },
+      "current": {
+        "median": 671.0625,
+        "min": 667.7265625,
+        "max": 717.72265625
+      }
+    },
+    {
+      "scenario": "repository-cached",
+      "metric": "\u4efb\u52a1\u7ed3\u675f\u540e heap used (MiB)",
+      "baseline": {
+        "median": 109.94551086425781,
+        "min": 101.0640640258789,
+        "max": 120.35163879394531
+      },
+      "current": {
+        "median": 96.54442596435547,
+        "min": 95.12982940673828,
+        "max": 170.92411041259766
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "sourceCommit": "af82d88ad88b696245fbc2d63979695b6379422c",
+  "upstreamCommit": "b0d717640ee577a15b73fa79194629ff2a1d3d72",
+  "archiveName": "alhena-0.1.0-dev-252.28539.SNAPSHOT.win.zip",
+  "archiveBytes": 250138984,
+  "archiveSha256": "8b7811b8b285a151ad07d3c3976e61b965301806017380beabfc115df37a3049",
+  "desktopAcceptance": "not_run_on_hosted_runner",
+  "releaseReady": false
+}

@@ -1,0 +1,9 @@
+{
+  "status": "failed",
+  "evidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\cache-contention\\20261128-151352",
+  "checks": [],
+  "archiveSha256": "29f137bb7bc42ed16e1f2cfcf505de9210e4a2097041336115d3764a08b9df22",
+  "fixture": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-20261128-151353\\repo",
+  "error": "Original cache contention test failed; inspect cache-probe.txt",
+  "normalExit": true
+}

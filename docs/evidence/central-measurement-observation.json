@@ -1,0 +1,19 @@
+{
+  "status": "measurement_harness_corrected_product_unchanged",
+  "archiveSha256": "29f137bb7bc42ed16e1f2cfcf505de9210e4a2097041336115d3764a08b9df22",
+  "triggerScreenshot": "out/measurements/current-platform-scale-20261128-111516/repository-fresh-1/activate-0.png",
+  "finding": "Existing metric matched any visible VcsLogMainGraphTable: bottom Log had five commits while selected central editor still displayed Loading commits. It cannot establish central-editor readiness.",
+  "affectedSeries": [
+    "out/measurements/current-platform-scale-20261128-111516",
+    "out/measurements/current-history-scale-20261128-111837"
+  ],
+  "fix": [
+    "Read visible graph row count only within FileEditorManager.getSelectedEditor(vcs-log-file).getComponent()",
+    "Use scanner startedOrStoppedEvent StateFlow counter, which tracks execution transitions; modificationTracker can stay zero during ordinary scans"
+  ],
+  "productAndPatchesUnchanged": true,
+  "remaining": [
+    "Repeat both performance series using corrected central metric",
+    "Refresh exact-source desktop gate and CI checks; existing hosted product build inputs remain unchanged"
+  ]
+}

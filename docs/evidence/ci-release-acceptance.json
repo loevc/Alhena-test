@@ -1,0 +1,154 @@
+{
+  "status": "passed",
+  "scope": "Dedicated authorized Alhena-test end-to-end workflow validation; no canonical Release changes",
+  "repository": "loevc/Alhena-test",
+  "branch": "codex/tag-release-20261128-091203",
+  "tag": "v0.1.0-ci.20261128-091203",
+  "sourceCommit": "111f6fb3d2b9c149e0178f9dbd31f8f69bfdb683",
+  "runUrl": "https://github.com/loevc/Alhena-test/actions/runs/46129350049",
+  "runId": 46129350049,
+  "releaseUrl": "https://github.com/loevc/Alhena-test/releases/tag/v0.1.0-ci.20261128-091203",
+  "jobs": [
+    {
+      "name": "checks",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "package",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "release",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ],
+  "metadata": {
+    "schemaVersion": 1,
+    "sourceCommit": "111f6fb3d2b9c149e0178f9dbd31f8f69bfdb683",
+    "tag": "v0.1.0-ci.20261128-091203",
+    "productVersion": "0.1.0-dev",
+    "buildNumber": "252.28539.SNAPSHOT",
+    "upstreamCommit": "b0d717640ee577a15b73fa79194629ff2a1d3d72",
+    "prerelease": true,
+    "checks": {
+      "zipCrc": "passed",
+      "packageLayout": "passed",
+      "bundledRuntimeStartup": "passed"
+    },
+    "desktopAcceptance": "not_run_on_hosted_runner",
+    "runUrl": "https://github.com/loevc/Alhena-test/actions/runs/46129350049",
+    "assets": [
+      {
+        "name": "alhena-0.1.0-dev-252.28539.SNAPSHOT.win.zip",
+        "sha256": "fd7dea427527998fac65fc839db8fb3bf5fc755580a69791ed5939c474801717",
+        "bytes": 250141729
+      },
+      {
+        "name": "alhena-0.1.0-dev-252.28539.SNAPSHOT.win.zip.sha256",
+        "sha256": "a1a310ed268f17713e2bc97da5a1d87728aa6cc3b5ba0d341eb3311c23538402",
+        "bytes": 111
+      }
+    ]
+  },
+  "assets": [
+    {
+      "name": "alhena-0.1.0-dev-252.28539.SNAPSHOT.win.zip",
+      "size": 250141729,
+      "digest": "sha256:fd7dea427527998fac65fc839db8fb3bf5fc755580a69791ed5939c474801717",
+      "state": "uploaded"
+    },
+    {
+      "name": "alhena-0.1.0-dev-252.28539.SNAPSHOT.win.zip.sha256",
+      "size": 111,
+      "digest": "sha256:a1a310ed268f17713e2bc97da5a1d87728aa6cc3b5ba0d341eb3311c23538402",
+      "state": "uploaded"
+    },
+    {
+      "name": "ci-package.json",
+      "size": 936,
+      "digest": "sha256:2b58b36a9641eeadf987a417593d526d0cb52f528f85583f3cb4930474e3ee3b",
+      "state": "uploaded"
+    },
+    {
+      "name": "release-notes.md",
+      "size": 756,
+      "digest": "sha256:5a6eae65aecb47559baca8027475c327249c3b676959b5cb50a1225393b95e54",
+      "state": "uploaded"
+    }
+  ],
+  "localBuildPreservation": {
+    "status": "passed",
+    "unchangedBuildProductPatchFiles": 22,
+    "buildEntry": "build.ps1 -Action Package",
+    "offlineEntry": "build.ps1 -Action Package -Offline",
+    "localProductCompilationPerformed": false
+  },
+  "desktopAcceptance": "not_run_for_new_ci_zip",
+  "mainRepositoryPublication": "not_performed",
+  "unitTestsPassed": 50,
+  "publisherFollowupChecks": {
+    "id": 46130707038,
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/loevc/Alhena-test/actions/runs/46130707038",
+    "head_sha": "f74351a0c7c6a60aa84639c8493f926059d63fd6",
+    "head_branch": "codex/tag-release-followup-20261128-092924",
+    "event": "push"
+  },
+  "publisherFollowupScope": "Publisher draft-lookup follow-up only; product/build entry/workflow unchanged from full pipeline snapshot",
+  "latestPublisherIdempotency": {
+    "status": "published_verified",
+    "url": "https://github.com/loevc/Alhena-test/releases/tag/v0.1.0-ci.20261128-091203",
+    "tag": "v0.1.0-ci.20261128-091203",
+    "sourceCommit": "111f6fb3d2b9c149e0178f9dbd31f8f69bfdb683",
+    "prerelease": true,
+    "assets": [
+      {
+        "name": "alhena-0.1.0-dev-252.28539.SNAPSHOT.win.zip",
+        "sha256": "fd7dea427527998fac65fc839db8fb3bf5fc755580a69791ed5939c474801717",
+        "bytes": 250141729
+      },
+      {
+        "name": "alhena-0.1.0-dev-252.28539.SNAPSHOT.win.zip.sha256",
+        "sha256": "a1a310ed268f17713e2bc97da5a1d87728aa6cc3b5ba0d341eb3311c23538402",
+        "bytes": 111
+      },
+      {
+        "name": "ci-package.json",
+        "sha256": "2b58b36a9641eeadf987a417593d526d0cb52f528f85583f3cb4930474e3ee3b",
+        "bytes": 936
+      },
+      {
+        "name": "release-notes.md",
+        "sha256": "5a6eae65aecb47559baca8027475c327249c3b676959b5cb50a1225393b95e54",
+        "bytes": 756
+      }
+    ],
+    "apiWrites": 0,
+    "allAssetsDownloadedAndDigestVerified": true,
+    "publisherSha256": "193aa751e9fcb5c89f802922026061861603a379bb9f7f9a3de85585f32dae57"
+  },
+  "branchChecksAndSkipBehavior": {
+    "id": 46129349704,
+    "conclusion": "success",
+    "html_url": "https://github.com/loevc/Alhena-test/actions/runs/46129349704",
+    "head_sha": "111f6fb3d2b9c149e0178f9dbd31f8f69bfdb683",
+    "head_branch": "codex/tag-release-20261128-091203"
+  },
+  "currentSourceGitBlobSha256": {
+    ".github/workflows/windows.yml": "9af117f8d9ff90386c0ab6c21fab39466a0f53cfdde91632c741e09a00d5be3c",
+    "tools/ci-release.py": "3939b6ef3dcf00a63bc15eb24a09ae89400c1b37d7dbd417cc61f8ac18c64ccc",
+    "tests/test_ci_release.py": "2b8d6a4ee86bca2e793fdc36f554359cc2c3d21655515b080cb6926e36994279",
+    "tests/test_source_association.py": "07157237e2e0fb152b23ad43439a8f31ea5f1c1e950c58506cd5a9b62693ba1b"
+  },
+  "limits": [
+    "Full Tag build/publish run used 111f6fb; a subsequent publisher-only draft lookup correction was tested in Windows checks at f74351a and by 50 local tests. Current publisher also verified the real published release with API writes forbidden.",
+    "Workflow, local build entry, product and patches were unchanged by the publisher-only correction.",
+    "The failed-upload recovery case uses an API fixture; no real upload was deliberately interrupted.",
+    "New CI ZIP was not run through interactive desktop or real-remote regression; its metadata says not_run_on_hosted_runner.",
+    "Main repository workflow changes remain uncommitted and inactive until pushed."
+  ]
+}

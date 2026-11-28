@@ -1,0 +1,111 @@
+{
+  "status": "passed",
+  "startedAtUtc": "2026-11-27T16:36:31.615469+00:00",
+  "archive": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\releases\\alhena-0.1.0-dev-252.28539-1e152f7e.win.zip",
+  "archiveSha256": "1e152f7e69f4162a1f619364758c458ec82d748ac6c9e54abc04c68f21ac13d4",
+  "archiveBytes": 250138990,
+  "sourceSha256": {
+    ".github/workflows/windows.yml": "4b9d0e6b8cf414072f03481f127dccadc7095326d11552ca09bbdfeab58ec3d2",
+    "build-support/offline-validation.json": "c748c0e67687b9d6c4b960f4bc23afb10d4d5b200d693cc57cf69e01bb034af9",
+    "build-support/offline.lock.json": "012ce83c126502e3f69f83327866af74f385c9786d1cc55805b0bfc85694d959",
+    "build-support/source-manifest.json": "b54a68c1d328c5ef9cb52c60d3f1d27f293a9223a06dfb7d2eeb163ceb3ec64f",
+    "build.ps1": "466741e6959a38e81bdc816ac0e7d24451214d8aadd0c8afdc6001e6272fe854",
+    "patches/upstream.json": "923e96247b664274507baa501800fbdf2b7d21c4ed55a282db23351a70c644bf",
+    "product/alhena.product.iml": "e28185ea4f2802e466e2012571e2e72bff388fc0a46e43abc75600ae18432458",
+    "product/build/AlhenaBuildTarget.kt": "7198c4f36ba74ac39545a7690eccd02a2c7f2920e16e929fbf0f0472132a99a3",
+    "product/build/AlhenaProperties.kt": "728540b4d31b339e2ea86994464d45334076296ec084ca490171ed7fd0ffb50e",
+    "product/platform-build/AlhenaPackaging.kt": "8df21e06601866c8d2aa9474e0b84746bdef6eab5bdafaeb9561e23f5259bf30",
+    "product/resources/alhena-excluded-modules.txt": "97b33c45d62c6bcf56a41d43abf416227ebfa686a9058cf2c101b0d0372d95c9",
+    "product/resources/alhena.svg": "36202fc62350fed794980f164cab128abc9344d39e832c745e678f69cc51d15f",
+    "product/resources/idea/AlhenaApplicationInfo.xml": "7b47b7f19c333e77913eb5e945eb2619c6f1ee5666e2f201e37c4b36f839f09d",
+    "product/resources/META-INF/AlhenaPlugin.xml": "68ee20750b6aec2394c15c9f7f7eee4be61ac5a3e30b9017b1b0fad3e825e168",
+    "product/resources/ProductivityFeaturesRegistry.xml": "eacd89a2260dfdd46cec99964f77efa2a6fd2868e9cefe39a93e06e312d6179e",
+    "product/src/alhena/AlhenaApplication.java": "0c50a1edec3f6f68ad2d0a63e82483ab2a6bfa50a66a677cc80e809afe334475",
+    "product/src/alhena/AlhenaConsent.java": "c673217469603c7617051ae611e79aa1482cde65caf7a3deabd18714d4f5e633",
+    "product/src/alhena/AlhenaProject.java": "854aced5c9024b7a3d6824692aaa94012b93e08298fe03fd42440dbef09818c8",
+    "product/src/alhena/AlhenaUpdates.java": "d33758d29a8166a3db722b39b495c3ad6a699139a9365ca6004de3afac6099d3",
+    "product/src/alhena/AlhenaWelcome.java": "b7b920c6ed8f6078b56b469248bbabddfc75b34e428c705bb156423d48823c4e",
+    "product/src/alhena/GitSettingsAction.java": "476ef35e67d325eb91e838f8362c62175055c85754c2a2ee280ef0d7ee6997d9",
+    "product/src/alhena/HistoryAction.java": "2efcc2a85d71d0f327814172b6ca7c575e4461dbc7581d6accb624317bf52cba",
+    "run.ps1": "cf0c0c9d2d9c40120fdb38e707af062379c9661c3fafb71ce48df93f40b0508d",
+    "tests/test_desktop_gate.py": "31dffa8d6cb1c634677ede3fbf312ad74f2da30cd322950aeac2a238de8939ac",
+    "tests/test_offline_kit.py": "060ed70c44062796544c74ce89569dc8e40e2bcf864eb7581a19e178232ba3ad",
+    "tests/test_powershell_scripts.py": "c8c9e7cce88c0a5e34c5a2fee34eca42e863bf1e2b4e3aec07a5eb35568514de",
+    "tests/test_remote_fixture.py": "854fa905072afb72322f114126b3f82b1f41fcb83eacd4a35818abb0a0fcf6ae",
+    "tests/test_workspace.py": "533322909d08076bb9df76d4fccbcc3bcfa0b4db8d129c3f83ff1ae62602c2ce",
+    "tools/advanced-git-smoke.ps1": "ef4f0dd32fbdb0c9e31d7a3752e26364f5504576ebfe8de49deebae7551d3972",
+    "tools/clean-generated.ps1": "00de7d74b24f7fa4f3bb24e4f90995cb5830587df5b175313686bf263584001f",
+    "tools/compile-workflow-probe.ps1": "9ca6ef4fe608db07da2f30310ae9b6dc3de691fd9eaafb6c24959ca71e0f242a",
+    "tools/desktop-gate.py": "6b102d2d19146ec3f70c81132d2207a4ea3902779b1f4df9960f10b9a3242dba",
+    "tools/distribution-report.py": "55785c67fb46102059e410dde5943d0d20bbaa8a4de1b1075b3aacd573ea3d42",
+    "tools/make-advanced-fixture.py": "4bde931fea3e17f0f7069c743b25223bc0b0fba7db5e6606a66a581ef8ab9b93",
+    "tools/make-fixture.py": "097a6896ebf8e895042f7301009d894a568e02ad59c3cb077fa59c11363cf0d8",
+    "tools/make-workflow-fixture.py": "0e8ba9869bb528ce3647ac155c3ae5bfa1de7d3234c19401589b89666e28e1c7",
+    "tools/measure.ps1": "861dafbf0d30694af71e454b904786cd9aa77f02d84b60bfa41ceeb5a659eebe",
+    "tools/offline/NetworkProbe.java": "d7c47f639b664708d25081cd7da36e1a27580ed1d37a782c64afa23f6673293c",
+    "tools/offline/NoNetwork.java": "5793ad65b8f9535363ac5b0a3a68bab0e6beb648288fc250b3ea169fffc11567",
+    "tools/offline-kit.py": "b6c40df259f9c6489965deac82dd931b22d533f691313081273585e94ed2cab3",
+    "tools/prefetch-runtime.ps1": "5b9da4b2552c65e732d1ad3faf0e101b40dab15f2327f9657ed4d5858ad3761e",
+    "tools/product-smoke.ps1": "052570bf602ef0a11a436f981805ea0580479e3e2e773054572f256d25e12caa",
+    "tools/remote-fixture.py": "cad0ac485045a9db3e581ddb9b2624d02ba92f0a701ee8e8970a87a838c078c5",
+    "tools/remote-matrix.py": "eb20c0fa0ac97119c4f92683aaf7035c768d19873f90d431fd9ba0d0878ad050",
+    "tools/remote-sync-smoke.ps1": "3bf097e51eced6d9e68ad58ff1009fbc9afa70fabbed6817aef51796d624c34b",
+    "tools/smoke/AdvancedProbe.java": "6d4f4be13d0c3fc1852005002f0fa481c777c6d29664823d7be002d32eb54991",
+    "tools/smoke/Attach.java": "bd2fef81aa178fb8641f68b84f8416cd6b43735f4d7cf86fca0f8c27862bca34",
+    "tools/smoke/NativeChooser.cs": "1b6367902659d6e9d75c52ab07b65e302dbd7e4a2cbfbda9e99f423650cf65cf",
+    "tools/smoke/UiProbe.java": "87737316c2e7acda9f96f5d7a0fa3b93742146f92f87b8b31825287157639382",
+    "tools/smoke/WelcomeProbe.java": "334b1f4c25d07f6dcd4f1a2269ebe6ed7f4bb7deeb4d070ac0d8a4b1c342fbc3",
+    "tools/smoke/WorkflowLoader.java": "721160712e547fcc92973eb2b8f8dde4a2b9b920f35665ac937be0d091e5eae3",
+    "tools/smoke/WorkflowProbe.java": "2a7d1a5ea27869880f59d2fb8185f1b5ae4b6fd968095e2abec37b9e892ed2d1",
+    "tools/smoke.ps1": "ca4f91b3138a721fc5f806bd825cb1e2c53200b946453b8c7fa5342f02a36ed1",
+    "tools/summarize-measurements.py": "87fafe9ff3b9a6f900f8f5e948dc1b392d0c9ac54fb8a55fc3fafc558dd59c8d",
+    "tools/verify-delivery.py": "0dd293fd9035b5a3475b4217e5185ba2e882ceffad9b876eafec7b4081466e40",
+    "tools/welcome-smoke.ps1": "81491f1a71f3fa771ac9770d822bd3064c6349b9550fd510ed7d0aaf27813344",
+    "tools/workflow-probe.ps1": "3d23eb14b04b5accec6fd8b811057f23e66aa2cf288eed7b82791d19f7ad7f56",
+    "tools/workflow-smoke.ps1": "993c533d1fc74d05406b233e68ec9cf715c5c820990d7087dd8938b0c7b7c393",
+    "tools/workspace-git-smoke.ps1": "08388a287f075aea6942ed1ded0961631d3bc01fcd75018f7014ae729d30aa94",
+    "tools/workspace.py": "a0301e2cd60beabc72ebfde4f404eb19c278cc36f6fdafc5d46e05a52554d14d",
+    "upstream.lock.json": "32fff8c54f2c1710c3b514a50600b2b34c5dfb37b783bf02adad29a75f7e5433"
+  },
+  "cases": {
+    "native-switch": {
+      "resultSha256": "b5d34506a5d333bab5aae99f1617e71362eb9d67717ddb11e36136c0fa734a02",
+      "originalEvidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\welcome-smoke\\20261128-003632"
+    },
+    "cli-ps51": {
+      "resultSha256": "4d133b2b63025f975bca8e444371a057a775fec363e1c7ddf36dec17a6c47283",
+      "originalEvidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\welcome-smoke\\20261128-003645"
+    },
+    "cli-ps7": {
+      "resultSha256": "df4f1100624b66233f660763ff4987577e70db43597c359ad8e4c5182692f314",
+      "originalEvidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\welcome-smoke\\20261128-003650"
+    },
+    "product": {
+      "resultSha256": "ba5f643dd5ef838ce6674e06f1fc1267172784d1a7e6bc4788db697cfbe07130",
+      "originalEvidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\product-smoke\\20261128-003656"
+    },
+    "graph-diff": {
+      "resultSha256": "a688e02b258c43f266e56f002450ead314b2bacfcab94a290c0e60bd89668cbe",
+      "originalEvidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\gui-smoke\\20261128-003707"
+    },
+    "workflow": {
+      "resultSha256": "01b42e0ef58ed531d64c678e159360807ac92ae6f7e9bcda3ab9b27e13604df8",
+      "originalEvidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\workflow-smoke\\20261128-003720"
+    },
+    "workspace": {
+      "resultSha256": "3f1ea0d00322bac41d05ebeb493d21aa9df2d5fae0891269422cd8ec24e129e5",
+      "originalEvidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\workspace-git-smoke\\20261128-003741"
+    },
+    "advanced": {
+      "resultSha256": "9a4eb37b15b6cc5ee262ed4f128b64fb98ee274f73559f18cbdca3ff43b9daf9",
+      "originalEvidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\advanced-git-smoke\\20261128-003800"
+    }
+  },
+  "realRemoteCoverage": "not_run",
+  "releaseReady": false,
+  "limits": [
+    "Real remote matrix is separate",
+    "Commit/tag/Release association and P2 remain"
+  ],
+  "finishedAtUtc": "2026-11-27T16:38:20.314712+00:00"
+}

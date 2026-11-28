@@ -1,0 +1,8 @@
+{
+  "status": "unchanged",
+  "filesVerified": 3057,
+  "metadataBaseline": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\workspace-isolation\\20261128-100930\\metadata-before.json",
+  "acceptanceEvidence": "docs/evidence/isolated-workspace-acceptance.json",
+  "archiveSha256": "bd2f264de139ca46177289c45903950f5cab319be0e608cc536b4bcffbb9fb8d",
+  "scope": "all .idea files and all .iml files throughout the isolated 249211-file repository; path set and SHA-256 matched after open/stage/unstage/reopen"
+}

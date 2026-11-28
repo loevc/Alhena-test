@@ -1,0 +1,24 @@
+{
+  "pid": 13992,
+  "productRoot": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\run\\29f137bb7bc4",
+  "sandbox": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\smoke\\20261128-111055",
+  "repository": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\history-20261128-111055",
+  "archiveSha256": "29f137bb7bc42ed16e1f2cfcf505de9210e4a2097041336115d3764a08b9df22",
+  "started": "2026-11-28T11:10:55.7157916+08:00"
+}
+{
+  "status": "passed",
+  "archiveSha256": "29f137bb7bc42ed16e1f2cfcf505de9210e4a2097041336115d3764a08b9df22",
+  "evidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\gui-smoke\\20261128-111054",
+  "fixture": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\history-20261128-111055",
+  "checks": [
+    "native ZIP launch",
+    "isolated config",
+    "Git4Idea enabled",
+    "5 commits with merge graph",
+    "main and feature/history branch tree",
+    "commit selection loads history.txt",
+    "original two-sided Diff",
+    "no SEVERE/ERROR log entries"
+  ]
+}

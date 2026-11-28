@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "archiveSha256": "2a71563a782d2c7ef6e9d00e9b7c1cade03a316ff416184616c6d1558f278bdc",
+  "bytesRemoved": 3778781110.0,
+  "targets": 81,
+  "fullRecord": "out/logs/cache-fix-cleanup-applied.json",
+  "preserved": [
+    "all source and Git repositories",
+    "release ZIPs and extracted applications",
+    "compilation and dependency caches",
+    "acceptance logs, screenshots and reports"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "startedAtUtc": "2026-11-27T16:23:05.060719+00:00",
+  "archive": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\releases\\alhena-252.28539-0ab35f94.win.zip",
+  "archiveSha256": "0ab35f948c7a5a27466127ebf6c50e5cb8121857f2a10fd9ac18262eefbe4c86",
+  "repository": "loevc/Alhena-test",
+  "cases": {
+    "https-clone": {
+      "resultSha256": "f8904b7db8c34e84561ca7a5540b331fb549f047848beb7e70a63356702a4238",
+      "originalEvidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\welcome-smoke\\20261128-002305"
+    },
+    "https-sync": {
+      "resultSha256": "d58f29012ed72241c04cc150ded0e6e7c9b3c361d812a2d04f9c970eac119813",
+      "originalEvidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\remote-sync\\20261128-002315-https"
+    },
+    "ssh-clone": {
+      "resultSha256": "de2591ddbcc5a280d27128feaddddad8f92fc11189df6d401ca2d7d11cd1ddc4",
+      "originalEvidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\welcome-smoke\\20261128-002346"
+    },
+    "ssh-sync": {
+      "resultSha256": "89d5e083b967e445cefdde01d0d4eadc0446ec7c17b327e2bc2280492602a356",
+      "originalEvidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\remote-sync\\20261128-002358-ssh"
+    },
+    "https-auth-cancel": {
+      "resultSha256": "fb4ff6369a37a05f87a08e8fe1055681716b43902caa1fc9d954d9103edee5b4",
+      "originalEvidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\remote-sync\\20261128-002432-https"
+    },
+    "ssh-auth-rejected": {
+      "resultSha256": "d51034575a79f5846a2eb0cf3f1a2b91e50582ec905f9bc437151e06b3e0f1cc",
+      "originalEvidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\welcome-smoke\\20261128-002451"
+    },
+    "network-failure": {
+      "resultSha256": "77dba7cea37e92c8c4a6c0b363d417665818762485b985268f165d7b72588e21",
+      "originalEvidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\welcome-smoke\\20261128-002457"
+    }
+  },
+  "temporaryKeyRevoked": true,
+  "releaseReady": false,
+  "limits": [
+    "Network failure uses an unreachable per-process proxy; physical disconnect/reconnect is not covered"
+  ],
+  "finishedAtUtc": "2026-11-27T16:25:07.436741+00:00"
+}

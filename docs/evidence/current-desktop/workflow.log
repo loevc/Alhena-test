@@ -1,0 +1,60 @@
+PASS native startup and Git detection
+PASS unstaged-files
+PASS original Stage All writes index
+PASS staged-files
+PASS original Commit button creates commit
+PASS empty-commit-rejected
+PASS original branch checkout
+PASS original branch checkout back
+PASS push
+PASS original Push updates local bare remote
+From D:\resources\code\github\loevc\Alhena\out\fixtures\workflow-20261128-112810\origin
+   eafee5a..9abe234  main       -> origin/main
+warning: in the working copy of 'remote-update.txt', LF will be replaced by CRLF the next time Git touches it
+To D:\resources\code\github\loevc\Alhena\out\fixtures\workflow-20261128-112810\origin.git
+   9abe234..d01c20e  main -> main
+PASS original Fetch updates remote tracking ref
+PASS update
+PASS original Update Project integrates peer commit
+PASS conflict-dialog
+PASS three-way-merge
+PASS original merge UI resolves index with selected content
+PASS merge-ready
+PASS original staging workflow finishes no-diff merge
+{
+  "status": "passed",
+  "archiveSha256": "29f137bb7bc42ed16e1f2cfcf505de9210e4a2097041336115d3764a08b9df22",
+  "evidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\workflow-smoke\\20261128-112811",
+  "fixture": {
+    "root": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-20261128-112810",
+    "repository": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-20261128-112810\\repo",
+    "remote": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-20261128-112810\\origin.git",
+    "peer": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-20261128-112810\\peer"
+  },
+  "head": "c49a82135b705b9f5929670a75f3d6e3417d588a",
+  "parents": [
+    "d01c20eee48b55fce575a6da980110445f467208",
+    "8648d36efdaae34c80f6c7cb2e24649d3f2d9749"
+  ],
+  "checks": [
+    "native startup and Git detection",
+    "unstaged-files",
+    "original Stage All writes index",
+    "staged-files",
+    "original Commit button creates commit",
+    "empty-commit-rejected",
+    "original branch checkout",
+    "original branch checkout back",
+    "push",
+    "original Push updates local bare remote",
+    "original Fetch updates remote tracking ref",
+    "update",
+    "original Update Project integrates peer commit",
+    "conflict-dialog",
+    "three-way-merge",
+    "original merge UI resolves index with selected content",
+    "merge-ready",
+    "original staging workflow finishes no-diff merge",
+    "two-parent merge commit, clean index and working tree, no severe log errors"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "bytesRemoved": 11124870739.0,
+  "targets": 238,
+  "fullRecord": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\logs\\current-cleanup-applied.json",
+  "preserved": [
+    "all source and Git repositories",
+    "release ZIPs and extracted applications",
+    "compilation and dependency caches",
+    "acceptance logs, screenshots and reports"
+  ],
+  "archiveSha256": "0ab35f948c7a5a27466127ebf6c50e5cb8121857f2a10fd9ac18262eefbe4c86"
+}

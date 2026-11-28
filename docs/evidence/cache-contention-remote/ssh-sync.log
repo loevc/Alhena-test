@@ -1,0 +1,45 @@
+Switched to a new branch 'alhena-ui-20261128-153334-ssh'
+remote: 
+remote: Create a pull request for 'alhena-ui-20261128-153334-ssh' on GitHub by visiting:        
+remote:      https://github.com/loevc/Alhena-test/pull/new/alhena-ui-20261128-153334-ssh        
+remote: 
+To github.com:loevc/Alhena-test.git
+ * [new branch]      alhena-ui-20261128-153334-ssh -> alhena-ui-20261128-153334-ssh
+PASS native Git ready
+PASS new file appears in original staging UI
+PASS original Stage All writes index
+PASS staging UI refreshes before commit
+PASS original Commit creates test commit
+PASS original Push preview
+PASS original Push updates real GitHub branch
+Cloning into 'D:\resources\code\github\loevc\Alhena\out\fixtures\workflow-peer-20261128-153334-ssh'...
+warning: in the working copy of 'incoming-remote-20261128-153334.txt', LF will be replaced by CRLF the next time Git touches it
+To github.com:loevc/Alhena-test.git
+   6a18c3d..9e7258c  alhena-ui-20261128-153334-ssh -> alhena-ui-20261128-153334-ssh
+PASS original Fetch updates tracking ref
+PASS original Update dialog
+PASS original Update integrates real remote commit
+{
+  "status": "passed",
+  "archiveSha256": "2a71563a782d2c7ef6e9d00e9b7c1cade03a316ff416184616c6d1558f278bdc",
+  "repository": "git@github.com:loevc/Alhena-test.git",
+  "transport": "ssh",
+  "branch": "alhena-ui-20261128-153334-ssh",
+  "fixture": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-remote-20261128-153320-ssh",
+  "evidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\remote-sync\\20261128-153334-ssh",
+  "credentialHelperDialogObserved": false,
+  "pushedHead": "6a18c3d4739a519869a397eaba81953287088ba6",
+  "pulledHead": "9e7258c1a8e667f08deb26b1d1310b1916fed399",
+  "checks": [
+    "native Git ready",
+    "new file appears in original staging UI",
+    "original Stage All writes index",
+    "staging UI refreshes before commit",
+    "original Commit creates test commit",
+    "original Push preview",
+    "original Push updates real GitHub branch",
+    "original Fetch updates tracking ref",
+    "original Update dialog",
+    "original Update integrates real remote commit"
+  ]
+}

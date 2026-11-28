@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "archiveSha256": "0ab35f948c7a5a27466127ebf6c50e5cb8121857f2a10fd9ac18262eefbe4c86",
+  "repository": "https://github.com/loevc/Alhena-test.git",
+  "transport": "https",
+  "scenario": "cancel HTTPS Push authentication",
+  "branch": "alhena-ui-20261128-002432-https",
+  "fixture": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-remote-20261128-002305-https",
+  "evidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\remote-sync\\20261128-002432-https",
+  "localHead": "ae185ba1710019437d8687522b30eec7d7a72cc5",
+  "remoteHead": "ad5a73196c24be0cb5e60db077d92923df2308bd",
+  "checks": [
+    "native Git ready",
+    "new file appears in original staging UI",
+    "original Stage All writes index",
+    "staging UI refreshes before commit",
+    "original Commit creates test commit",
+    "original Push preview",
+    "original authentication dialog appears",
+    "authentication cancellation returns control",
+    "Push can be reopened after authentication cancellation"
+  ]
+}

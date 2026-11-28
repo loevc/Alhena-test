@@ -1,0 +1,20 @@
+﻿{
+    "status":  "passed",
+    "archiveSha256":  "c9b5d639380786e3e1824c1d5e963c4582783c3c1ca6e05ed9be0cf14668434e",
+    "evidence":  "D:\\resources\\code\\github\\loevc\\Alhena\\out\\welcome-smoke\\20261127-194913",
+    "fixture":  "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\history-20261127-194914",
+    "powerShellVersion":  "5.1.19041.6456",
+    "commandLineMode":  false,
+    "nativeSelection":  false,
+    "existingProject":  false,
+    "trustConfirmationObserved":  true,
+    "checks":  [
+                   "repository opens and displays Git history",
+                   "no automatic trust bypass",
+                   "no SEVERE/ERROR log entries",
+                   "native EXE without repository argument",
+                   "real welcome button opens Windows native chooser",
+                   "real Clone Repository button opens upstream dialog",
+                   "original IDE chooser selects fixture directory"
+               ]
+}

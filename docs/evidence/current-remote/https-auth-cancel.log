@@ -1,0 +1,39 @@
+Switched to a new branch 'alhena-ui-20261128-113048-https'
+remote: 
+remote: Create a pull request for 'alhena-ui-20261128-113048-https' on GitHub by visiting:        
+remote:      https://github.com/loevc/Alhena-test/pull/new/alhena-ui-20261128-113048-https        
+remote: 
+To https://github.com/loevc/Alhena-test.git
+ * [new branch]      alhena-ui-20261128-113048-https -> alhena-ui-20261128-113048-https
+PASS native Git ready
+PASS new file appears in original staging UI
+PASS original Stage All writes index
+PASS staging UI refreshes before commit
+PASS original Commit creates test commit
+PASS original Push preview
+PASS original authentication dialog appears
+PASS authentication cancellation returns control
+PASS Push can be reopened after authentication cancellation
+{
+  "status": "passed",
+  "archiveSha256": "29f137bb7bc42ed16e1f2cfcf505de9210e4a2097041336115d3764a08b9df22",
+  "repository": "https://github.com/loevc/Alhena-test.git",
+  "transport": "https",
+  "scenario": "cancel HTTPS Push authentication",
+  "branch": "alhena-ui-20261128-113048-https",
+  "fixture": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-remote-20261128-112913-https",
+  "evidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\remote-sync\\20261128-113048-https",
+  "localHead": "195a5b095f20f3065c21741ad08d24e362b12bd8",
+  "remoteHead": "d1802d7d2337b40fcd9ca7f94e6006cc12505eee",
+  "checks": [
+    "native Git ready",
+    "new file appears in original staging UI",
+    "original Stage All writes index",
+    "staging UI refreshes before commit",
+    "original Commit creates test commit",
+    "original Push preview",
+    "original authentication dialog appears",
+    "authentication cancellation returns control",
+    "Push can be reopened after authentication cancellation"
+  ]
+}

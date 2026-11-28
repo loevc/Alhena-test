@@ -1,0 +1,9 @@
+<component xmlns="http://jetbrains.org/intellij/schema/application-info">
+  <!-- Upstream computeAppInfoXml validates this against the platform's 252 build. -->
+  <version major="2025" minor="2" full="0.1.1-dev" eap="true"/>
+  <company name="Alhena Contributors"/>
+  <build number="AL-__BUILD__" date="__BUILD_DATE__" majorReleaseDate="20261126"/>
+  <icon svg="/alhena.svg" svg-small="/alhena.svg"/>
+  <names product="Alhena" fullname="Alhena" script="alhena" motto="Git workspace"/>
+  <essential-plugin>Git4Idea</essential-plugin>
+</component>

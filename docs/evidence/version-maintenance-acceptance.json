@@ -1,0 +1,35 @@
+{
+  "status": "validated_for_pinned_platform",
+  "archiveSha256": "1e152f7e69f4162a1f619364758c458ec82d748ac6c9e54abc04c68f21ac13d4",
+  "productVersion": "0.1.0-dev",
+  "runtimeAboutVersion": "0.1.0-dev EAP",
+  "runtimeAboutBuild": "AL-252.28539.SNAPSHOT",
+  "platformVersion": "2025.2.6.5",
+  "platformCommit": "b0d717640ee577a15b73fa79194629ff2a1d3d72",
+  "packagedVersionMetadataMatches": true,
+  "productInfoVersionMatches": true,
+  "singleProductVersionSource": "product/resources/idea/AlhenaApplicationInfo.xml version/full",
+  "automatedTestsPassed": 28,
+  "testLog": "out/logs/version-tests.log",
+  "protectedPatches": [
+    {
+      "path": "plugins/git4idea/src/git4idea/ui/branch/dashboard/BranchesTree.kt",
+      "originalSha256": "44c5ec47a58e0e6c73520f7bf8a9ee42ead8da5d815ffcf87984167bafce85d5",
+      "patchedSha256": "d5bd08db09ed0e8afa5941a7aa634d522a64f4332fc01c6af4e68d74054f4975",
+      "baselineAndPatchedContentVerified": true
+    },
+    {
+      "path": "plugins/git4idea/src/git4idea/index/ui/GitStageCommitPanel.kt",
+      "originalSha256": "8aaccd13c721f24af9d5db6bdc8832bb494f9e41dcab690e91a972d9239798d0",
+      "patchedSha256": "2101a93fe8dcea6edb5b3e1acb14d449818222e6711723b7ca5280ff3f5e0de5",
+      "baselineAndPatchedContentVerified": true
+    }
+  ],
+  "runtimeRegression": "docs/evidence/version-desktop/workflow.json",
+  "productAndAboutEvidence": "docs/evidence/version-product-acceptance.json",
+  "upgradeProcedure": "docs/maintenance.md",
+  "limits": [
+    "Validation applies to the pinned platform; a future upstream revision still requires the documented migration and full gates",
+    "No claim of a newly published release or completed CI execution"
+  ]
+}

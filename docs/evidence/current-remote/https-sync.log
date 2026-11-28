@@ -1,0 +1,45 @@
+Switched to a new branch 'alhena-ui-20261128-112924-https'
+remote: 
+remote: Create a pull request for 'alhena-ui-20261128-112924-https' on GitHub by visiting:        
+remote:      https://github.com/loevc/Alhena-test/pull/new/alhena-ui-20261128-112924-https        
+remote: 
+To https://github.com/loevc/Alhena-test.git
+ * [new branch]      alhena-ui-20261128-112924-https -> alhena-ui-20261128-112924-https
+PASS native Git ready
+PASS new file appears in original staging UI
+PASS original Stage All writes index
+PASS staging UI refreshes before commit
+PASS original Commit creates test commit
+PASS original Push preview
+PASS original Push updates real GitHub branch
+Cloning into 'D:\resources\code\github\loevc\Alhena\out\fixtures\workflow-peer-20261128-112924-https'...
+warning: in the working copy of 'incoming-remote-20261128-112924.txt', LF will be replaced by CRLF the next time Git touches it
+To https://github.com/loevc/Alhena-test.git
+   4977a4f..d1802d7  alhena-ui-20261128-112924-https -> alhena-ui-20261128-112924-https
+PASS original Fetch updates tracking ref
+PASS original Update dialog
+PASS original Update integrates real remote commit
+{
+  "status": "passed",
+  "archiveSha256": "29f137bb7bc42ed16e1f2cfcf505de9210e4a2097041336115d3764a08b9df22",
+  "repository": "https://github.com/loevc/Alhena-test.git",
+  "transport": "https",
+  "branch": "alhena-ui-20261128-112924-https",
+  "fixture": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-remote-20261128-112913-https",
+  "evidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\remote-sync\\20261128-112924-https",
+  "credentialHelperDialogObserved": true,
+  "pushedHead": "4977a4fe92f397b38c0f0e9b5eec3589ff0fb9cb",
+  "pulledHead": "d1802d7d2337b40fcd9ca7f94e6006cc12505eee",
+  "checks": [
+    "native Git ready",
+    "new file appears in original staging UI",
+    "original Stage All writes index",
+    "staging UI refreshes before commit",
+    "original Commit creates test commit",
+    "original Push preview",
+    "original Push updates real GitHub branch",
+    "original Fetch updates tracking ref",
+    "original Update dialog",
+    "original Update integrates real remote commit"
+  ]
+}

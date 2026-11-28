@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "run": {
+    "id": 46102578842,
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/loevc/Alhena-test/actions/runs/46102578842",
+    "head_sha": "b30fe4ef7f310b18ee93b295010018432a0be8a4",
+    "head_branch": "codex/ci-acceptance-20261128-032246",
+    "event": "workflow_dispatch",
+    "jobs": [
+      {
+        "id": 140849361660,
+        "name": "checks",
+        "status": "completed",
+        "conclusion": "success",
+        "started_at": "2026-11-28T03:27:59Z",
+        "completed_at": "2026-11-28T03:28:23Z"
+      },
+      {
+        "id": 140849472539,
+        "name": "package",
+        "status": "completed",
+        "conclusion": "skipped",
+        "started_at": "2026-11-28T03:28:23Z",
+        "completed_at": "2026-11-28T03:28:23Z"
+      }
+    ]
+  },
+  "scope": "Latest-source Windows tests and PowerShell parsing; package intentionally skipped because product/build inputs equal successful hosted build commit",
+  "sourceIdentity": "docs/evidence/current-maintenance-acceptance.json",
+  "packageProof": "docs/evidence/current-windows-ci-package-acceptance.json"
+}

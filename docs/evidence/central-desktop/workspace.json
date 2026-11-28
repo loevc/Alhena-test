@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "archiveSha256": "0ab35f948c7a5a27466127ebf6c50e5cb8121857f2a10fd9ac18262eefbe4c86",
+  "evidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\workspace-git-smoke\\20261128-002931",
+  "fixture": {
+    "root": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-20261128-002931",
+    "repository": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-20261128-002931\\repo",
+    "remote": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-20261128-002931\\origin.git",
+    "peer": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-20261128-002931\\peer"
+  },
+  "checks": [
+    "native Git ready",
+    "original Git Log occupies selected central editor",
+    "History reuses one original central log editor",
+    "Git Settings opens original Git executable settings directly",
+    "Git settings cancel returns to repository",
+    "original staging panel opens alongside central history",
+    "Stage All refreshes original tree",
+    "original selected Unstage preserves other staged file",
+    "unstaged file refreshes in UI",
+    "original selected Discard restores working file",
+    "original Stash dialog",
+    "original Stash saves staged change",
+    "original stash tracker and tab are ready for Unstash",
+    "original stash browser loads saved entry",
+    "original Apply Stash restores file",
+    "central Git Log restores after normal platform exit"
+  ]
+}

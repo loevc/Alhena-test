@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "archiveSha256": "0ab35f948c7a5a27466127ebf6c50e5cb8121857f2a10fd9ac18262eefbe4c86",
+  "repository": "https://github.com/loevc/Alhena-test.git",
+  "transport": "https",
+  "branch": "alhena-ui-20261128-002315-https",
+  "fixture": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-remote-20261128-002305-https",
+  "evidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\remote-sync\\20261128-002315-https",
+  "credentialHelperDialogObserved": true,
+  "pushedHead": "a433177b384f32d0368dd2bfbebfa6965f93f702",
+  "pulledHead": "ad5a73196c24be0cb5e60db077d92923df2308bd",
+  "checks": [
+    "native Git ready",
+    "new file appears in original staging UI",
+    "original Stage All writes index",
+    "staging UI refreshes before commit",
+    "original Commit creates test commit",
+    "original Push preview",
+    "original Push updates real GitHub branch",
+    "original Fetch updates tracking ref",
+    "original Update dialog",
+    "original Update integrates real remote commit"
+  ]
+}

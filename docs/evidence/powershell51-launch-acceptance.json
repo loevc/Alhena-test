@@ -1,0 +1,15 @@
+﻿{
+    "status":  "passed",
+    "archiveSha256":  "4d1f78ace6e4f69e2d53b1f92c23eff32b3cc6fca6503e499d69806e74e8d88e",
+    "evidence":  "D:\\resources\\code\\github\\loevc\\Alhena\\out\\welcome-smoke\\20261127-184944",
+    "fixture":  "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\history-20261127-184945",
+    "powerShellVersion":  "5.1.19041.6456",
+    "commandLineMode":  true,
+    "trustConfirmationObserved":  true,
+    "checks":  [
+                   "repository opens and shows five Git commits",
+                   "no automatic trust bypass",
+                   "no SEVERE/ERROR log entries",
+                   "run.ps1 -Repository executed in actual caller PowerShell"
+               ]
+}

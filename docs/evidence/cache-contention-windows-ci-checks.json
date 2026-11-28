@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "run": {
+    "id": 46120547131,
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/loevc/Alhena-test/actions/runs/46120547131",
+    "head_sha": "115279fc55ef7c7ea538ea43714c993a7e73a35c",
+    "head_branch": "codex/ci-acceptance-20261128-071527",
+    "event": "workflow_dispatch"
+  },
+  "checksJob": {
+    "id": 140903879682,
+    "name": "checks",
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-11-28T07:17:56Z",
+    "completed_at": "2026-11-28T07:18:14Z"
+  },
+  "scope": "Checks and full package on the same exact current source commit",
+  "sourceIdentity": "docs/evidence/cache-contention-maintenance-acceptance.json"
+}

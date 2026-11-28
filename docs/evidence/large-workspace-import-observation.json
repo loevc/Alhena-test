@@ -1,0 +1,36 @@
+{
+  "status": "measurement_timeout_not_accepted",
+  "archiveSha256": "9b3ed7d117532bb6ba56a5d3c1b6d20b0a388d13c2799e52551f8a3173109362",
+  "dataset": {
+    "repository": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\fixtures\\workflow-performance-platform",
+    "baseCommit": "b0d717640ee577a15b73fa79194629ff2a1d3d72",
+    "head": "a9e59075350cdc50dae5e30f1b8a63f27010d1c6",
+    "commits": 5,
+    "trackedFiles": 249211,
+    "shallow": "true",
+    "workingTreeClean": true,
+    "originRemoved": true,
+    "controlledCommits": 4,
+    "localCoreLongpaths": true,
+    "limits": [
+      "Fixed IntelliJ full working tree, shallow source history; four local text commits provide a repeatable two-sided Diff",
+      "Uses shared read-only object store from pinned checkout; fixture owns working files and new commits"
+    ]
+  },
+  "evidence": "D:\\resources\\code\\github\\loevc\\Alhena\\out\\measurements\\platform-scale-20261128-010416\\repository-fresh-1",
+  "firstGraphObservedJvmUptimeMs": 6501,
+  "lastObservedJvmUptimeMs": 186279,
+  "lastObservedDumbMode": true,
+  "failure": "180-second wait for non-dumb state expired",
+  "screenshotFinding": "Central editor is empty while bottom Git Log is usable; original IDEA project import reports missing plugins and MAVEN_REPOSITORY macro",
+  "sourceFinding": [
+    "ProjectStorePathManager application service selects project configuration directory; ProjectStoreImpl.projectBasePath remains dirOrFile, independent of custom store directory",
+    "Default PlatformProjectConfigurator hardcodes repo/.idea/<name>.iml, so replacing store manager alone is insufficient to avoid modifying IDE project files"
+  ],
+  "nextAction": "Separate Alhena project storage from repository .idea, replace default directory module configurator with an isolated Git workspace module, verify repository metadata bytes unchanged, and repeat large repository startup/Git/performance gates",
+  "limits": [
+    "Timeout is a failed measurement, not a completed performance sample",
+    "No claim that indexing is permanently stuck; observed limit is documented",
+    "Current smart-mode History gate delays central workspace until indexing finishes"
+  ]
+}
