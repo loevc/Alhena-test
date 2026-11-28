@@ -21,6 +21,8 @@ class FakeGitHub:
     def request(self, path, method='GET', body=None, raw=None, missing_ok=False):
         if method != 'GET': self.writes.append((path, method))
         if '/commits/' in path: return {'sha': self.tag_commit}
+        if '/releases?' in path: return [copy.deepcopy(self.release)] if self.release else []
+        if '/releases/tags/' in path and self.release and self.release['draft']: return None
         if raw:
             if self.fail_upload: raise RuntimeError('Upload failed')
             p = Path(raw)

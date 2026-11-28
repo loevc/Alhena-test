@@ -184,6 +184,20 @@ def publish(folder, repository, tag, commit, client=None):
     if api.request(base + '/commits/' + encoded)['sha'] != commit:
         raise ValueError('Remote tag does not resolve to this source commit')
     release = api.request(base + '/releases/tags/' + encoded, missing_ok=True)
+    if release is None:
+        # The tag endpoint promises published releases. Locate an authenticated
+        # draft through the paginated listing when resuming a failed upload.
+        matches, page = [], 1
+        while True:
+            rows = api.request(base + '/releases?per_page=100&page=' + str(page))
+            matches.extend(row for row in rows if row['tag_name'] == tag)
+            if len(rows) < 100:
+                break
+            page += 1
+        if len(matches) > 1:
+            raise ValueError('Multiple releases use this tag; inspect drafts before retrying')
+        if matches:
+            release = api.request(base + '/releases/' + str(matches[0]['id']))
     marker = '<!-- alhena-ci:' + commit + ' -->'
     if release is None:
         release = api.request(base + '/releases', 'POST', {'tag_name': tag, 'target_commitish': commit,
